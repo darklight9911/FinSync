@@ -3,15 +3,16 @@
 #include <stdbool.h>
 #include <time.h>
 #include <netdb.h>
+#include "constants.h"
 char* getCurrentDateTime();
-bool CONLOG_OUTPUT_ENABLED = true;
+
 
 
 
 
 bool checkString(char string1[], char string2[]) {
     int checkStrInteger = strcmp(string1, string2);
-    printf("DEBUG: %s ? %s : %d\n", string1, string2, checkStrInteger);
+    // printf("DEBUG: %s ? %s : %d\n", string1, string2, checkStrInteger);
     return checkStrInteger == 0;
 }
 
