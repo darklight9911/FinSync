@@ -2,11 +2,10 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include "fsGlobal.h"
+#include "constants.h"
 #include <time.h>
 int main()
 {
-    conLog("hello", "error");
-
-    
+    startupCheck();    
     return 0;
 }
