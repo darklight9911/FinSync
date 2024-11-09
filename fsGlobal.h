@@ -13,7 +13,6 @@ char* getCurrentDateTime();
 
 bool checkString(char string1[], char string2[]) {
     int checkStrInteger = strcmp(string1, string2);
-    // printf("DEBUG: %s ? %s : %d\n", string1, string2, checkStrInteger);
     return checkStrInteger == 0;
 }
 
@@ -66,14 +65,17 @@ char* getCurrentDateTime() {
 bool checkConnection(char url[]){
     char *hostname;   
 	struct hostent *hostinfo;
-
+    char comment[300];
 	hostname = url;
 	hostinfo = gethostbyname(hostname);
     if (hostinfo == NULL) {
-        // printf("-> no connection!\n");
+        sprintf(comment," %s no connection", url);
+        conLog(comment, "error");
+        
         return false;
     } else {
-        // printf("-> connection established!\n");
+        sprintf(comment," %s connection established", url);
+        conLog(comment, "info");
         return true;
     }
 
@@ -181,3 +183,5 @@ char* callServer(const char *url, const char *json_data) {
     curl_global_cleanup();
     return chunk.memory;
 }
+
+//Create a function which return the length of given string.
