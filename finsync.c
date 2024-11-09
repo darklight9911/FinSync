@@ -5,12 +5,12 @@
 #include "constants.h"
 #include "views.h"
 #include <time.h>
-struct loginCred* loginInfoVAR;
+
 
 int main()
 {
     startupCheck();
-
+    
     // callServer();
     // int counter = 0;
     int appWindow = homePage();
@@ -24,7 +24,7 @@ int main()
 
         }else if(appWindow == 1){
             // printf("You selected to login");
-
+            struct loginCred* loginInfoVAR;
             loginInfoVAR = loginView();
             checklogin(loginInfoVAR);
             
@@ -34,6 +34,7 @@ int main()
             registerOperation(newUserCredInfo);
 
         }
+        
         return 0;
     }
 

@@ -185,3 +185,6 @@ char* callServer(const char *url, const char *json_data) {
 }
 
 //Create a function which return the length of given string.
+int getLength(char* givenStr){
+    return strlen(givenStr);
+}
