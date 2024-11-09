@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-// #include "fsGlobal.h"
-// #include "structures.h"
+
+
 void welcomeMessage(){
     printf("Welcome to FinSync.\n");
 
@@ -67,3 +67,4 @@ struct newUserCred* registrationFormView(){
     scanf("%99s", newUserCredInfo->email);
     return newUserCredInfo;
 }
+

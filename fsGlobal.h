@@ -103,13 +103,19 @@ void sysMessage(char prefix[],char comment[]){
 
 bool checklogin(struct loginCred* logininfo) {
     printf("username: %s | password: %s\n", logininfo->username, logininfo->password);
-    return true;
+    /* Task: logininfo structure er username r password jodi "test" hoy tahole true return korbe,
+    unless ei function false return korbe 
+
+    */
 }
 
-void registerOperation(struct newUserCred* newUserCredInfo){
+int registerOperation(struct newUserCred* newUserCredInfo){
     sysMessage(NULL, "Registration Process Started");
-    printf("%s", newUserCredInfo -> username);
-    
+    /*Task:  
+        newUserCredInfo -> password er length jodi 6 character er kom hoy tahole return korbe 0
+        r email jeita provide korbe oitay
+    */
+
 }
 
 struct MemoryStruct {

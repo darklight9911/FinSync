@@ -5,7 +5,6 @@
 #include "constants.h"
 #include "views.h"
 #include <time.h>
-// #include "structures.h"
 struct loginCred* loginInfoVAR;
 
 int main()
