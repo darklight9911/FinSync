@@ -112,39 +112,66 @@ void registerOperation(struct newUserCred* newUserCredInfo){
     
 }
 
+struct MemoryStruct {
+    char *memory;
+    size_t size;
+};
+
+static size_t WriteCallback(void *contents, size_t size, size_t nmemb, void *userp) {
+    size_t total_size = size * nmemb;
+    struct MemoryStruct *mem = (struct MemoryStruct *)userp;
+
+    char *ptr = realloc(mem->memory, mem->size + total_size + 1);
+    if (ptr == NULL) {
+        printf("Not enough memory to allocate!\n");
+        return 0; // Out of memory
+    }
+
+    mem->memory = ptr;
+    memcpy(&(mem->memory[mem->size]), contents, total_size);
+    mem->size += total_size;
+    mem->memory[mem->size] = 0;
+
+    return total_size;
+}
+
 char* callServer(const char *url, const char *json_data) {
     CURL *curl;
     CURLcode res;
-    long response_code = 0;
+    struct MemoryStruct chunk;
 
-    curl_global_init(CURL_GLOBAL_ALL); 
+    chunk.memory = malloc(1); // Initial buffer allocation
+    chunk.size = 0;
+
+    curl_global_init(CURL_GLOBAL_ALL);
     curl = curl_easy_init();
 
     if (curl) {
         curl_easy_setopt(curl, CURLOPT_URL, url);
-        
         curl_easy_setopt(curl, CURLOPT_POST, 1L);
-        
+
         struct curl_slist *headers = NULL;
         headers = curl_slist_append(headers, "Content-Type: application/json");
         curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
 
         curl_easy_setopt(curl, CURLOPT_POSTFIELDS, json_data);
 
+        // Set up the WriteCallback
+        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
+        curl_easy_setopt(curl, CURLOPT_WRITEDATA, (void *)&chunk);
+
         res = curl_easy_perform(curl);
 
         if (res != CURLE_OK) {
             fprintf(stderr, "curl_easy_perform() failed: %s\n", curl_easy_strerror(res));
-        } else {
-            curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &response_code);
-            printf("Response Code: %ld\n", response_code);
+            free(chunk.memory);
+            chunk.memory = NULL;
         }
 
-        // Cleanup
-        curl_slist_free_all(headers); 
-        curl_easy_cleanup(curl);      
+        curl_slist_free_all(headers);
+        curl_easy_cleanup(curl);
     }
 
     curl_global_cleanup();
-    return response_code;
+    return chunk.memory;
 }

@@ -11,13 +11,7 @@ struct loginCred* loginInfoVAR;
 int main()
 {
     startupCheck();
-    const char *url = "http://localhost:8000/createAccount";
-    const char *json_data = "{\"username\":\"value\",\"password\":\"test\",\"email\":\"test\"}";
 
-    int response_code = send_post_request(url, json_data);
-    printf("HTTP Response Code: %d\n", response_code);
-
-    return 0;
     // callServer();
     // int counter = 0;
     int appWindow = homePage();
