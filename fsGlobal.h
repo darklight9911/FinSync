@@ -82,7 +82,7 @@ bool checkConnection(char url[]){
 }
 
 void programExit(int exitCode, char errorMessage[]){
-    conOut("[Exit]Program Exited due to %s\n", errorMessage);
+    printf("[Exit]Program Exited due to %s\n", errorMessage);
     exit(exitCode);
 }
 bool startupCheck(){
