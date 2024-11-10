@@ -107,7 +107,7 @@ bool checklogin(struct loginCred* logininfo) {
     printf("username: %s | password: %s\n", logininfo->username, logininfo->password);
     const char *url = "http://localhost:8000/login";
     // char *json_data;
-    size_t json_size = 430;  // You can adjust this size as necessary
+    size_t json_size = 430; 
     char *json_data = malloc(json_size);
     if (json_data == NULL) {
         printf("Memory allocation failed\n");
@@ -119,16 +119,7 @@ bool checklogin(struct loginCred* logininfo) {
         printf("Response JSON: %s\n",response);
         free(response);
     }
-    
-    // const char *url = "http://localhost:8000/createAccount";/login
-    // const char *json_data = "{\"username\":\"value\",\"password\":\"test\",\"email\":\"test\"}";
-    // char *response = callServer(url, json_data);
-    // if (response) {
-    //     printf("Response JSON: %s\n", response);
-    //     free(response); // Important: free the allocated memory
-    // }
-    // // login info pathabo server e then server theke validate kore login hoiche kina amader janabe?
-    // return 0;
+    return 0;
     
 }
 
