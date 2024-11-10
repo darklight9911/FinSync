@@ -8,7 +8,7 @@
 #include "structures.h"
 char* getCurrentDateTime();
 
-
+char * callServer(const char *url, char *json_data);
 
 
 bool checkString(char string1[], char string2[]) {
@@ -105,10 +105,31 @@ void sysMessage(char prefix[],char comment[]){
 
 bool checklogin(struct loginCred* logininfo) {
     printf("username: %s | password: %s\n", logininfo->username, logininfo->password);
-    /* Task: logininfo structure er username r password jodi "test" hoy tahole true return korbe,
-    unless ei function false return korbe 
-
-    */
+    const char *url = "http://localhost:8000/login";
+    // char *json_data;
+    size_t json_size = 430;  // You can adjust this size as necessary
+    char *json_data = malloc(json_size);
+    if (json_data == NULL) {
+        printf("Memory allocation failed\n");
+        return 1;
+    }
+    sprintf(json_data,"{\"username\":\"%s\",\"password\":\"%s\"}",logininfo->username,logininfo->password);
+    char *response = callServer(url, json_data);
+    if(response){
+        printf("Response JSON: %s\n",response);
+        free(response);
+    }
+    
+    // const char *url = "http://localhost:8000/createAccount";/login
+    // const char *json_data = "{\"username\":\"value\",\"password\":\"test\",\"email\":\"test\"}";
+    // char *response = callServer(url, json_data);
+    // if (response) {
+    //     printf("Response JSON: %s\n", response);
+    //     free(response); // Important: free the allocated memory
+    // }
+    // // login info pathabo server e then server theke validate kore login hoiche kina amader janabe?
+    // return 0;
+    
 }
 
 int registerOperation(struct newUserCred* newUserCredInfo){
@@ -143,12 +164,12 @@ static size_t WriteCallback(void *contents, size_t size, size_t nmemb, void *use
     return total_size;
 }
 
-char* callServer(const char *url, const char *json_data) {
+char* callServer(const char *url,char *json_data) {
     CURL *curl;
     CURLcode res;
     struct MemoryStruct chunk;
 
-    chunk.memory = malloc(1); // Initial buffer allocation
+    chunk.memory = malloc(1); 
     chunk.size = 0;
 
     curl_global_init(CURL_GLOBAL_ALL);
@@ -163,8 +184,7 @@ char* callServer(const char *url, const char *json_data) {
         curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
 
         curl_easy_setopt(curl, CURLOPT_POSTFIELDS, json_data);
-
-        // Set up the WriteCallback
+        // Set Up WriteCallback
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, (void *)&chunk);
 
@@ -188,3 +208,5 @@ char* callServer(const char *url, const char *json_data) {
 int getLength(char* givenStr){
     return strlen(givenStr);
 }
+
+

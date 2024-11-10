@@ -10,7 +10,7 @@
 int main()
 {
     startupCheck();
-    
+
     // callServer();
     // int counter = 0;
     int appWindow = homePage();
