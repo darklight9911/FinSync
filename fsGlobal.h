@@ -105,7 +105,7 @@ void sysMessage(char prefix[],char comment[]){
 
 bool checklogin(struct loginCred* logininfo) {
     printf("username: %s | password: %s\n", logininfo->username, logininfo->password);
-    const char *url = "http://localhost:8000/login";
+    const char *url = "https://zoogle.projectdaffodil.xyz/api/login";
     // char *json_data;
     size_t json_size = 430; 
     char *json_data = malloc(json_size);
@@ -115,7 +115,7 @@ bool checklogin(struct loginCred* logininfo) {
     }
     sprintf(json_data,"{\"username\":\"%s\",\"password\":\"%s\"}",logininfo->username,logininfo->password);
     char *response = callServer(url, json_data);
-    if(response){
+    if(response){   
         printf("Response JSON: %s\n",response);
         free(response);
     }
@@ -125,11 +125,22 @@ bool checklogin(struct loginCred* logininfo) {
 
 int registerOperation(struct newUserCred* newUserCredInfo){
     sysMessage(NULL, "Registration Process Started");
-    /*Task:  
-        newUserCredInfo -> password er length jodi 6 character er kom hoy tahole return korbe 0
-        r email jeita provide korbe oitay
-    */
-
+    printf("username: %s | password: %s\n", newUserCredInfo->username, newUserCredInfo->password);
+    const char *url = "https://zoogle.projectdaffodil.xyz/api/signup";
+    // char *json_data;
+    size_t json_size = 700; 
+    char *json_data = malloc(json_size);
+    if (json_data == NULL) {
+        printf("Memory allocation failed to create registration\n");
+        return 1;
+    }
+    sprintf(json_data,"{\"username\":\"%s\",\"password\":\"%s\",\"email\":\"%s\"}",newUserCredInfo->username,newUserCredInfo->password, newUserCredInfo->email);
+    char *response = callServer(url, json_data);
+    if(response){   
+        printf("Response JSON: %s\n",response);
+        free(response);
+    }
+    return 0;
 }
 
 struct MemoryStruct {
