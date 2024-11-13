@@ -7,8 +7,7 @@
 #include <curl/curl.h>
 #include "structures.h"
 char* getCurrentDateTime();
-
-char * callServer(const char *url, char *json_data);
+struct Response callServer(const char *url, char *json_data);
 
 
 bool checkString(char string1[], char string2[]) {
@@ -102,6 +101,16 @@ void sysMessage(char prefix[],char comment[]){
     printf("[~%s] %s\n", prefix, comment);
 }
 
+bool createSession(char accessToken[]){
+    FILE *sessionFile = fopen("sessionFile.lock", "w");   
+    if (sessionFile == NULL){
+        sysMessage("Error", "sessionFile.lock creation failed");
+        return false;
+    }
+    fprintf(sessionFile, "%s", accessToken);
+    fclose(sessionFile);
+    return true;
+}
 
 bool checklogin(struct loginCred* logininfo) {
     printf("username: %s | password: %s\n", logininfo->username, logininfo->password);
@@ -114,10 +123,17 @@ bool checklogin(struct loginCred* logininfo) {
         return 1;
     }
     sprintf(json_data,"{\"username\":\"%s\",\"password\":\"%s\"}",logininfo->username,logininfo->password);
-    char *response = callServer(url, json_data);
-    if(response){   
-        printf("Response JSON: %s\n",response);
-        free(response);
+    struct Response getResponse = callServer(url, json_data);
+    if(getResponse.response_code == 200){   
+        printf("Response JSON: %d\n", (int) getResponse.response_code);
+        if (createSession(getResponse.data)){
+            sysMessage(NULL, "Login Successful");
+            conLog("Authentication token saved to sessionFile.lock", "success");
+        }else{
+            sysMessage("FAILED", "Login Unsuccessful");
+            
+        }
+        free(getResponse.data);
     }
     return 0;
     
@@ -135,10 +151,10 @@ int registerOperation(struct newUserCred* newUserCredInfo){
         return 1;
     }
     sprintf(json_data,"{\"username\":\"%s\",\"password\":\"%s\",\"email\":\"%s\"}",newUserCredInfo->username,newUserCredInfo->password, newUserCredInfo->email);
-    char *response = callServer(url, json_data);
-    if(response){   
-        printf("Response JSON: %s\n",response);
-        free(response);
+    struct Response getResponse = callServer(url, json_data);
+    if(getResponse.data){   
+        printf("Response JSON: %s\n",getResponse.data);
+        free(getResponse.data);
     }
     return 0;
 }
@@ -158,7 +174,7 @@ static size_t WriteCallback(void *contents, size_t size, size_t nmemb, void *use
         return 0; // Out of memory
     }
 
-    mem->memory = ptr;
+        mem->memory = ptr;
     memcpy(&(mem->memory[mem->size]), contents, total_size);
     mem->size += total_size;
     mem->memory[mem->size] = 0;
@@ -166,49 +182,75 @@ static size_t WriteCallback(void *contents, size_t size, size_t nmemb, void *use
     return total_size;
 }
 
-char* callServer(const char *url,char *json_data) {
+
+struct Response callServer(const char *url, char *json_data) {
     CURL *curl;
     CURLcode res;
-    struct MemoryStruct chunk;
+    struct Response server_response = {NULL, 0};
+    struct curl_slist *headers = NULL;
+    long http_code = 0;
 
-    chunk.memory = malloc(1); 
-    chunk.size = 0;
-
-    curl_global_init(CURL_GLOBAL_ALL);
     curl = curl_easy_init();
-
-    if (curl) {
+    if(curl) {
         curl_easy_setopt(curl, CURLOPT_URL, url);
-        curl_easy_setopt(curl, CURLOPT_POST, 1L);
-
-        struct curl_slist *headers = NULL;
+        curl_easy_setopt(curl, CURLOPT_POSTFIELDS, json_data);
+        
         headers = curl_slist_append(headers, "Content-Type: application/json");
         curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
 
-        curl_easy_setopt(curl, CURLOPT_POSTFIELDS, json_data);
-        // Set Up WriteCallback
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
-        curl_easy_setopt(curl, CURLOPT_WRITEDATA, (void *)&chunk);
+        curl_easy_setopt(curl, CURLOPT_WRITEDATA, &server_response.data);
 
         res = curl_easy_perform(curl);
-
-        if (res != CURLE_OK) {
-            fprintf(stderr, "curl_easy_perform() failed: %s\n", curl_easy_strerror(res));
-            free(chunk.memory);
-            chunk.memory = NULL;
+        
+        if(res == CURLE_OK) {
+            curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &http_code);
+            server_response.response_code = http_code;
+        } else {
+            printf("Curl failed: %s\n", curl_easy_strerror(res));
         }
-
-        curl_slist_free_all(headers);
+        
         curl_easy_cleanup(curl);
+        curl_slist_free_all(headers);
     }
 
-    curl_global_cleanup();
-    return chunk.memory;
+    return server_response;
 }
 
-//Create a function which return the length of given string.
 int getLength(char* givenStr){
     return strlen(givenStr);
 }
 
+struct Response recallServer(const char *url, char *json_data) {
+    CURL *curl;
+    CURLcode res;
+    struct Response server_response = {NULL, 0};
+    struct curl_slist *headers = NULL;
+    long http_code = 0;
 
+    curl = curl_easy_init();
+    if(curl) {
+        curl_easy_setopt(curl, CURLOPT_URL, url);
+        curl_easy_setopt(curl, CURLOPT_POSTFIELDS, json_data);
+        
+        headers = curl_slist_append(headers, "Content-Type: application/json");
+        curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
+
+        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
+        curl_easy_setopt(curl, CURLOPT_WRITEDATA, &server_response.data);
+
+        res = curl_easy_perform(curl);
+        
+        if(res == CURLE_OK) {
+            curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &http_code);
+            server_response.response_code = http_code;
+        } else {
+            printf("Curl failed: %s\n", curl_easy_strerror(res));
+        }
+        
+        curl_easy_cleanup(curl);
+        curl_slist_free_all(headers);
+    }
+
+    return server_response;
+}

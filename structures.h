@@ -7,3 +7,7 @@ struct newUserCred{
     char password[200];
     char email[200];
 };
+struct Response {
+    char *data;
+    long response_code;
+};
