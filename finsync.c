@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <time.h>
+
 #include "fsGlobal.h"
 #include "constants.h"
 #include "views.h"
-#include <time.h>
 
-
+void sleep();
 int main()
 {
     startupCheck();
@@ -33,6 +34,30 @@ int main()
             newUserCredInfo = registrationFormView();
             registerOperation(newUserCredInfo);
 
+        }else if(appWindow == 99){
+            int x;
+            
+
+            while(true){
+                x = userDashboard();
+                // conLog("You are logged in", "info");
+                if (x == 1){
+                    sysMessage("OUT","You selected to create transaction.\n");
+                    sleep(2);
+                }else if(x == 2){
+                    printf("Transaction history");
+                }else if(x == 3){
+                    printf("Stats");
+                }else if (x == 4){
+                    printf("logout");
+                }else{
+                    sysMessage("WARN", "You have selected unknown option\n");
+                    sleep(1);
+                    continue;
+                }
+            }
+            continue;
+            
         }
         
         return 0;

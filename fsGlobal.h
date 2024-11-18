@@ -7,6 +7,8 @@
 #include <curl/curl.h>
 #include "structures.h"
 char* getCurrentDateTime();
+struct USYNCED_TRANSACTION *uSyncTransactionHead;
+
 struct Response callServer(const char *url, char *json_data);
 
 
@@ -254,3 +256,89 @@ struct Response recallServer(const char *url, char *json_data) {
 
     return server_response;
 }
+void removeQuotes(char *str) {
+    int i, j = 0;
+    int len = strlen(str);
+
+    for (i = 0; i < len; i++) {
+        if (str[i] != '\"') {
+            str[j++] = str[i];
+        }
+    }
+    str[j] = '\0'; 
+}
+bool authCheck(){
+    FILE *authFile;
+    char line[256];
+    char *content;
+    long fileSize;
+    authFile = fopen("sessionFile.lock", "r");
+
+    if (authFile == NULL){
+        sysMessage("[READ ERROR]", "Failed to read auth file");
+        return false;
+    }
+    fseek(authFile, 0, SEEK_END);
+    fileSize = ftell(authFile);
+    rewind(authFile);
+    content = (char *)malloc(fileSize + 1);
+    if (content == NULL) {
+        perror("Error allocating memory");
+        fclose(authFile);
+        return 1;
+    }
+
+    fread(content, 1, fileSize, authFile);
+    content[fileSize] = '\0'; 
+    removeQuotes(content);
+    const char *url = "https://zoogle.projectdaffodil.xyz/api/checkSession";
+    // char *json_data;
+    size_t json_size = 700; 
+    char *json_data = malloc(json_size);
+    if (json_data == NULL) {
+        printf("Memory allocation failed to create registration\n");
+        return 1;
+    }
+    sprintf(json_data,"{\"accessToken\":\"%s\"}", content);
+    struct Response getResponse = callServer(url, json_data);
+    free(content);
+    fclose(authFile);
+    
+    if (checkString(getResponse.data, "\"True\"")){
+        conLog("Session Matched", "info");
+        return true;
+    }else {
+        conLog("Session not matched", "warning");
+        return false;
+    }
+}
+    
+void delay(int seconds) {
+    int milli_seconds = seconds * 1000;
+    clock_t start_time = clock();
+    
+    while (clock() < start_time + milli_seconds);
+}
+
+struct USYNCED_TRANSACTION* createUsyncTransaction(int amount, char *transactionType){
+
+
+    if (uSyncTransactionHead == NULL){
+        uSyncTransactionHead = (struct USYNCED_TRANSACTION*)malloc(sizeof(struct USYNCED_TRANSACTION));
+        uSyncTransactionHead -> prev = uSyncTransactionHead -> next = NULL;
+        uSyncTransactionHead -> amount = amount;
+        strcpy(uSyncTransactionHead->transactionType, transactionType);
+         
+    }else{
+        struct USYNCED_TRANSACTION *newNode;
+        newNode = (struct USYNCED_TRANSACTION*)malloc(sizeof(struct USYNCED_TRANSACTION));
+        if (newNode == NULL){
+            sysMessage("[ERROR]", "Failed to allocate memory");
+            programExit(0, "Failed to allocate memory to create transaction");
+        }
+        newNode -> next = newNode -> prev = NULL;
+        newNode -> amount = amount;strcpy(newNode->transactionType, transactionType);
+        return newNode; 
+    }
+}
+

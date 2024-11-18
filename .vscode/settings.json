@@ -59,6 +59,8 @@
   "files.associations": {
     "views.h": "c",
     "structures.h": "c",
-    "time.h": "c"
+    "time.h": "c",
+    "constants.h": "c",
+    "fsglobal.h": "c"
   }
 }

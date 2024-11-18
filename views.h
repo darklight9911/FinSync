@@ -13,25 +13,27 @@ void clearScr(){
         system("clear");
     }
 }
-int selectOption(int maxOption){
-    int selectedOption;
-    printf("[+]Select a option[1~%d]:", maxOption);
-    scanf("%d", &selectedOption);
+int selectOption(int maxOption) {
+    int option;
+    printf("Select an option (1-%d): ", maxOption);
+    if (scanf("%d", &option) != 1 || option < 1 || option > maxOption) {
+        while (getchar() != '\n');
+        clearScr();
+        sysMessage("WARN", "Invalid option selected");
+        return 0; 
+    }
     clearScr();
-    if (!(selectedOption>= 1 && selectedOption << 10)){
-        return 0;
-    }
-
-    if (selectedOption >= 1 && selectedOption <= maxOption){
-        return selectedOption;
-    }else{
-        return 0;
-    }
+    return option;
 }
 int homePage(){
     welcomeMessage();
-    printf("[1]\tLogin\n[2]\tRegistration\n");
-    return selectOption(2);
+    if (authCheck()){
+        return 99;
+    }else{
+        printf("[1]\tLogin\n[2]\tRegistration\n");
+        return selectOption(2);
+
+    }
 
 }
 
@@ -68,3 +70,27 @@ struct newUserCred* registrationFormView(){
     return newUserCredInfo;
 }
 
+
+int userDashboard(){
+    clearScr();
+    while(true){
+        printf("\n\t USER DASHBOARD \t\n");
+        printf("[1] Create Transaction\n");
+        printf("[2] Transaction History\n");
+        printf("[3] Stats\n");
+        printf("[4] Logout\n");
+        int option = selectOption(4);
+        if (option == 0){
+            continue;
+        }else{
+            return option;
+
+        }
+    }
+
+}
+
+bool createTransactionView(){
+    printf("\tCreate Transaction\t\n");
+    printf("[1]");
+}
