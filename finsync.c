@@ -43,6 +43,7 @@ int main()
                 // conLog("You are logged in", "info");
                 if (x == 1){
                     sysMessage("OUT","You selected to create transaction.\n");
+                    createTransactionView();
                     sleep(2);
                 }else if(x == 2){
                     printf("Transaction history");
