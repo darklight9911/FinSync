@@ -86,16 +86,35 @@ void programExit(int exitCode, char errorMessage[]){
     printf("[Exit]Program Exited due to %s\n", errorMessage);
     exit(exitCode);
 }
+bool checkFileExists(char *filename){
+    FILE *file;
+    if ((file = fopen(filename, "r")) != NULL){
+        return true;
+        fclose(file);
+    }else{
+        return false;
+    }
+}
 bool startupCheck(){
     conLog("Starting startupCheck", "info");
-    if (checkConnection("neobank.projectdaffodil.xyz")){ //checking connection with the backend server
+    if (checkConnection("zoogle.projectdaffodil.xyz")){ //checking connection with the backend server
         conLog("Connection established with the backend server", "success");
     }else{
         conLog("Connection failed with the backend server", "error");
         programExit(0, "Connection failed with the backend server");       
     }
+    char sessionFileName[] = "sessionFile.lock"; 
+    if (checkFileExists(sessionFileName)){
+        conLog("Session File Found", "success");
+    }else{
+        conLog("Session File not Found", "error");
+        programExit(0, "Programfiles not found");
+    }
+    
 
 }
+
+
 void sysMessage(char prefix[],char comment[]){
     if (prefix == NULL){
         prefix = "OUT"; 
