@@ -15,8 +15,7 @@ struct Response {
 struct USYNCED_TRANSACTION{
     char transactionId[50];
     int amount;
-    char transactionType[50];
-    char creationTime[50];
+    int transactionType;
     struct USYNCED_TRANSACTION *next, *prev;
 
 };

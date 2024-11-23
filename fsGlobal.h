@@ -10,7 +10,7 @@ char* getCurrentDateTime();
 struct USYNCED_TRANSACTION *uSyncTransactionHead;
 
 struct Response callServer(const char *url, char *json_data);
-
+void sysMessage(char prefix[], char comment[]);
 
 bool checkString(char string1[], char string2[]) {
     int checkStrInteger = strcmp(string1, string2);
@@ -34,7 +34,16 @@ bool conLog(char string[], char level[]) {
     fclose(logs);
     return true;
 }
-
+bool createFile(char filename[]){
+    FILE *dummyFile = fopen(filename, "w");
+    if (dummyFile == NULL){
+        return false;
+    }else{
+        fprintf(dummyFile, "this file created by finsync");
+        fclose(dummyFile);
+        return true;
+    }
+}
 void conOut(char string[], char level[]){
     if (checkString(level, "warning")) {
         level = "[warning]";
@@ -106,9 +115,16 @@ bool startupCheck(){
     char sessionFileName[] = "sessionFile.lock"; 
     if (checkFileExists(sessionFileName)){
         conLog("Session File Found", "success");
+
     }else{
         conLog("Session File not Found", "error");
-        programExit(0, "Programfiles not found");
+        char *filename = "sessionFile.lock";
+        if (createFile(filename)){
+            conLog("System", "Session file created by the system");
+        }else{
+            programExit(0, "Programfiles not found");
+        
+        }
     }
     
 
@@ -147,6 +163,11 @@ bool checklogin(struct loginCred* logininfo) {
     struct Response getResponse = callServer(url, json_data);
     if(getResponse.response_code == 200){   
         printf("Response JSON: %d\n", (int) getResponse.response_code);
+        if (checkString(getResponse.data, "\"False\"")){
+            sysMessage(NULL, "Wrong username or password!");
+            free(getResponse.data);
+            return 0;
+        }
         if (createSession(getResponse.data)){
             sysMessage(NULL, "Login Successful");
             conLog("Authentication token saved to sessionFile.lock", "success");
@@ -339,14 +360,16 @@ void delay(int seconds) {
     while (clock() < start_time + milli_seconds);
 }
 
-struct USYNCED_TRANSACTION* createUsyncTransaction(int amount, char *transactionType){
+struct USYNCED_TRANSACTION* createUsyncTransaction(int amount, int transactionType){
 
 
     if (uSyncTransactionHead == NULL){
         uSyncTransactionHead = (struct USYNCED_TRANSACTION*)malloc(sizeof(struct USYNCED_TRANSACTION));
         uSyncTransactionHead -> prev = uSyncTransactionHead -> next = NULL;
         uSyncTransactionHead -> amount = amount;
-        strcpy(uSyncTransactionHead->transactionType, transactionType);
+        uSyncTransactionHead -> transactionType = transactionType;
+        // strcpy(uSyncTransactionHead->transactionType, transactionType);
+        
          
     }else{
         struct USYNCED_TRANSACTION *newNode;
@@ -356,7 +379,9 @@ struct USYNCED_TRANSACTION* createUsyncTransaction(int amount, char *transaction
             programExit(0, "Failed to allocate memory to create transaction");
         }
         newNode -> next = newNode -> prev = NULL;
-        newNode -> amount = amount;strcpy(newNode->transactionType, transactionType);
+        newNode -> amount = amount;
+        newNode -> transactionType = transactionType;
+        // strcpy(newNode->transactionType, transactionType);
         return newNode; 
     }
 }

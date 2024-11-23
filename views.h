@@ -91,6 +91,19 @@ int userDashboard(){
 }
 
 bool createTransactionView(){
+    struct USYNCED_TRANSACTION *tempTransaction;
     printf("\tCreate Transaction\t\n");
-    printf("[1]");
+    printf("[~] Transaction Type: \n");
+    printf("[1]\tOutgoing\n[2]\tIncoming\n[3]\tGiven\n[4]\tTaken\n");
+    tempTransaction -> transactionType = selectOption(4);
+
+    printf("[IN] Enter amount: ");
+    scanf("%d", &tempTransaction -> amount);
+
+    return true;
+
+    
+
+
+
 }
