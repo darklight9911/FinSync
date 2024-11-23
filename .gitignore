@@ -1,4 +1,4 @@
 *.out
 .vscode
-debug.log
+sessionFile.lock
 debug.log
