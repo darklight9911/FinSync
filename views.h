@@ -96,7 +96,7 @@ bool createTransactionView(){
     struct USYNCED_TRANSACTION *tempTransaction;
     int amount, transactionType;
     char transactonReason[200];
-
+    // also provide the transactionId. have to do something about it
     printf("\tCreate Transaction\t\n");
     printf("[~] Transaction Type: \n");
     printf("[1]\tOutgoing\n[2]\tIncoming\n[3]\tGiven\n[4]\tTaken\n");
@@ -109,6 +109,7 @@ bool createTransactionView(){
     return true;
 }
 void viewTransaction(){
+    // Complete this function add all the details of transaction
     struct USYNCED_TRANSACTION *temp;
     temp = uSyncTransactionHead;
     int counter = 1;
@@ -118,3 +119,15 @@ void viewTransaction(){
         temp = temp -> next;
     }
 }
+
+
+float fetchCurrentBalance(){
+
+    return 0.0;
+}
+
+bool syncWithServer(){
+    
+    return true;
+}
+

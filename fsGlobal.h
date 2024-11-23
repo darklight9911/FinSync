@@ -365,42 +365,44 @@ void delay(int seconds) {
     while (clock() < start_time + milli_seconds);
 }
 
-struct USYNCED_TRANSACTION* createUsyncTransaction(int amount, int transactionType, char transactionReason[]) {
+struct USYNCED_TRANSACTION* createUsyncTransaction(int amount, int transactionType, const char transactionReason[]) {
+    struct USYNCED_TRANSACTION *newNode;
+
+    newNode = (struct USYNCED_TRANSACTION*)malloc(sizeof(struct USYNCED_TRANSACTION));
+    if (newNode == NULL) {
+        sysMessage("[ERROR]", "Failed to allocate memory for a new transaction");
+        programExit(0, "Memory allocation failed");
+    }
+
+    newNode->amount = amount;
+    newNode->transactionType = transactionType;
+
+    newNode->transactionReason = (char *)malloc(strlen(transactionReason) + 1);
+    if (newNode->transactionReason == NULL) {
+        free(newNode);
+        sysMessage("[ERROR]", "Failed to allocate memory for transaction reason");
+        programExit(0, "Memory allocation failed");
+    }
+    strcpy(newNode->transactionReason, transactionReason);
+    newNode->prev = newNode->next = NULL;
     if (uSyncTransactionHead == NULL) {
-        uSyncTransactionHead = (struct USYNCED_TRANSACTION*)malloc(sizeof(struct USYNCED_TRANSACTION));
-        if (uSyncTransactionHead == NULL) {
-            sysMessage("[ERROR]", "Failed to allocate memory for the first transaction");
-            programExit(0, "Memory allocation failed");
-        }
-        uSyncTransactionHead->prev = uSyncTransactionHead->next = NULL;
-        uSyncTransactionHead->amount = amount;
-        uSyncTransactionHead->transactionType = transactionType;
-        uSyncTransactionHead->transactionReason = transactionReason;
+        uSyncTransactionHead = newNode;
         conLog("Transaction Created Locally. It was the first transaction", "success");
         return uSyncTransactionHead;
     } else {
-        struct USYNCED_TRANSACTION *newNode, *temp;
-        newNode = (struct USYNCED_TRANSACTION*)malloc(sizeof(struct USYNCED_TRANSACTION));
-        if (newNode == NULL) {
-            sysMessage("[ERROR]", "Failed to allocate memory for new transaction");
-            programExit(0, "Memory allocation failed");
-        }
-
-        newNode->next = newNode->prev = NULL;
-        newNode->amount = amount;
-        newNode->transactionType = transactionType;
-        newNode->transactionReason = transactionReason; 
-
-        temp = uSyncTransactionHead;
+        struct USYNCED_TRANSACTION *temp = uSyncTransactionHead;
         while (temp->next != NULL) {
             temp = temp->next;
         }
-
         temp->next = newNode;
         newNode->prev = temp;
 
+        conLog("Transaction Created Locally and appended to the list", "success");
         return newNode;
     }
 }
-
+bool logoutOperation(){
+    // @assigned to darklight    
+    return true;
+}
 
