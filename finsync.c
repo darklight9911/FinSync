@@ -47,6 +47,8 @@ int main()
                     sleep(2);
                 }else if(x == 2){
                     printf("Transaction history");
+                    viewTransaction();
+                    sleep(3);
                 }else if(x == 3){
                     printf("Stats");
                 }else if (x == 4){

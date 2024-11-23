@@ -15,7 +15,7 @@ void clearScr(){
 }
 int selectOption(int maxOption) {
     int option;
-    printf("Select an option (1-%d): ", maxOption);
+    printf("[~] Select an option (1-%d): ", maxOption);
     if (scanf("%d", &option) != 1 || option < 1 || option > maxOption) {
         while (getchar() != '\n');
         clearScr();
@@ -45,11 +45,13 @@ struct loginCred* loginView(){
         sysMessage("Error", "Memory allocation failed to store loginCredentials");
         return NULL;
     }
-    printf("Provide Username and password:\n");
-    scanf("%s %s", userLoginInfo -> username, userLoginInfo -> password);
+    printf("[+] Username: \n");
+    scanf("%s", userLoginInfo -> username);
+
+    printf("[+] Password: \n");
+    scanf("%s", userLoginInfo -> password);
     // printf("%s, %s", userLoginInfo -> username, userLoginInfo -> password);
     return userLoginInfo;
-    
 }
 struct newUserCred* registrationFormView(){
     struct newUserCred* newUserCredInfo;
@@ -59,13 +61,13 @@ struct newUserCred* registrationFormView(){
         programExit(0, "Memory allocation failed to store registration data");
     }
 
-    printf("Username: ");
+    printf("[+] Username: ");
     scanf("%49s", newUserCredInfo->username);
 
-    printf("Password: ");
+    printf("[+] Password: ");
     scanf("%49s", newUserCredInfo->password);
 
-    printf("Email: ");
+    printf("[+] Email: ");
     scanf("%99s", newUserCredInfo->email);
     return newUserCredInfo;
 }
@@ -92,18 +94,24 @@ int userDashboard(){
 
 bool createTransactionView(){
     struct USYNCED_TRANSACTION *tempTransaction;
+    int amount, transactionType;
+
     printf("\tCreate Transaction\t\n");
     printf("[~] Transaction Type: \n");
     printf("[1]\tOutgoing\n[2]\tIncoming\n[3]\tGiven\n[4]\tTaken\n");
-    tempTransaction -> transactionType = selectOption(4);
-
+    transactionType = selectOption(4);
     printf("[IN] Enter amount: ");
-    scanf("%d", &tempTransaction -> amount);
-
+    scanf("%d", &amount);
+    createUsyncTransaction(amount, transactionType);
     return true;
-
-    
-
-
-
+}
+void viewTransaction(){
+    struct USYNCED_TRANSACTION *temp;
+    temp = uSyncTransactionHead;
+    int counter = 1;
+    while(temp != NULL){
+        printf("%d. Amount : %d\n", counter, temp->amount);
+        counter++;
+        temp = temp -> next;
+    }
 }

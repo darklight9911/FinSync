@@ -162,7 +162,9 @@ bool checklogin(struct loginCred* logininfo) {
     sprintf(json_data,"{\"username\":\"%s\",\"password\":\"%s\"}",logininfo->username,logininfo->password);
     struct Response getResponse = callServer(url, json_data);
     if(getResponse.response_code == 200){   
-        printf("Response JSON: %d\n", (int) getResponse.response_code);
+        char responseLog[100];
+        sprintf(responseLog, "Response JSON: %d\n", (int) getResponse.response_code);
+        conLog(responseLog, "info");
         if (checkString(getResponse.data, "\"False\"")){
             sysMessage(NULL, "Wrong username or password!");
             free(getResponse.data);
@@ -176,6 +178,9 @@ bool checklogin(struct loginCred* logininfo) {
             
         }
         free(getResponse.data);
+    }else{
+        sysMessage("Error", "Communication between server failed");
+        printf("%d", (int) getResponse.response_code);
     }
     return 0;
     
@@ -360,29 +365,41 @@ void delay(int seconds) {
     while (clock() < start_time + milli_seconds);
 }
 
-struct USYNCED_TRANSACTION* createUsyncTransaction(int amount, int transactionType){
-
-
-    if (uSyncTransactionHead == NULL){
+struct USYNCED_TRANSACTION* createUsyncTransaction(int amount, int transactionType) {
+    if (uSyncTransactionHead == NULL) {
         uSyncTransactionHead = (struct USYNCED_TRANSACTION*)malloc(sizeof(struct USYNCED_TRANSACTION));
-        uSyncTransactionHead -> prev = uSyncTransactionHead -> next = NULL;
-        uSyncTransactionHead -> amount = amount;
-        uSyncTransactionHead -> transactionType = transactionType;
-        // strcpy(uSyncTransactionHead->transactionType, transactionType);
-        
-         
-    }else{
-        struct USYNCED_TRANSACTION *newNode;
-        newNode = (struct USYNCED_TRANSACTION*)malloc(sizeof(struct USYNCED_TRANSACTION));
-        if (newNode == NULL){
-            sysMessage("[ERROR]", "Failed to allocate memory");
-            programExit(0, "Failed to allocate memory to create transaction");
+        if (uSyncTransactionHead == NULL) {
+            sysMessage("[ERROR]", "Failed to allocate memory for the first transaction");
+            programExit(0, "Memory allocation failed");
         }
-        newNode -> next = newNode -> prev = NULL;
-        newNode -> amount = amount;
-        newNode -> transactionType = transactionType;
-        // strcpy(newNode->transactionType, transactionType);
-        return newNode; 
+        uSyncTransactionHead->prev = uSyncTransactionHead->next = NULL;
+        uSyncTransactionHead->amount = amount;
+        uSyncTransactionHead->transactionType = transactionType;
+
+        conLog("Transaction Created Locally. It was the first transaction", "success");
+        return uSyncTransactionHead;
+    } else {
+        struct USYNCED_TRANSACTION *newNode, *temp;
+        newNode = (struct USYNCED_TRANSACTION*)malloc(sizeof(struct USYNCED_TRANSACTION));
+        if (newNode == NULL) {
+            sysMessage("[ERROR]", "Failed to allocate memory for new transaction");
+            programExit(0, "Memory allocation failed");
+        }
+
+        newNode->next = newNode->prev = NULL;
+        newNode->amount = amount;
+        newNode->transactionType = transactionType;
+
+        temp = uSyncTransactionHead;
+        while (temp->next != NULL) {
+            temp = temp->next;
+        }
+
+        temp->next = newNode;
+        newNode->prev = temp;
+
+        return newNode;
     }
 }
+
 
