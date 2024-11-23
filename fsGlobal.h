@@ -365,7 +365,7 @@ void delay(int seconds) {
     while (clock() < start_time + milli_seconds);
 }
 
-struct USYNCED_TRANSACTION* createUsyncTransaction(int amount, int transactionType) {
+struct USYNCED_TRANSACTION* createUsyncTransaction(int amount, int transactionType, char transactionReason[]) {
     if (uSyncTransactionHead == NULL) {
         uSyncTransactionHead = (struct USYNCED_TRANSACTION*)malloc(sizeof(struct USYNCED_TRANSACTION));
         if (uSyncTransactionHead == NULL) {
@@ -375,7 +375,7 @@ struct USYNCED_TRANSACTION* createUsyncTransaction(int amount, int transactionTy
         uSyncTransactionHead->prev = uSyncTransactionHead->next = NULL;
         uSyncTransactionHead->amount = amount;
         uSyncTransactionHead->transactionType = transactionType;
-
+        uSyncTransactionHead->transactionReason = transactionReason;
         conLog("Transaction Created Locally. It was the first transaction", "success");
         return uSyncTransactionHead;
     } else {
@@ -389,6 +389,7 @@ struct USYNCED_TRANSACTION* createUsyncTransaction(int amount, int transactionTy
         newNode->next = newNode->prev = NULL;
         newNode->amount = amount;
         newNode->transactionType = transactionType;
+        newNode->transactionReason = transactionReason; 
 
         temp = uSyncTransactionHead;
         while (temp->next != NULL) {

@@ -77,3 +77,19 @@ Sat Nov 23 22:33:59 2024~[success] Connection established with the backend serve
 Sat Nov 23 22:33:59 2024~[success] Session File Found
 Sat Nov 23 22:33:59 2024~[info] Session Matched
 Sat Nov 23 22:34:07 2024~[success] Transaction Created Locally. It was the first transaction
+Sat Nov 23 22:40:27 2024~[info] Starting startupCheck
+Sat Nov 23 22:40:27 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Nov 23 22:40:27 2024~[success] Connection established with the backend server
+Sat Nov 23 22:40:27 2024~[success] Session File Found
+Sat Nov 23 22:40:27 2024~[info] Session Matched
+Sat Nov 23 22:44:29 2024~[info] Starting startupCheck
+Sat Nov 23 22:44:29 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Nov 23 22:44:29 2024~[success] Connection established with the backend server
+Sat Nov 23 22:44:29 2024~[success] Session File Found
+Sat Nov 23 22:44:30 2024~[info] Session Matched
+Sat Nov 23 22:44:58 2024~[info] Starting startupCheck
+Sat Nov 23 22:44:58 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Nov 23 22:44:58 2024~[success] Connection established with the backend server
+Sat Nov 23 22:44:58 2024~[success] Session File Found
+Sat Nov 23 22:44:59 2024~[info] Session Matched
+Sat Nov 23 22:45:04 2024~[success] Transaction Created Locally. It was the first transaction
