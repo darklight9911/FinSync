@@ -1,5 +1,5 @@
 import os
-
+import sys
 
 projectfiles = [
     "finsync.c",
@@ -24,5 +24,7 @@ def checkFiles() -> int:
     return totalLinesCount
 
 
-totalLinesCount = checkFiles()
-print(totalLinesCount)
+if sys.argv[1] == "info":
+    totalLinesCount = checkFiles()
+    print(f"Total Lines of Project: {totalLinesCount}")
+    print(f"Additional Library: {open("linkers", "r").read().splitlines()}")

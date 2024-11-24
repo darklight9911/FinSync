@@ -10,6 +10,7 @@
 void sleep();
 int main()
 {
+    start:
     startupCheck();
 
     // callServer();
@@ -25,9 +26,23 @@ int main()
 
         }else if(appWindow == 1){
             // printf("You selected to login");
+            
             struct loginCred* loginInfoVAR;
             loginInfoVAR = loginView();
-            checklogin(loginInfoVAR);
+            if (checklogin(loginInfoVAR)){
+                goto start;
+
+            }else{
+                struct loginCred* loginInfoVAR;
+                loginInfoVAR = loginView();
+                if (checklogin(loginInfoVAR)){
+                    goto start;
+                }else{
+                    clearScr();
+                    sysMessage("[MAX]", "Maximum number of attempt completed");
+                    programExit(0, "Exited due to exceeding limits");
+                }
+            }
             
         }else if(appWindow == 2){
             struct newUserCred* newUserCredInfo;
@@ -52,7 +67,16 @@ int main()
                 }else if(x == 3){
                     printf("Stats");
                 }else if (x == 4){
-                    printf("logout");
+
+                    sysMessage("PROC", "Trying to logout");
+                    if (logoutOperation()){
+                        clearScr();
+                        sysMessage("SUCCESS", "Logout successful");
+                        goto start;
+                    }
+                
+                    break;
+
                 }else{
                     sysMessage("WARN", "You have selected unknown option\n");
                     sleep(1);

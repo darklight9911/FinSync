@@ -168,11 +168,12 @@ bool checklogin(struct loginCred* logininfo) {
         if (checkString(getResponse.data, "\"False\"")){
             sysMessage(NULL, "Wrong username or password!");
             free(getResponse.data);
-            return 0;
+            return false;
         }
         if (createSession(getResponse.data)){
             sysMessage(NULL, "Login Successful");
             conLog("Authentication token saved to sessionFile.lock", "success");
+            return true;
         }else{
             sysMessage("FAILED", "Login Unsuccessful");
             
@@ -403,6 +404,13 @@ struct USYNCED_TRANSACTION* createUsyncTransaction(int amount, int transactionTy
 }
 bool logoutOperation(){
     // @assigned to darklight    
+    FILE *file;
+    file = fopen("sessionFile.lock", "w");
+    fprintf(file, "logged out!");
+    fclose(file);
     return true;
+    
 }
+
+
 
