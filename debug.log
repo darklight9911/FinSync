@@ -257,3 +257,321 @@ Sun Nov 24 20:34:36 2024~[info]  zoogle.projectdaffodil.xyz connection establish
 Sun Nov 24 20:34:36 2024~[success] Connection established with the backend server
 Sun Nov 24 20:34:36 2024~[success] Session File Found
 Sun Nov 24 20:34:36 2024~[warning] Session not matched
+Sun Nov 24 20:49:56 2024~[info] Starting startupCheck
+Sun Nov 24 20:49:56 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 20:49:56 2024~[success] Connection established with the backend server
+Sun Nov 24 20:49:56 2024~[success] Session File Found
+Sun Nov 24 20:49:57 2024~[warning] Session not matched
+Sun Nov 24 20:50:19 2024~[info] Starting startupCheck
+Sun Nov 24 20:50:19 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 20:50:19 2024~[success] Connection established with the backend server
+Sun Nov 24 20:50:19 2024~[success] Session File Found
+Sun Nov 24 20:50:20 2024~[warning] Session not matched
+Sun Nov 24 20:51:01 2024~[info] Starting startupCheck
+Sun Nov 24 20:51:01 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 20:51:01 2024~[success] Connection established with the backend server
+Sun Nov 24 20:51:01 2024~[success] Session File Found
+Sun Nov 24 20:51:01 2024~[warning] Session not matched
+Sun Nov 24 20:51:07 2024~[info] Response JSON: 200
+
+Sun Nov 24 20:51:07 2024~[success] Authentication token saved to sessionFile.lock
+Sun Nov 24 20:51:07 2024~[info] Starting startupCheck
+Sun Nov 24 20:51:07 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 20:51:07 2024~[success] Connection established with the backend server
+Sun Nov 24 20:51:07 2024~[success] Session File Found
+Sun Nov 24 20:51:08 2024~[info] Session Matched
+Sun Nov 24 20:51:34 2024~[success] Transaction Created Locally. It was the first transaction
+Sun Nov 24 20:51:45 2024~[success] Transaction Created Locally and appended to the list
+Sun Nov 24 20:52:22 2024~[info] Starting startupCheck
+Sun Nov 24 20:52:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 20:52:22 2024~[success] Connection established with the backend server
+Sun Nov 24 20:52:22 2024~[success] Session File Found
+Sun Nov 24 20:52:23 2024~[warning] Session not matched
+Sun Nov 24 20:52:27 2024~[info] Starting startupCheck
+Sun Nov 24 20:52:27 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 20:52:27 2024~[success] Connection established with the backend server
+Sun Nov 24 20:52:27 2024~[success] Session File Found
+Sun Nov 24 20:52:28 2024~[warning] Session not matched
+Sun Nov 24 20:52:32 2024~[info] Response JSON: 200
+
+Sun Nov 24 20:52:32 2024~[success] Authentication token saved to sessionFile.lock
+Sun Nov 24 20:52:32 2024~[info] Starting startupCheck
+Sun Nov 24 20:52:32 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 20:52:32 2024~[success] Connection established with the backend server
+Sun Nov 24 20:52:32 2024~[success] Session File Found
+Sun Nov 24 20:52:33 2024~[info] Session Matched
+Sun Nov 24 20:52:35 2024~[info] Starting startupCheck
+Sun Nov 24 20:52:35 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 20:52:35 2024~[success] Connection established with the backend server
+Sun Nov 24 20:52:35 2024~[success] Session File Found
+Sun Nov 24 20:52:35 2024~[info] Session Matched
+Sun Nov 24 20:52:36 2024~[info] Starting startupCheck
+Sun Nov 24 20:52:36 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 20:52:36 2024~[success] Connection established with the backend server
+Sun Nov 24 20:52:36 2024~[success] Session File Found
+Sun Nov 24 20:52:37 2024~[info] Session Matched
+Sun Nov 24 20:52:38 2024~[info] Starting startupCheck
+Sun Nov 24 20:52:38 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 20:52:38 2024~[success] Connection established with the backend server
+Sun Nov 24 20:52:38 2024~[success] Session File Found
+Sun Nov 24 20:52:38 2024~[info] Session Matched
+Sun Nov 24 20:52:44 2024~[info] Starting startupCheck
+Sun Nov 24 20:52:44 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 20:52:44 2024~[success] Connection established with the backend server
+Sun Nov 24 20:52:44 2024~[success] Session File Found
+Sun Nov 24 20:52:44 2024~[info] Session Matched
+Sun Nov 24 21:36:13 2024~[info] Starting startupCheck
+Sun Nov 24 21:36:13 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 21:36:13 2024~[success] Connection established with the backend server
+Sun Nov 24 21:36:13 2024~[success] Session File Found
+Sun Nov 24 21:36:14 2024~[info] Session Matched
+Sun Nov 24 21:36:20 2024~[success] Transaction Created Locally. It was the first transaction
+Sun Nov 24 22:00:59 2024~[info] Starting startupCheck
+Sun Nov 24 22:00:59 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 22:00:59 2024~[success] Connection established with the backend server
+Sun Nov 24 22:00:59 2024~[success] Session File Found
+Sun Nov 24 22:01:07 2024~[info] Starting startupCheck
+Sun Nov 24 22:01:07 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 22:01:07 2024~[success] Connection established with the backend server
+Sun Nov 24 22:01:07 2024~[success] Session File Found
+Sun Nov 24 22:01:16 2024~[info] Starting startupCheck
+Sun Nov 24 22:01:16 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 22:01:16 2024~[success] Connection established with the backend server
+Sun Nov 24 22:01:16 2024~[success] Session File Found
+Sun Nov 24 22:01:24 2024~[info] Starting startupCheck
+Sun Nov 24 22:01:24 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 22:01:24 2024~[success] Connection established with the backend server
+Sun Nov 24 22:01:24 2024~[success] Session File Found
+Sun Nov 24 22:29:51 2024~[info] Starting startupCheck
+Sun Nov 24 22:29:51 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 22:29:51 2024~[success] Connection established with the backend server
+Sun Nov 24 22:29:51 2024~[success] Session File Found
+Sun Nov 24 22:30:52 2024~[warning] Session not matched
+Sun Nov 24 22:31:21 2024~[info] Starting startupCheck
+Sun Nov 24 22:31:21 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 22:31:21 2024~[success] Connection established with the backend server
+Sun Nov 24 22:31:21 2024~[success] Session File Found
+Sun Nov 24 22:32:22 2024~[warning] Session not matched
+Sun Nov 24 22:42:45 2024~[info] Starting startupCheck
+Sun Nov 24 22:42:45 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 22:42:45 2024~[success] Connection established with the backend server
+Sun Nov 24 22:42:45 2024~[success] Session File Found
+Sun Nov 24 22:42:46 2024~[warning] Session not matched
+Sun Nov 24 22:42:49 2024~[info] Response JSON: 200
+
+Sun Nov 24 22:42:49 2024~[success] Authentication token saved to sessionFile.lock
+Sun Nov 24 22:42:51 2024~[info] Starting startupCheck
+Sun Nov 24 22:42:51 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 22:42:51 2024~[success] Connection established with the backend server
+Sun Nov 24 22:42:51 2024~[success] Session File Found
+Sun Nov 24 22:42:53 2024~[warning] Session not matched
+Sun Nov 24 22:43:57 2024~[info] Starting startupCheck
+Sun Nov 24 22:43:57 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 22:43:57 2024~[success] Connection established with the backend server
+Sun Nov 24 22:43:57 2024~[success] Session File Found
+Sun Nov 24 22:43:58 2024~[warning] Session not matched
+Sun Nov 24 22:44:03 2024~[info] Response JSON: 200
+
+Sun Nov 24 22:44:03 2024~[success] Authentication token saved to sessionFile.lock
+Sun Nov 24 22:44:05 2024~[info] Starting startupCheck
+Sun Nov 24 22:44:05 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 22:44:05 2024~[success] Connection established with the backend server
+Sun Nov 24 22:44:05 2024~[success] Session File Found
+Sun Nov 24 22:44:06 2024~[warning] Session not matched
+Sun Nov 24 23:41:57 2024~[info] Response JSON: 200
+
+Sun Nov 24 23:41:57 2024~[success] Authentication token saved to sessionFile.lock
+Sun Nov 24 23:41:59 2024~[info] Starting startupCheck
+Sun Nov 24 23:41:59 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 23:41:59 2024~[success] Connection established with the backend server
+Sun Nov 24 23:41:59 2024~[success] Session File Found
+Sun Nov 24 23:42:00 2024~[warning] Session not matched
+Sun Nov 24 23:43:17 2024~[info] Starting startupCheck
+Sun Nov 24 23:43:17 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 23:43:17 2024~[success] Connection established with the backend server
+Sun Nov 24 23:43:17 2024~[success] Session File Found
+Sun Nov 24 23:43:19 2024~[warning] Session not matched
+Sun Nov 24 23:43:22 2024~[info] Response JSON: 200
+
+Sun Nov 24 23:43:22 2024~[success] Authentication token saved to sessionFile.lock
+Sun Nov 24 23:43:24 2024~[info] Starting startupCheck
+Sun Nov 24 23:43:24 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 23:43:24 2024~[success] Connection established with the backend server
+Sun Nov 24 23:43:24 2024~[success] Session File Found
+Sun Nov 24 23:43:26 2024~[warning] Session not matched
+Sun Nov 24 23:43:33 2024~[info] Response JSON: 200
+
+Sun Nov 24 23:43:33 2024~[success] Authentication token saved to sessionFile.lock
+Sun Nov 24 23:43:35 2024~[info] Starting startupCheck
+Sun Nov 24 23:43:35 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Nov 24 23:43:35 2024~[success] Connection established with the backend server
+Sun Nov 24 23:43:35 2024~[success] Session File Found
+Sun Nov 24 23:43:35 2024~[warning] Session not matched
+Mon Nov 25 20:09:22 2024~[info] Starting startupCheck
+Mon Nov 25 20:09:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Mon Nov 25 20:09:22 2024~[success] Connection established with the backend server
+Mon Nov 25 20:09:22 2024~[success] Session File Found
+Mon Nov 25 20:09:24 2024~[warning] Session not matched
+Mon Nov 25 20:09:27 2024~[info] Response JSON: 200
+
+Mon Nov 25 20:09:27 2024~[success] Authentication token saved to sessionFile.lock
+Mon Nov 25 20:09:29 2024~[info] Starting startupCheck
+Mon Nov 25 20:09:29 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Mon Nov 25 20:09:29 2024~[success] Connection established with the backend server
+Mon Nov 25 20:09:29 2024~[success] Session File Found
+Mon Nov 25 20:09:30 2024~[warning] Session not matched
+Mon Nov 25 20:10:02 2024~[info] Response JSON: 200
+
+Mon Nov 25 20:10:02 2024~[success] Authentication token saved to sessionFile.lock
+Mon Nov 25 20:10:04 2024~[info] Starting startupCheck
+Mon Nov 25 20:10:04 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Mon Nov 25 20:10:04 2024~[success] Connection established with the backend server
+Mon Nov 25 20:10:04 2024~[success] Session File Found
+Mon Nov 25 20:10:04 2024~[warning] Session not matched
+Mon Nov 25 20:10:10 2024~[info] Starting startupCheck
+Mon Nov 25 20:10:10 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Mon Nov 25 20:10:10 2024~[success] Connection established with the backend server
+Mon Nov 25 20:10:10 2024~[success] Session File Found
+Mon Nov 25 20:10:10 2024~[warning] Session not matched
+Mon Nov 25 20:12:41 2024~[info] Starting startupCheck
+Mon Nov 25 20:12:41 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Mon Nov 25 20:12:41 2024~[success] Connection established with the backend server
+Mon Nov 25 20:12:41 2024~[success] Session File Found
+Mon Nov 25 20:12:42 2024~[info] Session Matched
+Sun Dec  1 21:23:03 2024~[info] Starting startupCheck
+Sun Dec  1 21:23:04 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Dec  1 21:23:04 2024~[success] Connection established with the backend server
+Sun Dec  1 21:23:04 2024~[success] Session File Found
+Sun Dec  1 21:23:05 2024~[info] Session Matched
+Sun Dec  1 21:46:26 2024~[info] Starting startupCheck
+Sun Dec  1 21:46:26 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Dec  1 21:46:26 2024~[success] Connection established with the backend server
+Sun Dec  1 21:46:26 2024~[success] Session File Found
+Sun Dec  1 21:46:26 2024~[success] Transaction storage file not found. Trying to fix by own
+Sun Dec  1 21:46:26 2024~[Transaction storage file created by the system] System
+Sun Dec  1 21:46:28 2024~[info] Session Matched
+Sun Dec  1 21:47:11 2024~[info] Starting startupCheck
+Sun Dec  1 21:47:11 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Dec  1 21:47:11 2024~[success] Connection established with the backend server
+Sun Dec  1 21:47:11 2024~[success] Session File Found
+Sun Dec  1 21:47:11 2024~[success] Transaction storage files found
+Sun Dec  1 21:47:12 2024~[info] Session Matched
+Sun Dec  1 21:47:19 2024~[success] Transaction Created Locally. It was the first transaction
+Sun Dec  1 21:47:28 2024~[success] Transaction Created Locally and appended to the list
+Sun Dec  1 22:07:08 2024~[info] Starting startupCheck
+Sun Dec  1 22:07:08 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Dec  1 22:07:08 2024~[success] Connection established with the backend server
+Sun Dec  1 22:07:08 2024~[success] Session File Found
+Sun Dec  1 22:07:08 2024~[success] Transaction storage files found
+Sun Dec  1 22:07:09 2024~[info] Session Matched
+Sun Dec  1 22:07:12 2024~[success] Transaction Created Locally. It was the first transaction
+Sun Dec  1 22:07:20 2024~[success] Transaction Created Locally and appended to the list
+Sun Dec  1 22:16:26 2024~[info] Starting startupCheck
+Sun Dec  1 22:16:26 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Dec  1 22:16:26 2024~[success] Connection established with the backend server
+Sun Dec  1 22:16:26 2024~[success] Session File Found
+Sun Dec  1 22:16:26 2024~[success] Transaction storage files found
+Sun Dec  1 22:16:27 2024~[info] Session Matched
+Sun Dec  1 22:16:40 2024~[success] Transaction Created Locally. It was the first transaction
+Sun Dec  1 22:16:50 2024~[success] Transaction Created Locally and appended to the list
+Sun Dec  1 22:17:20 2024~[info] Starting startupCheck
+Sun Dec  1 22:17:20 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Dec  1 22:17:20 2024~[success] Connection established with the backend server
+Sun Dec  1 22:17:20 2024~[success] Session File Found
+Sun Dec  1 22:17:20 2024~[success] Transaction storage files found
+Sun Dec  1 22:17:20 2024~[info] Session Matched
+Sun Dec  1 22:17:24 2024~[success] Transaction Created Locally. It was the first transaction
+Sun Dec  1 22:17:41 2024~[success] Transaction Created Locally and appended to the list
+Sun Dec  1 22:18:09 2024~[info] Starting startupCheck
+Sun Dec  1 22:18:09 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Dec  1 22:18:09 2024~[success] Connection established with the backend server
+Sun Dec  1 22:18:09 2024~[success] Session File Found
+Sun Dec  1 22:18:09 2024~[success] Transaction storage files found
+Sun Dec  1 22:18:10 2024~[info] Session Matched
+Sun Dec  1 22:18:17 2024~[success] Transaction Created Locally. It was the first transaction
+Sun Dec  1 22:18:26 2024~[success] Transaction Created Locally and appended to the list
+Sun Dec  1 22:21:15 2024~[info] Starting startupCheck
+Sun Dec  1 22:21:15 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Dec  1 22:21:15 2024~[success] Connection established with the backend server
+Sun Dec  1 22:21:15 2024~[success] Session File Found
+Sun Dec  1 22:21:15 2024~[success] Transaction storage files found
+Sun Dec  1 22:21:16 2024~[info] Session Matched
+Sun Dec  1 22:21:22 2024~[success] Transaction Created Locally. It was the first transaction
+Sun Dec  1 22:21:30 2024~[success] Transaction Created Locally and appended to the list
+Sun Dec  1 22:22:19 2024~[info] Starting startupCheck
+Sun Dec  1 22:22:19 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Dec  1 22:22:19 2024~[success] Connection established with the backend server
+Sun Dec  1 22:22:19 2024~[success] Session File Found
+Sun Dec  1 22:22:19 2024~[success] Transaction storage files found
+Sun Dec  1 22:22:20 2024~[info] Session Matched
+Sun Dec  1 22:22:23 2024~[success] Transaction Created Locally. It was the first transaction
+Sun Dec  1 22:22:32 2024~[success] Transaction Created Locally and appended to the list
+Sun Dec  1 22:26:21 2024~[info] Starting startupCheck
+Sun Dec  1 22:26:21 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Dec  1 22:26:21 2024~[success] Connection established with the backend server
+Sun Dec  1 22:26:21 2024~[success] Session File Found
+Sun Dec  1 22:26:21 2024~[success] Transaction storage files found
+Sun Dec  1 22:26:24 2024~[info] Starting startupCheck
+Sun Dec  1 22:26:24 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Dec  1 22:26:24 2024~[success] Connection established with the backend server
+Sun Dec  1 22:26:24 2024~[success] Session File Found
+Sun Dec  1 22:26:24 2024~[success] Transaction storage files found
+Sun Dec  1 22:26:24 2024~[info] Session Matched
+Sun Dec  1 22:34:44 2024~[success] Transaction Created Locally. It was the first transaction
+Sun Dec  1 22:34:52 2024~[success] Transaction Created Locally and appended to the list
+Sun Dec  1 22:55:58 2024~[info] Starting startupCheck
+Sun Dec  1 22:55:58 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Dec  1 22:55:58 2024~[success] Connection established with the backend server
+Sun Dec  1 22:55:58 2024~[success] Session File Found
+Sun Dec  1 22:55:58 2024~[success] Transaction storage files found
+Sun Dec  1 22:56:00 2024~[info] Session Matched
+Sun Dec  1 22:56:06 2024~[success] Transaction Created Locally. It was the first transaction
+Sun Dec  1 22:56:23 2024~[success] Transactions saved successfully to transactionStorage.csv
+
+Sun Dec  1 22:56:23 2024~[success] Transaction saved into tempStorage
+Sun Dec  1 22:56:47 2024~[success] Transaction Created Locally and appended to the list
+Sun Dec  1 22:56:56 2024~[success] Transactions saved successfully to transactionStorage.csv
+
+Sun Dec  1 22:56:56 2024~[success] Transaction saved into tempStorage
+Sun Dec  1 22:57:03 2024~[info] Starting startupCheck
+Sun Dec  1 22:57:03 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Dec  1 22:57:03 2024~[success] Connection established with the backend server
+Sun Dec  1 22:57:03 2024~[success] Session File Found
+Sun Dec  1 22:57:03 2024~[success] Transaction storage files found
+Sun Dec  1 22:57:04 2024~[warning] Session not matched
+Sun Dec  1 22:57:08 2024~[info] Response JSON: 200
+
+Sun Dec  1 22:57:08 2024~[success] Authentication token saved to sessionFile.lock
+Sun Dec  1 22:57:10 2024~[info] Starting startupCheck
+Sun Dec  1 22:57:10 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Dec  1 22:57:10 2024~[success] Connection established with the backend server
+Sun Dec  1 22:57:10 2024~[success] Session File Found
+Sun Dec  1 22:57:10 2024~[success] Transaction storage files found
+Sun Dec  1 22:57:10 2024~[info] Session Matched
+Sun Dec  1 22:58:30 2024~[info] Starting startupCheck
+Sun Dec  1 22:58:30 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Dec  1 22:58:30 2024~[success] Connection established with the backend server
+Sun Dec  1 22:58:30 2024~[success] Session File Found
+Sun Dec  1 22:58:30 2024~[success] Transaction storage files found
+Sun Dec  1 22:58:30 2024~[info] Session Matched
+Sun Dec  1 22:58:31 2024~[info] Starting startupCheck
+Sun Dec  1 22:58:31 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Dec  1 22:58:31 2024~[success] Connection established with the backend server
+Sun Dec  1 22:58:31 2024~[success] Session File Found
+Sun Dec  1 22:58:31 2024~[success] Transaction storage files found
+Sun Dec  1 22:58:31 2024~[warning] Session not matched
+Sun Dec  1 22:58:41 2024~[info] Starting startupCheck
+Sun Dec  1 22:58:41 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Dec  1 22:58:41 2024~[success] Connection established with the backend server
+Sun Dec  1 22:58:41 2024~[success] Session File Found
+Sun Dec  1 22:58:41 2024~[success] Transaction storage files found
+Sun Dec  1 22:58:42 2024~[warning] Session not matched
+Sun Dec  1 22:58:51 2024~[info] Response JSON: 200
+
+Sun Dec  1 22:58:51 2024~[success] Authentication token saved to sessionFile.lock
+Sun Dec  1 22:58:53 2024~[info] Starting startupCheck
+Sun Dec  1 22:58:53 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sun Dec  1 22:58:53 2024~[success] Connection established with the backend server
+Sun Dec  1 22:58:53 2024~[success] Session File Found
+Sun Dec  1 22:58:53 2024~[success] Transaction storage files found
+Sun Dec  1 22:58:53 2024~[info] Session Matched

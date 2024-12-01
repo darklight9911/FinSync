@@ -80,8 +80,9 @@ int userDashboard(){
         printf("[1] Create Transaction\n");
         printf("[2] Transaction History\n");
         printf("[3] Stats\n");
-        printf("[4] Logout\n");
-        int option = selectOption(4);
+        printf("[4] Save Transactions\n");
+        printf("[5] Logout\n");
+        int option = selectOption(5);
         if (option == 0){
             continue;
         }else{
@@ -114,7 +115,7 @@ void viewTransaction(){
     temp = uSyncTransactionHead;
     int counter = 1;
     while(temp != NULL){
-        printf("%d. Amount : %d\n", counter, temp->amount);
+        printf("%d. Amount : %d; Reason : %s; Transaction Type : %d; TransactionId : %s\n", counter, temp->amount, temp->transactionReason, temp -> transactionType, temp->transactionId);
         counter++;
         temp = temp -> next;
     }

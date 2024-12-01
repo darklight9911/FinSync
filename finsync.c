@@ -11,6 +11,7 @@ void sleep();
 int main()
 {
     start:
+    clearScr();
     startupCheck();
 
     // callServer();
@@ -30,6 +31,7 @@ int main()
             struct loginCred* loginInfoVAR;
             loginInfoVAR = loginView();
             if (checklogin(loginInfoVAR)){
+                sleep(2);
                 goto start;
 
             }else{
@@ -48,7 +50,7 @@ int main()
             struct newUserCred* newUserCredInfo;
             newUserCredInfo = registrationFormView();
             registerOperation(newUserCredInfo);
-
+            goto start;
         }else if(appWindow == 99){
             int x;
             
@@ -66,7 +68,7 @@ int main()
                     sleep(3);
                 }else if(x == 3){
                     printf("Stats");
-                }else if (x == 4){
+                }else if (x == 5){
 
                     sysMessage("PROC", "Trying to logout");
                     if (logoutOperation()){
@@ -77,7 +79,15 @@ int main()
                 
                     break;
 
-                }else{
+                }else if (x == 4){
+                    sysMessage("PROC", "Trying to save the transactions in tempStorage");
+                    if (saveTransactionToCSV(uSyncTransactionHead)){
+                        conLog("Transaction saved into tempStorage", "success");
+                    }else{
+                        conLog("Transaction could not saved", "error");
+                    }
+                    sleep(2);                }
+                else{
                     sysMessage("WARN", "You have selected unknown option\n");
                     sleep(1);
                     continue;

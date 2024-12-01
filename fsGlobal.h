@@ -7,7 +7,8 @@
 #include <curl/curl.h>
 #include "structures.h"
 char* getCurrentDateTime();
-struct USYNCED_TRANSACTION *uSyncTransactionHead;
+char* generateStrToken(int length);
+struct USYNCED_TRANSACTION *uSyncTransactionHead = NULL;
 
 struct Response callServer(const char *url, char *json_data);
 void sysMessage(char prefix[], char comment[]);
@@ -106,13 +107,16 @@ bool checkFileExists(char *filename){
 }
 bool startupCheck(){
     conLog("Starting startupCheck", "info");
+    // Neccessary files name
+    char sessionFileName[] = "sessionFile.lock";
+    char transactionStorageFilename[] = "transactionStorage.csv";
+
     if (checkConnection("zoogle.projectdaffodil.xyz")){ //checking connection with the backend server
         conLog("Connection established with the backend server", "success");
     }else{
         conLog("Connection failed with the backend server", "error");
         programExit(0, "Connection failed with the backend server");       
     }
-    char sessionFileName[] = "sessionFile.lock"; 
     if (checkFileExists(sessionFileName)){
         conLog("Session File Found", "success");
 
@@ -122,8 +126,20 @@ bool startupCheck(){
         if (createFile(filename)){
             conLog("System", "Session file created by the system");
         }else{
-            programExit(0, "Programfiles not found");
+            programExit(0, "Programfiles not found 1");
         
+        }
+    }
+    if (checkFileExists(transactionStorageFilename)){
+        conLog("Transaction storage files found", "success");
+    }else{
+        conLog("Transaction storage file not found. Trying to fix by own", "success");
+        
+        if (createFile(transactionStorageFilename)){
+            conLog("System", "Transaction storage file created by the system");
+
+        }else{
+            programExit(0, "Programfiles not found 2");
         }
     }
     
@@ -219,7 +235,7 @@ static size_t WriteCallback(void *contents, size_t size, size_t nmemb, void *use
     char *ptr = realloc(mem->memory, mem->size + total_size + 1);
     if (ptr == NULL) {
         printf("Not enough memory to allocate!\n");
-        return 0; // Out of memory
+        return 0; 
     }
 
         mem->memory = ptr;
@@ -377,7 +393,8 @@ struct USYNCED_TRANSACTION* createUsyncTransaction(int amount, int transactionTy
 
     newNode->amount = amount;
     newNode->transactionType = transactionType;
-
+    char *newTransactionId = generateStrToken(6);
+    newNode -> transactionId = newTransactionId;
     newNode->transactionReason = (char *)malloc(strlen(transactionReason) + 1);
     if (newNode->transactionReason == NULL) {
         free(newNode);
@@ -396,6 +413,7 @@ struct USYNCED_TRANSACTION* createUsyncTransaction(int amount, int transactionTy
             temp = temp->next;
         }
         temp->next = newNode;
+
         newNode->prev = temp;
 
         conLog("Transaction Created Locally and appended to the list", "success");
@@ -413,4 +431,85 @@ bool logoutOperation(){
 }
 
 
+char* getLocalSession(){
+    FILE *authFile;
+    char line[256];
+    char *content;
+    long fileSize;
+    authFile = fopen("sessionFile.lock", "r");
 
+    if (authFile == NULL){
+        sysMessage("[READ ERROR]", "Failed to read auth file");
+        return false;
+    }
+    fseek(authFile, 0, SEEK_END);
+    fileSize = ftell(authFile);
+    rewind(authFile);
+    content = (char *)malloc(fileSize + 1);
+    if (content == NULL) {
+        perror("Error allocating memory");
+        fclose(authFile);
+        return "None";
+    }
+
+    fread(content, 1, fileSize, authFile);
+    content[fileSize] = '\0'; 
+    removeQuotes(content);
+    return content;
+}
+
+bool saveTransactionToCSV(struct USYNCED_TRANSACTION *head) {
+    char *filename = "transactionStorage.csv";
+    FILE *file = fopen(filename, "w");
+    if (!file) {
+        perror("Failed to open the transactionStorageFile");
+        conLog("Failed to open the transactionStorageFile", "error");
+        programExit(0, "Failed to open the transactionStorageFile");
+    }
+
+    if (head == NULL) {
+        conLog("The transaction list is empty", "warning");
+        fclose(file);
+        return false;
+    }
+
+    fprintf(file, "TransactionId,Amount,TransactionType,TransactionReason\n");
+    struct USYNCED_TRANSACTION *current = head;
+    while (current != NULL) {
+        // Debugging step
+        fprintf(stderr, "Debug: Processing transactionId=%s\n",
+                current->transactionId ? current->transactionId : "NULL");
+
+        fprintf(file, "%s,%d,%d,%s\n",
+                current->transactionId ? current->transactionId : "NULL",
+                current->amount,
+                current->transactionType,
+                current->transactionReason ? current->transactionReason : "NULL");
+        
+        current = current->next;
+    }
+    fclose(file);
+    conLog("Transactions saved successfully to transactionStorage.csv\n", "success");
+    return true;
+}
+
+char* generateStrToken(int length){
+    if (length <= 0){
+        return NULL;
+    }
+    static const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    char *randomString = (char *)malloc(length + 1);
+    if (randomString == NULL){
+        conLog("Memory allocation failed to generate randomString", "error");
+        programExit(0,"Memory allocation failed to generate randomString");
+
+    }
+    srand(time(NULL));
+    for (int i = 0; i < length; i++){
+        int index = rand() % (sizeof(charset - 1));
+        randomString[i] = charset[index];
+    }
+    randomString[length] = '\0';
+    return randomString;    
+
+}
