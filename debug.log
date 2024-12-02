@@ -575,3 +575,9 @@ Sun Dec  1 22:58:53 2024~[success] Connection established with the backend serve
 Sun Dec  1 22:58:53 2024~[success] Session File Found
 Sun Dec  1 22:58:53 2024~[success] Transaction storage files found
 Sun Dec  1 22:58:53 2024~[info] Session Matched
+Mon Dec  2 19:04:47 2024~[info] Starting startupCheck
+Mon Dec  2 19:04:53 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Mon Dec  2 19:04:53 2024~[success] Connection established with the backend server
+Mon Dec  2 19:04:53 2024~[success] Session File Found
+Mon Dec  2 19:04:53 2024~[success] Transaction storage files found
+Mon Dec  2 19:04:58 2024~[info] Session Matched

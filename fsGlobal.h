@@ -9,6 +9,7 @@
 char* getCurrentDateTime();
 char* generateStrToken(int length);
 struct USYNCED_TRANSACTION *uSyncTransactionHead = NULL;
+char *USYNCED_TRANSACTIONS[MAX_SIZE];
 
 struct Response callServer(const char *url, char *json_data);
 void sysMessage(char prefix[], char comment[]);
@@ -476,7 +477,6 @@ bool saveTransactionToCSV(struct USYNCED_TRANSACTION *head) {
     fprintf(file, "TransactionId,Amount,TransactionType,TransactionReason\n");
     struct USYNCED_TRANSACTION *current = head;
     while (current != NULL) {
-        // Debugging step
         fprintf(stderr, "Debug: Processing transactionId=%s\n",
                 current->transactionId ? current->transactionId : "NULL");
 
@@ -511,5 +511,60 @@ char* generateStrToken(int length){
     }
     randomString[length] = '\0';
     return randomString;    
+}
 
+bool pushTransactionToServer(){
+
+
+
+
+}
+
+void loadTransactionsFromCSV() {
+    char *filename = "transactionStorage.csv";
+    FILE *file = fopen(filename, "r");
+    if (!file) {
+        perror("Failed to open CSV file");
+        return;
+    }
+
+    char line[256];
+    int lineNum = 0;
+    
+    while (fgets(line, sizeof(line), file)) {
+        if (lineNum == 0) {
+            lineNum++;
+            continue;
+        }
+
+        char *transactionId = strtok(line, ",");
+        char *amountStr = strtok(NULL, ",");
+        char *transactionTypeStr = strtok(NULL, ",");
+        char *transactionReason = strtok(NULL, "\n");
+
+        if (transactionId && amountStr && transactionTypeStr && transactionReason) {
+            int amount = atoi(amountStr);           
+            int transactionType = atoi(transactionTypeStr); 
+
+            printf("TransactionId: %s, Amount: %d, Type: %d, Reason: %s\n",
+                   transactionId, amount, transactionType, transactionReason);
+        } else {
+            fprintf(stderr, "Invalid data on line %d: %s", lineNum + 1, line);
+        }
+
+        lineNum++;
+    }
+
+    fclose(file);
+    printf("Transactions loaded successfully from %s\n", filename);
+}
+
+int topUT(){
+    USYNCED_TRANSACTIONS[0] = "test";
+    return (sizeof(USYNCED_TRANSACTIONS)/sizeof(USYNCED_TRANSACTIONS[0]));
+}
+int display(){
+    for (int i = 0; i < 1; i++){
+        printf("%s\n", USYNCED_TRANSACTIONS[i]);
+    }
 }

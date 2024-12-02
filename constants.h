@@ -6,5 +6,5 @@
 #else
     #define CONLOG_OUTPUT_ENABLED false
 #endif
-
+#define MAX_SIZE 1000
 
