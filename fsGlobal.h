@@ -9,8 +9,9 @@
 char* getCurrentDateTime();
 char* generateStrToken(int length);
 struct USYNCED_TRANSACTION *uSyncTransactionHead = NULL;
+char* BACKEND_URI = "zoogle.projectdaffodil.xyz";
 char *USYNCED_TRANSACTIONS[MAX_SIZE];
-
+void programExit(int exitCode, char errorMessage[]);
 struct Response callServer(const char *url, char *json_data);
 void sysMessage(char prefix[], char comment[]);
 
@@ -88,9 +89,33 @@ bool checkConnection(char url[]){
     } else {
         sprintf(comment," %s connection established", url);
         conLog(comment, "info");
-        return true;
-    }
+            size_t json_size = 430; 
+        char *json_data = malloc(json_size);
+        if (json_data == NULL) {
+            conLog("Memory allocation failed to send packet to backend server to checkConnect\n", "error");
+            programExit(0, "Memory allocation failed in checkConnection function");
+        }
+        json_data = "{\"clientId\":\"testing\"}";
+        const char* url = "https://zoogle.projectdaffodil.xyz/api/checkServer";
+        struct Response getResponse = callServer(url, json_data);
+        printf("%ld\n", getResponse.response_code);
+        if (getResponse.response_code == 200){
+            if (checkString("\"True\"", getResponse.data)){
+                conLog("Backend working properly", "success");
+                return true;                
+            }else{
+                conLog("Backend Server deny to response", "warning");
+                return false;
 
+            }
+        }else if(getResponse.response_code == 502){
+            conLog("Backend Server Under Maintainance", "error");
+            return false;
+        }else{
+            conLog("Backend Server Currently Offline", "error");
+            return false;
+        }
+    }
 }
 
 void programExit(int exitCode, char errorMessage[]){
@@ -514,7 +539,13 @@ char* generateStrToken(int length){
 }
 
 bool pushTransactionToServer(){
-
+    if (checkConnection(BACKEND_URI)){
+        printf("Connection established\n");
+        return true;
+    }else{
+        conLog("Failed to push created transaction to the server", "warning");
+        return false;
+    }
 
 
 

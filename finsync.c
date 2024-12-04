@@ -11,13 +11,8 @@ void sleep();
 int main()
 {
     start:
-    // Debugging Block
-    // printf("%d\n", topUT());
-    // display();
-    // loadTransactionsFromCSV();
-    // exit(0);
-    // clearScr();
-    // End Debugging Block
+    printf("%d", pushTransactionToServer());
+    programExit(0, "Debug Ended");
     startupCheck();
 
     // callServer();
