@@ -11,8 +11,6 @@ void sleep();
 int main()
 {
     start:
-    printf("%d", pushTransactionToServer());
-    programExit(0, "Debug Ended");
     startupCheck();
 
     // callServer();

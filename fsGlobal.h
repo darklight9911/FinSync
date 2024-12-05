@@ -14,6 +14,8 @@ char *USYNCED_TRANSACTIONS[MAX_SIZE];
 void programExit(int exitCode, char errorMessage[]);
 struct Response callServer(const char *url, char *json_data);
 void sysMessage(char prefix[], char comment[]);
+bool pushTransactionToServer(struct USYNCED_TRANSACTION *newTransactionInfo);
+bool createTransactionView();
 
 bool checkString(char string1[], char string2[]) {
     int checkStrInteger = strcmp(string1, string2);
@@ -89,7 +91,7 @@ bool checkConnection(char url[]){
     } else {
         sprintf(comment," %s connection established", url);
         conLog(comment, "info");
-            size_t json_size = 430; 
+        size_t json_size = 430; 
         char *json_data = malloc(json_size);
         if (json_data == NULL) {
             conLog("Memory allocation failed to send packet to backend server to checkConnect\n", "error");
@@ -98,7 +100,7 @@ bool checkConnection(char url[]){
         json_data = "{\"clientId\":\"testing\"}";
         const char* url = "https://zoogle.projectdaffodil.xyz/api/checkServer";
         struct Response getResponse = callServer(url, json_data);
-        printf("%ld\n", getResponse.response_code);
+
         if (getResponse.response_code == 200){
             if (checkString("\"True\"", getResponse.data)){
                 conLog("Backend working properly", "success");
@@ -141,7 +143,10 @@ bool startupCheck(){
         conLog("Connection established with the backend server", "success");
     }else{
         conLog("Connection failed with the backend server", "error");
-        programExit(0, "Connection failed with the backend server");       
+        // programExit(0, "Connection failed with the backend server");
+        sysMessage("INFO", "You are not connected with the internet switching to the offline mode");
+        createTransactionView();
+        return true;    
     }
     if (checkFileExists(sessionFileName)){
         conLog("Session File Found", "success");
@@ -287,7 +292,6 @@ struct Response callServer(const char *url, char *json_data) {
         
         headers = curl_slist_append(headers, "Content-Type: application/json");
         curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
-
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, &server_response.data);
 
@@ -298,6 +302,8 @@ struct Response callServer(const char *url, char *json_data) {
             server_response.response_code = http_code;
         } else {
             printf("Curl failed: %s\n", curl_easy_strerror(res));
+            server_response.data = "null";
+            server_response.response_code = 502;
         }
         
         curl_easy_cleanup(curl);
@@ -429,22 +435,49 @@ struct USYNCED_TRANSACTION* createUsyncTransaction(int amount, int transactionTy
     }
     strcpy(newNode->transactionReason, transactionReason);
     newNode->prev = newNode->next = NULL;
-    if (uSyncTransactionHead == NULL) {
-        uSyncTransactionHead = newNode;
-        conLog("Transaction Created Locally. It was the first transaction", "success");
-        return uSyncTransactionHead;
-    } else {
-        struct USYNCED_TRANSACTION *temp = uSyncTransactionHead;
-        while (temp->next != NULL) {
-            temp = temp->next;
+    int pushAttemptCounter = 0;
+    pushAttempt: 
+    if (checkConnection(BACKEND_URI)){
+        conLog("Transaction will sent to server?","info");
+        
+        if (pushTransactionToServer(newNode)){
+            sysMessage("SUCCESS", "Transaction synced with the sevrer");
+        }else{
+            sysMessage("Failed", "Transaction could not get synced with server");
+            conLog("Trying again to push the transaction to the server", "warning");
+            if (pushAttemptCounter < 3){
+                printf("[DEBUG] attempt no : %d\n", pushAttemptCounter);
+                pushAttemptCounter++;
+                goto pushAttempt;
+                
+
+            }else{
+                conLog("Transaction failed to push after multiple attempts, Ignoring this transaction.", "error");
+                sysMessage("ERROR", "Transaction could not be saved try again");
+
+            }
         }
-        temp->next = newNode;
+    }else{
+        conLog("Transaction failed to submit to the server. Attempting to save locally","info");
+        if (uSyncTransactionHead == NULL) {
+            uSyncTransactionHead = newNode;
+            conLog("Transaction Created Locally. It was the first transaction", "success");
+            return uSyncTransactionHead;
+        } else {
+            struct USYNCED_TRANSACTION *temp = uSyncTransactionHead;
+            while (temp->next != NULL) {
+                temp = temp->next;
+            }
+            temp->next = newNode;
 
-        newNode->prev = temp;
+            newNode->prev = temp;
 
-        conLog("Transaction Created Locally and appended to the list", "success");
-        return newNode;
+            conLog("Transaction Created Locally and appended to the list", "success");
+            return newNode;
+        }
     }
+
+
 }
 bool logoutOperation(){
     // @assigned to darklight    
@@ -538,12 +571,26 @@ char* generateStrToken(int length){
     return randomString;    
 }
 
-bool pushTransactionToServer(){
+bool pushTransactionToServer(struct USYNCED_TRANSACTION *newTransactionInfo){
     if (checkConnection(BACKEND_URI)){
-        printf("Connection established\n");
+        conLog("Trying to push tranasction to the server\n", "info");
+        size_t json_size = 430; 
+        char *json_data = malloc(json_size);
+        if (json_data == NULL) {
+            conLog("Memory allocation failed to send packet to backend server to checkConnect\n", "error");
+            programExit(0, "Memory allocation failed in checkConnection function");
+        }
+        sprintf(json_data, "{\"transactionId\": \"%s\",\"reason\":\"%s\"}", newTransactionInfo->transactionId, newTransactionInfo->transactionReason);
+        const char* url = "https://zoogle.projectdaffodil.xyz/api/checkServer";
+        struct Response getResponse = callServer(url, json_data);
+        printf("%ld\n", getResponse.response_code);
+        
         return true;
     }else{
         conLog("Failed to push created transaction to the server", "warning");
+        sysMessage("MANAGER", "Trying to save the transaction in offline\n");
+
+
         return false;
     }
 
