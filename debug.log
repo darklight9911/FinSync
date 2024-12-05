@@ -866,3 +866,10 @@ Thu Dec  5 23:29:47 2024~[info]  zoogle.projectdaffodil.xyz connection establish
 Thu Dec  5 23:29:47 2024~[success] Backend working properly
 Thu Dec  5 23:29:47 2024~[info] Trying to push tranasction to the server
 
+Thu Dec  5 23:37:57 2024~[info] Starting startupCheck
+Thu Dec  5 23:37:57 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Thu Dec  5 23:37:58 2024~[success] Backend working properly
+Thu Dec  5 23:37:58 2024~[success] Connection established with the backend server
+Thu Dec  5 23:37:58 2024~[success] Session File Found
+Thu Dec  5 23:37:58 2024~[success] Transaction storage files found
+Thu Dec  5 23:37:58 2024~[info] Session Matched

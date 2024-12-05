@@ -301,7 +301,10 @@ struct Response callServer(const char *url, char *json_data) {
             curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &http_code);
             server_response.response_code = http_code;
         } else {
-            printf("Curl failed: %s\n", curl_easy_strerror(res));
+            char *curlError;
+            sprintf(curlError, "Curl failed to interact [%s] with the endpoint %s", curl_easy_strerror(res), url);
+            // printf("Curl failed: %s\n", curl_easy_strerror(res));
+            conLog(curlError, "error");
             server_response.data = "null";
             server_response.response_code = 502;
         }
@@ -341,7 +344,12 @@ struct Response recallServer(const char *url, char *json_data) {
             curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &http_code);
             server_response.response_code = http_code;
         } else {
-            printf("Curl failed: %s\n", curl_easy_strerror(res));
+            char *curlError;
+            sprintf(curlError, "Curl failed to interact [%s] with the endpoint %s", curl_easy_strerror(res), url);
+            // printf("Curl failed: %s\n", curl_easy_strerror(res));
+            conLog(curlError, "error");
+            server_response.data = "null";
+            server_response.response_code = 502;
         }
         
         curl_easy_cleanup(curl);
