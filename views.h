@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int fetchCurrentBalance();
+
 
 void welcomeMessage(){
     printf("Welcome to FinSync.\n");
@@ -76,7 +78,9 @@ struct newUserCred* registrationFormView(){
 int userDashboard(){
     clearScr();
     while(true){
-        printf("\n\t USER DASHBOARD \t\n");
+        printf("\n\t USER DASHBOARD\t\n");
+        printf("\tBalance: %d Taka\t\n", fetchCurrentBalance());
+        // fetchCurrentBalance();
         printf("[1] Create Transaction\n");
         printf("[2] Transaction History\n");
         printf("[3] Stats\n");
@@ -104,8 +108,15 @@ bool createTransactionView(){
     transactionType = selectOption(4);
     printf("[IN] Enter amount: ");
     scanf("%d", &amount);
+    while (getchar() != '\n');
     printf("[IN] Reason: ");
-    scanf("%s", transactonReason);
+    // scanf("%s", transactonReason);
+    fgets(transactonReason, 200, stdin);
+    size_t len = strlen(transactonReason);
+    if (len > 0 && transactonReason[len - 1] == '\n') {
+        transactonReason[len - 1] = '\0';
+    }
+
     createUsyncTransaction(amount, transactionType, transactonReason);
     return true;
 }
@@ -122,9 +133,28 @@ void viewTransaction(){
 }
 
 
-float fetchCurrentBalance(){
+int fetchCurrentBalance(){
+    int balance;
+    size_t json_size = 500;
+    char *json_data = malloc(json_size);
+    char *url = "https://zoogle.projectdaffodil.xyz/api/getCurrentBalance";
 
-    return 0.0;
+    sprintf(json_data, "{\"apiToken\":\"%s\"}", readApiToken());
+    struct Response getResponse;
+    getResponse = callServer(url, json_data);
+    if (getResponse.response_code == 200){
+        // printf("[DEBUG] Current balance is %s\n", getResponse.data);
+        removeQuotes(getResponse.data);
+        balance = atoi(getResponse.data);
+        // printf("%d", balance);
+    }else{
+        // printf("[DEBUG] Balance fetching failed\n");
+        balance = atoi(getResponse.data);
+    }
+
+    
+
+    return balance;
 }
 
 bool syncWithServer(){

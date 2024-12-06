@@ -873,3 +873,538 @@ Thu Dec  5 23:37:58 2024~[success] Connection established with the backend serve
 Thu Dec  5 23:37:58 2024~[success] Session File Found
 Thu Dec  5 23:37:58 2024~[success] Transaction storage files found
 Thu Dec  5 23:37:58 2024~[info] Session Matched
+Fri Dec  6 01:16:16 2024~[info] Starting startupCheck
+Fri Dec  6 01:16:17 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:16:17 2024~[success] Backend working properly
+Fri Dec  6 01:16:17 2024~[success] Connection established with the backend server
+Fri Dec  6 01:16:17 2024~[success] Session File Found
+Fri Dec  6 01:16:17 2024~[success] Transaction storage files found
+Fri Dec  6 01:16:17 2024~[info] Session Matched
+Fri Dec  6 01:16:20 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:16:21 2024~[success] Backend working properly
+Fri Dec  6 01:16:21 2024~[info] Transaction will sent to server?
+Fri Dec  6 01:16:21 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:16:22 2024~[info] Starting startupCheck
+Fri Dec  6 01:16:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:16:24 2024~[success] Backend working properly
+Fri Dec  6 01:16:24 2024~[success] Connection established with the backend server
+Fri Dec  6 01:16:24 2024~[success] Session File Found
+Fri Dec  6 01:16:24 2024~[success] Transaction storage files found
+Fri Dec  6 01:16:24 2024~[info] Session Matched
+Fri Dec  6 01:16:30 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:16:31 2024~[success] Backend working properly
+Fri Dec  6 01:16:31 2024~[info] Transaction will sent to server?
+Fri Dec  6 01:16:31 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:16:31 2024~[success] Backend working properly
+Fri Dec  6 01:16:31 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 01:16:49 2024~[info] Starting startupCheck
+Fri Dec  6 01:16:49 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:16:49 2024~[success] Backend working properly
+Fri Dec  6 01:16:49 2024~[success] Connection established with the backend server
+Fri Dec  6 01:16:49 2024~[success] Session File Found
+Fri Dec  6 01:16:49 2024~[success] Transaction storage files found
+Fri Dec  6 01:16:49 2024~[info] Session Matched
+Fri Dec  6 01:16:51 2024~[info] Starting startupCheck
+Fri Dec  6 01:16:51 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:16:51 2024~[success] Backend working properly
+Fri Dec  6 01:16:51 2024~[success] Connection established with the backend server
+Fri Dec  6 01:16:51 2024~[success] Session File Found
+Fri Dec  6 01:16:51 2024~[success] Transaction storage files found
+Fri Dec  6 01:16:51 2024~[info] Session Matched
+Fri Dec  6 01:17:12 2024~[info] Starting startupCheck
+Fri Dec  6 01:17:12 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:17:13 2024~[success] Backend working properly
+Fri Dec  6 01:17:13 2024~[success] Connection established with the backend server
+Fri Dec  6 01:17:13 2024~[success] Session File Found
+Fri Dec  6 01:17:13 2024~[success] Transaction storage files found
+Fri Dec  6 01:17:13 2024~[info] Session Matched
+Fri Dec  6 01:17:21 2024~[info] Starting startupCheck
+Fri Dec  6 01:17:21 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:17:21 2024~[success] Backend working properly
+Fri Dec  6 01:17:21 2024~[success] Connection established with the backend server
+Fri Dec  6 01:17:21 2024~[success] Session File Found
+Fri Dec  6 01:17:21 2024~[success] Transaction storage files found
+Fri Dec  6 01:17:21 2024~[info] Session Matched
+Fri Dec  6 01:17:30 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:17:32 2024~[success] Backend working properly
+Fri Dec  6 01:17:32 2024~[info] Transaction will sent to server?
+Fri Dec  6 01:17:32 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:17:32 2024~[success] Backend working properly
+Fri Dec  6 01:17:32 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 01:18:05 2024~[info] Starting startupCheck
+Fri Dec  6 01:18:05 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:18:06 2024~[success] Backend working properly
+Fri Dec  6 01:18:06 2024~[success] Connection established with the backend server
+Fri Dec  6 01:18:06 2024~[success] Session File Found
+Fri Dec  6 01:18:06 2024~[success] Transaction storage files found
+Fri Dec  6 01:18:06 2024~[info] Session Matched
+Fri Dec  6 01:18:17 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:18:17 2024~[success] Backend working properly
+Fri Dec  6 01:18:17 2024~[info] Transaction will sent to server?
+Fri Dec  6 01:18:17 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:18:17 2024~[success] Backend working properly
+Fri Dec  6 01:18:17 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 01:18:17 2024~[info] {"transactionId": "cdcgdg","transactionReason":"hello","amount":230,"transactionType":1}
+Fri Dec  6 01:18:56 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:18:56 2024~[success] Backend working properly
+Fri Dec  6 01:18:56 2024~[info] Transaction will sent to server?
+Fri Dec  6 01:18:56 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:18:56 2024~[success] Backend working properly
+Fri Dec  6 01:18:56 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 01:18:56 2024~[info] {"transactionId": "ahehcc","transactionReason":"test","amount":23,"transactionType":1}
+Fri Dec  6 01:27:08 2024~[info] Starting startupCheck
+Fri Dec  6 01:27:08 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:27:08 2024~[success] Backend working properly
+Fri Dec  6 01:27:08 2024~[success] Connection established with the backend server
+Fri Dec  6 01:27:08 2024~[success] Session File Found
+Fri Dec  6 01:27:08 2024~[success] Transaction storage files found
+Fri Dec  6 01:27:09 2024~[info] Session Matched
+Fri Dec  6 01:27:13 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:27:13 2024~[success] Backend working properly
+Fri Dec  6 01:27:13 2024~[info] Transaction will sent to server?
+Fri Dec  6 01:27:13 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:27:14 2024~[success] Backend working properly
+Fri Dec  6 01:27:14 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 01:27:14 2024~[info] {"transactionId": "acecea","transactionReason":"hello","amount":230,"transactionType":1}
+Fri Dec  6 01:27:14 2024~[info] {"detail":[{"type":"missing","loc":["body","clientId"],"msg":"Field required","input":{"transactionId":"acecea","transactionReason":"hello","amount":230,"tra1nsactionType":1}}]}
+Fri Dec  6 01:29:54 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:29:55 2024~[success] Backend working properly
+Fri Dec  6 01:29:55 2024~[info] Transaction will sent to server?
+Fri Dec  6 01:29:55 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:29:55 2024~[success] Backend working properly
+Fri Dec  6 01:29:55 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 01:29:55 2024~[info] {"transactionId": "cddhae","transactionReason":"hello","amount":230,"transactionType":1}
+Fri Dec  6 01:29:56 2024~[info] {"detail":[{"type":"missing","loc":["body","clientId"],"msg":"Field required","input":{"transactionId":"cddhae","transactionReason":"hello","amount":230,"transactionType":1}}]}
+Fri Dec  6 01:31:22 2024~[info] Starting startupCheck
+Fri Dec  6 01:31:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:31:22 2024~[success] Backend working properly
+Fri Dec  6 01:31:22 2024~[success] Connection established with the backend server
+Fri Dec  6 01:31:22 2024~[success] Session File Found
+Fri Dec  6 01:31:22 2024~[success] Transaction storage files found
+Fri Dec  6 01:31:23 2024~[info] Session Matched
+Fri Dec  6 01:31:33 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:31:34 2024~[success] Backend working properly
+Fri Dec  6 01:31:34 2024~[info] Transaction will sent to server?
+Fri Dec  6 01:31:34 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:31:34 2024~[success] Backend working properly
+Fri Dec  6 01:31:34 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 01:31:34 2024~[info] {"transactionId": "edddfa","transactionReason":"hello","amount":130,"transactionType":1}
+Fri Dec  6 01:31:34 2024~[info] "{\"transactionId\":\"edddfa\",\"transactionReason\":\"hello\",\"amount\":130,\"transactionType\":1}"
+Fri Dec  6 01:42:30 2024~[info] Starting startupCheck
+Fri Dec  6 01:42:30 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:42:30 2024~[success] Backend working properly
+Fri Dec  6 01:42:30 2024~[success] Connection established with the backend server
+Fri Dec  6 01:42:30 2024~[success] Session File Found
+Fri Dec  6 01:42:30 2024~[success] Transaction storage files found
+Fri Dec  6 01:42:30 2024~[info] Session Matched
+Fri Dec  6 01:43:39 2024~[info] Starting startupCheck
+Fri Dec  6 01:43:39 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:43:39 2024~[success] Backend working properly
+Fri Dec  6 01:43:39 2024~[success] Connection established with the backend server
+Fri Dec  6 01:43:39 2024~[success] Session File Found
+Fri Dec  6 01:43:39 2024~[success] Transaction storage files found
+Fri Dec  6 01:43:40 2024~[info] Session Matched
+Fri Dec  6 01:43:49 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:43:50 2024~[success] Backend working properly
+Fri Dec  6 01:43:50 2024~[info] Transaction will sent to server?
+Fri Dec  6 01:43:50 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:43:50 2024~[success] Backend working properly
+Fri Dec  6 01:43:50 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 01:43:50 2024~[info] {"transactionId": "gfcaef","transactionReason":"hs","amount":23,"transactionType":1,"apiToken":b78bdbbe-98dc-44bf-bc21-d325c1888164}
+Fri Dec  6 01:43:51 2024~[info] {"detail":[{"type":"json_invalid","loc":["body",95],"msg":"JSON decode error","input":{},"ctx":{"error":"Expecting value"}}]}
+Fri Dec  6 01:44:20 2024~[info] Starting startupCheck
+Fri Dec  6 01:44:20 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:44:20 2024~[success] Backend working properly
+Fri Dec  6 01:44:20 2024~[success] Connection established with the backend server
+Fri Dec  6 01:44:20 2024~[success] Session File Found
+Fri Dec  6 01:44:20 2024~[success] Transaction storage files found
+Fri Dec  6 01:44:20 2024~[info] Session Matched
+Fri Dec  6 01:44:27 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:44:28 2024~[success] Backend working properly
+Fri Dec  6 01:44:28 2024~[info] Transaction will sent to server?
+Fri Dec  6 01:44:28 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:44:28 2024~[success] Backend working properly
+Fri Dec  6 01:44:28 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 01:44:28 2024~[info] {"transactionId": "abfggb","transactionReason":"tes","amount":23,"transactionType":1,"apiToken":"b78bdbbe-98dc-44bf-bc21-d325c1888164"}
+Fri Dec  6 01:44:28 2024~[info] "{\"transactionId\":\"abfggb\",\"transactionReason\":\"tes\",\"amount\":23,\"transactionType\":1,\"apiToken\":\"b78bdbbe-98dc-44bf-bc21-d325c1888164\"}"
+Fri Dec  6 01:56:19 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:56:21 2024~[success] Backend working properly
+Fri Dec  6 01:56:21 2024~[info] Transaction will sent to server?
+Fri Dec  6 01:56:21 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:56:22 2024~[success] Backend working properly
+Fri Dec  6 01:56:22 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 01:56:22 2024~[info] {"transactionId": "fehgdd","transactionReason":"test","amount":233,"transactionType":1,"apiToken":"b78bdbbe-98dc-44bf-bc21-d325c1888164"}
+Fri Dec  6 01:56:22 2024~[info] {}
+Fri Dec  6 01:57:57 2024~[info] Starting startupCheck
+Fri Dec  6 01:57:57 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:57:57 2024~[success] Backend working properly
+Fri Dec  6 01:57:57 2024~[success] Connection established with the backend server
+Fri Dec  6 01:57:57 2024~[success] Session File Found
+Fri Dec  6 01:57:57 2024~[success] Transaction storage files found
+Fri Dec  6 01:57:57 2024~[info] Session Matched
+Fri Dec  6 01:58:01 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:58:01 2024~[success] Backend working properly
+Fri Dec  6 01:58:01 2024~[info] Transaction will sent to server?
+Fri Dec  6 01:58:01 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 01:58:02 2024~[success] Backend working properly
+Fri Dec  6 01:58:02 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 01:58:02 2024~[info] {"transactionId": "cadegb","transactionReason":"hasd","amount":123,"transactionType":1,"apiToken":"b78bdbbe-98dc-44bf-bc21-d325c1888164"}
+Fri Dec  6 01:58:02 2024~[info] {}
+Fri Dec  6 02:01:47 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 02:01:47 2024~[success] Backend working properly
+Fri Dec  6 02:01:47 2024~[info] Transaction will sent to server?
+Fri Dec  6 02:01:47 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 02:01:47 2024~[success] Backend working properly
+Fri Dec  6 02:01:47 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 02:01:47 2024~[info] {"transactionId": "cfgbgb","transactionReason":"hello","amount":230,"transactionType":1,"apiToken":"b78bdbbe-98dc-44bf-bc21-d325c1888164"}
+Fri Dec  6 02:01:47 2024~[info] {}
+Fri Dec  6 02:31:18 2024~[info] Starting startupCheck
+Fri Dec  6 02:31:18 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 02:31:19 2024~[success] Backend working properly
+Fri Dec  6 02:31:19 2024~[success] Connection established with the backend server
+Fri Dec  6 02:31:19 2024~[success] Session File Found
+Fri Dec  6 02:31:19 2024~[success] Transaction storage files found
+Fri Dec  6 02:31:19 2024~[info] Session Matched
+Fri Dec  6 11:48:48 2024~[info] Starting startupCheck
+Fri Dec  6 11:48:48 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 11:48:49 2024~[success] Backend working properly
+Fri Dec  6 11:48:49 2024~[success] Connection established with the backend server
+Fri Dec  6 11:48:49 2024~[success] Session File Found
+Fri Dec  6 11:48:49 2024~[success] Transaction storage files found
+Fri Dec  6 11:48:49 2024~[info] Session Matched
+Fri Dec  6 11:50:43 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 11:50:44 2024~[success] Backend working properly
+Fri Dec  6 11:50:44 2024~[info] Transaction will sent to server?
+Fri Dec  6 11:50:44 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 11:50:45 2024~[success] Backend working properly
+Fri Dec  6 11:50:45 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 11:50:45 2024~[info] {"transactionId": "aecadf","transactionReason":"hello","amount":230,"transactionType":1,"apiToken":"b78bdbbe-98dc-44bf-bc21-d325c1888164"}
+Fri Dec  6 11:50:45 2024~[info] {}
+Fri Dec  6 11:52:04 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 11:52:04 2024~[success] Backend working properly
+Fri Dec  6 11:52:04 2024~[info] Transaction will sent to server?
+Fri Dec  6 11:52:04 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 11:52:04 2024~[success] Backend working properly
+Fri Dec  6 11:52:04 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 11:52:04 2024~[info] {"transactionId": "cfecfe","transactionReason":"asd","amount":32,"transactionType":1,"apiToken":"b78bdbbe-98dc-44bf-bc21-d325c1888164"}
+Fri Dec  6 11:52:05 2024~[info] {}
+Fri Dec  6 11:53:04 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 11:53:04 2024~[success] Backend working properly
+Fri Dec  6 11:53:04 2024~[info] Transaction will sent to server?
+Fri Dec  6 11:53:04 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 11:53:05 2024~[success] Backend working properly
+Fri Dec  6 11:53:05 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 11:53:05 2024~[info] {"transactionId": "cfcbda","transactionReason":"hello","amount":223,"transactionType":1,"apiToken":"b78bdbbe-98dc-44bf-bc21-d325c1888164"}
+Fri Dec  6 11:53:05 2024~[info] {}
+Fri Dec  6 13:58:33 2024~[info] Starting startupCheck
+Fri Dec  6 13:58:33 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 13:58:34 2024~[success] Backend working properly
+Fri Dec  6 13:58:34 2024~[success] Connection established with the backend server
+Fri Dec  6 13:58:34 2024~[success] Session File Found
+Fri Dec  6 13:58:34 2024~[success] Transaction storage files found
+Fri Dec  6 13:58:34 2024~[info] Session Matched
+Fri Dec  6 13:58:49 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 13:58:49 2024~[success] Backend working properly
+Fri Dec  6 13:58:49 2024~[info] Transaction will sent to server?
+Fri Dec  6 13:58:49 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 13:58:50 2024~[success] Backend working properly
+Fri Dec  6 13:58:50 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 13:58:50 2024~[info] {"transactionId": "cchhfc","transactionReason":"created","amount":120,"transactionType":1,"apiToken":"b78bdbbe-98dc-44bf-bc21-d325c1888164"}
+Fri Dec  6 13:58:50 2024~[info] "True"
+Fri Dec  6 14:02:14 2024~[info] Starting startupCheck
+Fri Dec  6 14:02:14 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:02:14 2024~[success] Backend working properly
+Fri Dec  6 14:02:14 2024~[success] Connection established with the backend server
+Fri Dec  6 14:02:14 2024~[success] Session File Found
+Fri Dec  6 14:02:14 2024~[success] Transaction storage files found
+Fri Dec  6 14:02:15 2024~[info] Session Matched
+Fri Dec  6 14:02:18 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:02:18 2024~[success] Backend working properly
+Fri Dec  6 14:02:18 2024~[info] Transaction will sent to server?
+Fri Dec  6 14:02:18 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:02:18 2024~[success] Backend working properly
+Fri Dec  6 14:02:18 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 14:02:18 2024~[info] {"transactionId": "hdedac","transactionReason":"
+","amount":102,"transactionType":1,"apiToken":"b78bdbbe-98dc-44bf-bc21-d325c1888164"}
+Fri Dec  6 14:02:18 2024~[info] {"detail":[{"type":"json_invalid","loc":["body",48],"msg":"JSON decode error","input":{},"ctx":{"error":"Invalid control character at"}}]}
+Fri Dec  6 14:07:40 2024~[info] Starting startupCheck
+Fri Dec  6 14:07:40 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:07:40 2024~[success] Backend working properly
+Fri Dec  6 14:07:40 2024~[success] Connection established with the backend server
+Fri Dec  6 14:07:40 2024~[success] Session File Found
+Fri Dec  6 14:07:40 2024~[success] Transaction storage files found
+Fri Dec  6 14:07:40 2024~[info] Session Matched
+Fri Dec  6 14:07:49 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:07:49 2024~[success] Backend working properly
+Fri Dec  6 14:07:49 2024~[info] Transaction will sent to server?
+Fri Dec  6 14:07:49 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:07:49 2024~[success] Backend working properly
+Fri Dec  6 14:07:49 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 14:07:49 2024~[info] {"transactionId": "fdehdd","transactionReason":"testing from desktop app
+","amount":123,"transactionType":200,"apiToken":"b78bdbbe-98dc-44bf-bc21-d325c1888164"}
+Fri Dec  6 14:07:50 2024~[info] {"detail":[{"type":"json_invalid","loc":["body",72],"msg":"JSON decode error","input":{},"ctx":{"error":"Invalid control character at"}}]}
+Fri Dec  6 14:08:23 2024~[info] Starting startupCheck
+Fri Dec  6 14:08:23 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:08:24 2024~[success] Backend working properly
+Fri Dec  6 14:08:24 2024~[success] Connection established with the backend server
+Fri Dec  6 14:08:24 2024~[success] Session File Found
+Fri Dec  6 14:08:24 2024~[success] Transaction storage files found
+Fri Dec  6 14:08:24 2024~[info] Session Matched
+Fri Dec  6 14:08:34 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:08:34 2024~[success] Backend working properly
+Fri Dec  6 14:08:34 2024~[info] Transaction will sent to server?
+Fri Dec  6 14:08:34 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:08:34 2024~[success] Backend working properly
+Fri Dec  6 14:08:34 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 14:08:34 2024~[info] {"transactionId": "ffhhbf","transactionReason":"testing from desktop app
+","amount":32,"transactionType":200,"apiToken":"b78bdbbe-98dc-44bf-bc21-d325c1888164"}
+Fri Dec  6 14:08:35 2024~[info] {"detail":[{"type":"json_invalid","loc":["body",72],"msg":"JSON decode error","input":{},"ctx":{"error":"Invalid control character at"}}]}
+Fri Dec  6 14:09:41 2024~[info] Starting startupCheck
+Fri Dec  6 14:09:41 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:09:42 2024~[success] Backend working properly
+Fri Dec  6 14:09:42 2024~[success] Connection established with the backend server
+Fri Dec  6 14:09:42 2024~[success] Session File Found
+Fri Dec  6 14:09:42 2024~[success] Transaction storage files found
+Fri Dec  6 14:09:42 2024~[info] Session Matched
+Fri Dec  6 14:09:49 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:09:50 2024~[success] Backend working properly
+Fri Dec  6 14:09:50 2024~[info] Transaction will sent to server?
+Fri Dec  6 14:09:50 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:09:50 2024~[success] Backend working properly
+Fri Dec  6 14:09:50 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 14:09:50 2024~[info] {"transactionId": "ecbfaf","transactionReason":"hello testingin from desktop app","amount":23,"transactionType":200,"apiToken":"b78bdbbe-98dc-44bf-bc21-d325c1888164"}
+Fri Dec  6 14:09:50 2024~[info] "Error"
+Fri Dec  6 14:10:24 2024~[info] Starting startupCheck
+Fri Dec  6 14:10:24 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:10:25 2024~[success] Backend working properly
+Fri Dec  6 14:10:25 2024~[success] Connection established with the backend server
+Fri Dec  6 14:10:25 2024~[success] Session File Found
+Fri Dec  6 14:10:25 2024~[success] Transaction storage files found
+Fri Dec  6 14:10:25 2024~[info] Session Matched
+Fri Dec  6 14:10:34 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:10:34 2024~[success] Backend working properly
+Fri Dec  6 14:10:34 2024~[info] Transaction will sent to server?
+Fri Dec  6 14:10:34 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:10:35 2024~[success] Backend working properly
+Fri Dec  6 14:10:35 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 14:10:35 2024~[info] {"transactionId": "fcfbff","transactionReason":"hello testing from desktop app","amount":23,"transactionType":200,"apiToken":"b78bdbbe-98dc-44bf-bc21-d325c1888164"}
+Fri Dec  6 14:10:35 2024~[info] "list index out of range"
+Fri Dec  6 14:11:18 2024~[info] Starting startupCheck
+Fri Dec  6 14:11:18 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:11:18 2024~[success] Backend working properly
+Fri Dec  6 14:11:18 2024~[success] Connection established with the backend server
+Fri Dec  6 14:11:18 2024~[success] Session File Found
+Fri Dec  6 14:11:18 2024~[success] Transaction storage files found
+Fri Dec  6 14:11:20 2024~[info] Session Matched
+Fri Dec  6 14:11:30 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:11:30 2024~[success] Backend working properly
+Fri Dec  6 14:11:30 2024~[info] Transaction will sent to server?
+Fri Dec  6 14:11:30 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:11:30 2024~[success] Backend working properly
+Fri Dec  6 14:11:30 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 14:11:30 2024~[info] {"transactionId": "cbfdab","transactionReason":"testing from desktop app","amount":2303,"transactionType":1,"apiToken":"b78bdbbe-98dc-44bf-bc21-d325c1888164"}
+Fri Dec  6 14:11:32 2024~[info] "True"
+Fri Dec  6 14:22:36 2024~[info] Starting startupCheck
+Fri Dec  6 14:22:36 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:22:37 2024~[success] Backend working properly
+Fri Dec  6 14:22:37 2024~[success] Connection established with the backend server
+Fri Dec  6 14:22:37 2024~[success] Session File Found
+Fri Dec  6 14:22:37 2024~[success] Transaction storage files found
+Fri Dec  6 14:22:38 2024~[info] Session Matched
+Fri Dec  6 14:23:10 2024~[info] Starting startupCheck
+Fri Dec  6 14:23:10 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:23:10 2024~[success] Backend working properly
+Fri Dec  6 14:23:10 2024~[success] Connection established with the backend server
+Fri Dec  6 14:23:10 2024~[success] Session File Found
+Fri Dec  6 14:23:10 2024~[success] Transaction storage files found
+Fri Dec  6 14:23:10 2024~[info] Session Matched
+Fri Dec  6 14:23:30 2024~[info] Starting startupCheck
+Fri Dec  6 14:23:30 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:23:30 2024~[success] Backend working properly
+Fri Dec  6 14:23:30 2024~[success] Connection established with the backend server
+Fri Dec  6 14:23:30 2024~[success] Session File Found
+Fri Dec  6 14:23:30 2024~[success] Transaction storage files found
+Fri Dec  6 14:23:31 2024~[info] Session Matched
+Fri Dec  6 14:26:57 2024~[info] Starting startupCheck
+Fri Dec  6 14:26:57 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:26:58 2024~[success] Backend working properly
+Fri Dec  6 14:26:58 2024~[success] Connection established with the backend server
+Fri Dec  6 14:26:58 2024~[success] Session File Found
+Fri Dec  6 14:26:58 2024~[success] Transaction storage files found
+Fri Dec  6 14:26:58 2024~[info] Session Matched
+Fri Dec  6 14:27:22 2024~[info] Starting startupCheck
+Fri Dec  6 14:27:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:27:22 2024~[success] Backend working properly
+Fri Dec  6 14:27:22 2024~[success] Connection established with the backend server
+Fri Dec  6 14:27:22 2024~[success] Session File Found
+Fri Dec  6 14:27:22 2024~[success] Transaction storage files found
+Fri Dec  6 14:27:22 2024~[info] Session Matched
+Fri Dec  6 14:27:52 2024~[info] Starting startupCheck
+Fri Dec  6 14:27:52 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:27:53 2024~[success] Backend working properly
+Fri Dec  6 14:27:53 2024~[success] Connection established with the backend server
+Fri Dec  6 14:27:53 2024~[success] Session File Found
+Fri Dec  6 14:27:53 2024~[success] Transaction storage files found
+Fri Dec  6 14:27:54 2024~[info] Session Matched
+Fri Dec  6 14:29:00 2024~[info] Starting startupCheck
+Fri Dec  6 14:29:00 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:29:01 2024~[success] Backend working properly
+Fri Dec  6 14:29:01 2024~[success] Connection established with the backend server
+Fri Dec  6 14:29:01 2024~[success] Session File Found
+Fri Dec  6 14:29:01 2024~[success] Transaction storage files found
+Fri Dec  6 14:29:02 2024~[info] Session Matched
+Fri Dec  6 14:29:19 2024~[info] Starting startupCheck
+Fri Dec  6 14:29:19 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:29:19 2024~[success] Backend working properly
+Fri Dec  6 14:29:19 2024~[success] Connection established with the backend server
+Fri Dec  6 14:29:19 2024~[success] Session File Found
+Fri Dec  6 14:29:19 2024~[success] Transaction storage files found
+Fri Dec  6 14:29:20 2024~[info] Session Matched
+Fri Dec  6 14:29:51 2024~[info] Starting startupCheck
+Fri Dec  6 14:29:51 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:29:51 2024~[success] Backend working properly
+Fri Dec  6 14:29:51 2024~[success] Connection established with the backend server
+Fri Dec  6 14:29:51 2024~[success] Session File Found
+Fri Dec  6 14:29:51 2024~[success] Transaction storage files found
+Fri Dec  6 14:29:52 2024~[info] Session Matched
+Fri Dec  6 14:30:29 2024~[info] Starting startupCheck
+Fri Dec  6 14:30:29 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:30:29 2024~[success] Backend working properly
+Fri Dec  6 14:30:29 2024~[success] Connection established with the backend server
+Fri Dec  6 14:30:29 2024~[success] Session File Found
+Fri Dec  6 14:30:29 2024~[success] Transaction storage files found
+Fri Dec  6 14:30:30 2024~[info] Session Matched
+Fri Dec  6 14:32:13 2024~[info] Starting startupCheck
+Fri Dec  6 14:32:13 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:32:14 2024~[success] Backend working properly
+Fri Dec  6 14:32:14 2024~[success] Connection established with the backend server
+Fri Dec  6 14:32:14 2024~[success] Session File Found
+Fri Dec  6 14:32:14 2024~[success] Transaction storage files found
+Fri Dec  6 14:32:14 2024~[info] Session Matched
+Fri Dec  6 14:32:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:32:22 2024~[success] Backend working properly
+Fri Dec  6 14:32:22 2024~[info] Transaction will sent to server?
+Fri Dec  6 14:32:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:32:22 2024~[success] Backend working properly
+Fri Dec  6 14:32:22 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 14:32:22 2024~[info] {"transactionId": "bdhbeg","transactionReason":"hello","amount":200,"transactionType":1,"apiToken":"b78bdbbe-98dc-44bf-bc21-d325c1888164"}
+Fri Dec  6 14:32:23 2024~[info] "True"
+Fri Dec  6 14:32:42 2024~[info] Starting startupCheck
+Fri Dec  6 14:32:42 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:32:43 2024~[success] Backend working properly
+Fri Dec  6 14:32:43 2024~[success] Connection established with the backend server
+Fri Dec  6 14:32:43 2024~[success] Session File Found
+Fri Dec  6 14:32:43 2024~[success] Transaction storage files found
+Fri Dec  6 14:32:43 2024~[info] Session Matched
+Fri Dec  6 14:32:58 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:32:58 2024~[success] Backend working properly
+Fri Dec  6 14:32:58 2024~[info] Transaction will sent to server?
+Fri Dec  6 14:32:58 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:32:58 2024~[success] Backend working properly
+Fri Dec  6 14:32:58 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 14:32:58 2024~[info] {"transactionId": "efeece","transactionReason":"testing","amount":23,"transactionType":1,"apiToken":"b78bdbbe-98dc-44bf-bc21-d325c1888164"}
+Fri Dec  6 14:32:59 2024~[info] "True"
+Fri Dec  6 14:33:27 2024~[info] Starting startupCheck
+Fri Dec  6 14:33:27 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:33:27 2024~[success] Backend working properly
+Fri Dec  6 14:33:27 2024~[success] Connection established with the backend server
+Fri Dec  6 14:33:27 2024~[success] Session File Found
+Fri Dec  6 14:33:27 2024~[success] Transaction storage files found
+Fri Dec  6 14:33:28 2024~[info] Session Matched
+Fri Dec  6 14:33:30 2024~[info] Starting startupCheck
+Fri Dec  6 14:33:30 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:33:31 2024~[success] Backend working properly
+Fri Dec  6 14:33:31 2024~[success] Connection established with the backend server
+Fri Dec  6 14:33:31 2024~[success] Session File Found
+Fri Dec  6 14:33:31 2024~[success] Transaction storage files found
+Fri Dec  6 14:33:32 2024~[warning] Session not matched
+Fri Dec  6 14:33:34 2024~[info] Response JSON: 200
+
+Fri Dec  6 14:33:34 2024~[success] Authentication token saved to sessionFile.lock
+Fri Dec  6 14:33:36 2024~[info] Starting startupCheck
+Fri Dec  6 14:33:36 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 14:33:36 2024~[success] Backend working properly
+Fri Dec  6 14:33:36 2024~[success] Connection established with the backend server
+Fri Dec  6 14:33:36 2024~[success] Session File Found
+Fri Dec  6 14:33:36 2024~[success] Transaction storage files found
+Fri Dec  6 14:33:37 2024~[info] Session Matched
+Fri Dec  6 15:02:42 2024~[info] Starting startupCheck
+Fri Dec  6 15:02:43 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 15:02:43 2024~[success] Backend working properly
+Fri Dec  6 15:02:43 2024~[success] Connection established with the backend server
+Fri Dec  6 15:02:43 2024~[success] Session File Found
+Fri Dec  6 15:02:43 2024~[success] Transaction storage files found
+Fri Dec  6 15:02:44 2024~[info] Session Matched
+Fri Dec  6 15:02:53 2024~[info] Starting startupCheck
+Fri Dec  6 15:02:53 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 15:02:54 2024~[success] Backend working properly
+Fri Dec  6 15:02:54 2024~[success] Connection established with the backend server
+Fri Dec  6 15:02:54 2024~[success] Session File Found
+Fri Dec  6 15:02:54 2024~[success] Transaction storage files found
+Fri Dec  6 15:02:54 2024~[info] Session Matched
+Fri Dec  6 15:02:56 2024~[info] Starting startupCheck
+Fri Dec  6 15:02:56 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 15:02:56 2024~[success] Backend working properly
+Fri Dec  6 15:02:56 2024~[success] Connection established with the backend server
+Fri Dec  6 15:02:56 2024~[success] Session File Found
+Fri Dec  6 15:02:56 2024~[success] Transaction storage files found
+Fri Dec  6 15:02:57 2024~[info] Session Matched
+Fri Dec  6 15:02:58 2024~[info] Starting startupCheck
+Fri Dec  6 15:02:58 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 15:02:58 2024~[success] Backend working properly
+Fri Dec  6 15:02:58 2024~[success] Connection established with the backend server
+Fri Dec  6 15:02:58 2024~[success] Session File Found
+Fri Dec  6 15:02:58 2024~[success] Transaction storage files found
+Fri Dec  6 15:02:58 2024~[warning] Session not matched
+Fri Dec  6 15:03:43 2024~[info] Response JSON: 200
+
+Fri Dec  6 15:03:43 2024~[success] Authentication token saved to sessionFile.lock
+Fri Dec  6 15:03:45 2024~[info] Starting startupCheck
+Fri Dec  6 15:03:45 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 15:03:45 2024~[success] Backend working properly
+Fri Dec  6 15:03:45 2024~[success] Connection established with the backend server
+Fri Dec  6 15:03:45 2024~[success] Session File Found
+Fri Dec  6 15:03:45 2024~[success] Transaction storage files found
+Fri Dec  6 15:03:46 2024~[info] Session Matched
+Fri Dec  6 15:04:08 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 15:04:08 2024~[success] Backend working properly
+Fri Dec  6 15:04:08 2024~[info] Transaction will sent to server?
+Fri Dec  6 15:04:08 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 15:04:10 2024~[success] Backend working properly
+Fri Dec  6 15:04:10 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 15:04:10 2024~[info] {"transactionId": "defhbh","transactionReason":"income","amount":2769,"transactionType":2,"apiToken":"723f11f4-4461-44a1-87e9-440e636f8d28"}
+Fri Dec  6 15:04:10 2024~[info] "True"
+Fri Dec  6 15:04:36 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 15:04:36 2024~[success] Backend working properly
+Fri Dec  6 15:04:36 2024~[info] Transaction will sent to server?
+Fri Dec  6 15:04:36 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 15:04:37 2024~[success] Backend working properly
+Fri Dec  6 15:04:37 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 15:04:37 2024~[info] {"transactionId": "ffbefd","transactionReason":"hello","amount":230,"transactionType":1,"apiToken":"723f11f4-4461-44a1-87e9-440e636f8d28"}
+Fri Dec  6 15:04:37 2024~[info] "True"

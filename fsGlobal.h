@@ -16,7 +16,7 @@ struct Response callServer(const char *url, char *json_data);
 void sysMessage(char prefix[], char comment[]);
 bool pushTransactionToServer(struct USYNCED_TRANSACTION *newTransactionInfo);
 bool createTransactionView();
-
+void removeQuotes(char *str);
 bool checkString(char string1[], char string2[]) {
     int checkStrInteger = strcmp(string1, string2);
     return checkStrInteger == 0;
@@ -38,6 +38,32 @@ bool conLog(char string[], char level[]) {
     }
     fclose(logs);
     return true;
+}
+char* readApiToken(){
+    FILE *sessionFile = fopen("sessionFile.lock", "r");
+    char *apiToken;
+    char line[256];
+    long fileSize;
+    if (sessionFile == NULL){
+        conLog("Failed to read apiToken", "error");
+        
+        return "null";
+    }
+    fseek(sessionFile, 0, SEEK_END);
+    fileSize = ftell(sessionFile);
+    rewind(sessionFile);
+    apiToken = (char *)malloc(fileSize + 1);
+    if (apiToken == NULL) {
+        perror("Error allocating memory");
+        fclose(sessionFile);
+        return "null";
+    }
+
+    fread(apiToken, 1, fileSize, sessionFile);
+    apiToken[fileSize] = '\0'; 
+    removeQuotes(apiToken);
+    return apiToken;
+
 }
 bool createFile(char filename[]){
     FILE *dummyFile = fopen(filename, "w");
@@ -454,7 +480,7 @@ struct USYNCED_TRANSACTION* createUsyncTransaction(int amount, int transactionTy
             sysMessage("Failed", "Transaction could not get synced with server");
             conLog("Trying again to push the transaction to the server", "warning");
             if (pushAttemptCounter < 3){
-                printf("[DEBUG] attempt no : %d\n", pushAttemptCounter);
+                // printf("[DEBUG] attempt no : %d\n", pushAttemptCounter);
                 pushAttemptCounter++;
                 goto pushAttempt;
                 
@@ -588,10 +614,18 @@ bool pushTransactionToServer(struct USYNCED_TRANSACTION *newTransactionInfo){
             conLog("Memory allocation failed to send packet to backend server to checkConnect\n", "error");
             programExit(0, "Memory allocation failed in checkConnection function");
         }
-        sprintf(json_data, "{\"transactionId\": \"%s\",\"reason\":\"%s\"}", newTransactionInfo->transactionId, newTransactionInfo->transactionReason);
-        const char* url = "https://zoogle.projectdaffodil.xyz/api/checkServer";
+        sprintf(json_data, "{\"transactionId\": \"%s\",\"transactionReason\":\"%s\",\"amount\":%d,\"transactionType\":%d,\"apiToken\":\"%s\"}", 
+        newTransactionInfo->transactionId, 
+        newTransactionInfo->transactionReason,
+        newTransactionInfo-> amount,
+        newTransactionInfo -> transactionType,
+        readApiToken());
+        // printf("[DEBUG] %s \n", json_data);
+        conLog(json_data, "info");
+        const char* url = "https://zoogle.projectdaffodil.xyz/api/createTransaction";
         struct Response getResponse = callServer(url, json_data);
         printf("%ld\n", getResponse.response_code);
+        conLog(getResponse.data, "info");
         
         return true;
     }else{
