@@ -21,3 +21,13 @@ struct USYNCED_TRANSACTION{
     
 
 };
+struct USYNCED_NODE {
+    int amount;
+    int transactionType;
+    char *transactionReason;
+    char *transactionId;
+    struct USYNCED_NODE *next;
+};
+struct USYNCED_QUEUE {
+    struct USYNCED_NODE *front, *rear;
+};

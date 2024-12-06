@@ -84,9 +84,8 @@ int userDashboard(){
         printf("[1] Create Transaction\n");
         printf("[2] Transaction History\n");
         printf("[3] Stats\n");
-        printf("[4] Save Transactions\n");
-        printf("[5] Logout\n");
-        int option = selectOption(5);
+        printf("[4] Logout\n");
+        int option = selectOption(4);
         if (option == 0){
             continue;
         }else{

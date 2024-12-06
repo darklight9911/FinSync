@@ -11,6 +11,8 @@ void sleep();
 int main()
 {
     start:
+    // postInternetConnection();
+    // programExit(0,"DEBUG mode ended");
     startupCheck();
 
     // callServer();
@@ -67,7 +69,7 @@ int main()
                     // sleep(3);
                 }else if(x == 3){
                     printf("Stats");
-                }else if (x == 5){
+                }else if (x == 4){
 
                     sysMessage("PROC", "Trying to logout");
                     if (logoutOperation()){
@@ -78,15 +80,16 @@ int main()
                 
                     break;
 
-                }else if (x == 4){
-                    sysMessage("PROC", "Trying to save the transactions in tempStorage");
-                    if (saveTransactionToCSV(uSyncTransactionHead)){
-                        conLog("Transaction saved into tempStorage", "success");
-                    }else{
-                        conLog("Transaction could not saved", "error");
-                    }
-                    // sleep(2);       
-                    }
+                }
+                // else if (x == 4){
+                //     sysMessage("PROC", "Trying to save the transactions in tempStorage");
+                //     if (saveTransactionToCSV(uSyncTransactionHead)){
+                //         conLog("Transaction saved into tempStorage", "success");
+                //     }else{
+                //         conLog("Transaction could not saved", "error");
+                //     }
+                //     // sleep(2);       
+                //     }
                 else{
                     sysMessage("WARN", "You have selected unknown option\n");
                     sleep(1);

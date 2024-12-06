@@ -61,6 +61,11 @@
     "structures.h": "c",
     "time.h": "c",
     "constants.h": "c",
-    "fsglobal.h": "c"
+    "fsglobal.h": "c",
+    "random": "c",
+    "array": "c",
+    "deque": "c",
+    "vector": "c",
+    "string_view": "c"
   }
 }
