@@ -761,41 +761,40 @@ void storeQueueToCSV(struct USYNCED_QUEUE *head) {
     FILE *file = fopen("transactionStorage.csv", "w");
     if (file == NULL) {
         printf("Error opening file\n");
-        return;
+        programExit(0, "Error opening file");
     }
 
     fprintf(file, "TransactionId,Amount,TransactionType,TransactionReason\n");
 
     struct USYNCED_NODE *temp = head->front;
     while (temp != NULL) {
-        if (checkConnection(BACKEND_URI)){
+        if (checkConnection(BACKEND_URI)) {
             struct USYNCED_TRANSACTION *pushTransaction;
-            if (pushTransaction == NULL){
+            pushTransaction = (struct USYNCED_TRANSACTION*)malloc(sizeof(struct USYNCED_TRANSACTION));
+            if (pushTransaction == NULL) {
                 conLog("Memory allocation failed for pushTransaction", "error");
                 programExit(0, "Memory allocation failed");
             }
-            pushTransaction -> amount = temp ->amount;
-            strcpy(pushTransaction -> transactionId, temp -> transactionId);
-            strcpy(pushTransaction -> transactionReason, temp -> transactionReason);
-            pushTransaction -> transactionType = temp -> transactionType;
-            if (pushTransactionToServer(pushTransaction)){
-                conLog("Unsynced transaction pushed successfully","success");
-            }else{
+            pushTransaction->amount = temp->amount;
+            strcpy(pushTransaction->transactionId, temp->transactionId);
+            strcpy(pushTransaction->transactionReason, temp->transactionReason);
+            pushTransaction->transactionType = temp->transactionType;
+            if (pushTransactionToServer(pushTransaction)) {
+                conLog("Unsynced transaction pushed successfully", "success");
+            } else {
                 conLog("Unsynced transaction failed to be pushed", "error");
                 fprintf(file, "%s,%d,%d,%s\n", temp->transactionId, temp->amount, temp->transactionType, temp->transactionReason);
             }
-
-
-        }else{
+        } else {
             fprintf(file, "%s,%d,%d,%s\n", temp->transactionId, temp->amount, temp->transactionType, temp->transactionReason);
         }
         temp = temp->next;
-
     }
 
     fclose(file);
     printf("Queue data has been written to queue_data.csv\n");
 }
+
 
 
 void loadTransactionsFromCSV() {
