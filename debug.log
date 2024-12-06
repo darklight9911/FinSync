@@ -1408,3 +1408,198 @@ Fri Dec  6 15:04:37 2024~[info] Trying to push tranasction to the server
 
 Fri Dec  6 15:04:37 2024~[info] {"transactionId": "ffbefd","transactionReason":"hello","amount":230,"transactionType":1,"apiToken":"723f11f4-4461-44a1-87e9-440e636f8d28"}
 Fri Dec  6 15:04:37 2024~[info] "True"
+Fri Dec  6 16:01:51 2024~[info] Starting startupCheck
+Fri Dec  6 16:01:51 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 16:01:51 2024~[error] Connection failed with the backend server
+Fri Dec  6 16:01:56 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 16:01:56 2024~[info] Transaction failed to submit to the server. Attempting to save locally
+Fri Dec  6 16:01:56 2024~[success] Transaction Created Locally. It was the first transaction
+Fri Dec  6 18:41:51 2024~[info] Starting startupCheck
+Fri Dec  6 18:41:51 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 18:41:52 2024~[success] Backend working properly
+Fri Dec  6 18:41:52 2024~[success] Connection established with the backend server
+Fri Dec  6 18:41:52 2024~[success] Session File Found
+Fri Dec  6 18:41:52 2024~[success] Transaction storage files found
+Fri Dec  6 18:41:52 2024~[info] Session Matched
+Fri Dec  6 18:41:57 2024~[info] Starting startupCheck
+Fri Dec  6 18:41:57 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 18:41:58 2024~[success] Backend working properly
+Fri Dec  6 18:41:58 2024~[success] Connection established with the backend server
+Fri Dec  6 18:41:58 2024~[success] Session File Found
+Fri Dec  6 18:41:58 2024~[success] Transaction storage files found
+Fri Dec  6 18:41:58 2024~[info] Session Matched
+Fri Dec  6 19:06:53 2024~[info] Starting startupCheck
+Fri Dec  6 19:06:53 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 19:07:00 2024~[success] Backend working properly
+Fri Dec  6 19:07:00 2024~[success] Connection established with the backend server
+Fri Dec  6 19:07:00 2024~[success] Session File Found
+Fri Dec  6 19:07:00 2024~[success] Transaction storage files found
+Fri Dec  6 19:07:00 2024~[info] Session Matched
+Fri Dec  6 19:07:51 2024~[info] Starting startupCheck
+Fri Dec  6 19:07:51 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 19:07:58 2024~[success] Backend working properly
+Fri Dec  6 19:07:58 2024~[success] Connection established with the backend server
+Fri Dec  6 19:07:58 2024~[success] Session File Found
+Fri Dec  6 19:07:58 2024~[success] Transaction storage files found
+Fri Dec  6 19:07:59 2024~[info] Session Matched
+Fri Dec  6 19:12:01 2024~[info] Starting startupCheck
+Fri Dec  6 19:12:01 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:12:01 2024~[error] Connection failed with the backend server
+Fri Dec  6 19:12:44 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:12:44 2024~[info] Transaction failed to submit to the server. Attempting to save locally
+Fri Dec  6 19:12:44 2024~[success] Transaction Created Locally. It was the first transaction
+Fri Dec  6 19:13:24 2024~[info] Starting startupCheck
+Fri Dec  6 19:13:24 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:13:24 2024~[error] Connection failed with the backend server
+Fri Dec  6 19:13:28 2024~[info] Starting startupCheck
+Fri Dec  6 19:13:28 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:13:28 2024~[error] Connection failed with the backend server
+Fri Dec  6 19:15:30 2024~[info] Starting startupCheck
+Fri Dec  6 19:15:30 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:15:30 2024~[error] Connection failed with the backend server
+Fri Dec  6 19:18:31 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 19:18:31 2024~[success] Backend working properly
+Fri Dec  6 19:18:31 2024~[info] Transaction will sent to server?
+Fri Dec  6 19:18:31 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 19:18:32 2024~[success] Backend working properly
+Fri Dec  6 19:18:32 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 19:18:32 2024~[info] {"transactionId": "badfec","transactionReason":"ahsdad","amount":23,"transactionType":1,"apiToken":"723f11f4-4461-44a1-87e9-440e636f8d28"}
+Fri Dec  6 19:18:32 2024~[info] "True"
+Fri Dec  6 19:18:33 2024~[info] Session Matched
+Fri Dec  6 19:28:18 2024~[info] Starting startupCheck
+Fri Dec  6 19:28:18 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 19:28:26 2024~[success] Backend working properly
+Fri Dec  6 19:28:26 2024~[success] Connection established with the backend server
+Fri Dec  6 19:28:26 2024~[success] Session File Found
+Fri Dec  6 19:28:26 2024~[success] Transaction storage files found
+Fri Dec  6 19:28:31 2024~[info] Session Matched
+Fri Dec  6 19:28:43 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:28:43 2024~[info] Transaction failed to sync. Attempting to save locally
+Fri Dec  6 19:28:43 2024~[success] Transaction created locally as the first transaction
+Fri Dec  6 19:28:43 2024~[success] Transactions saved successfully to transactionStorage.csv
+
+Fri Dec  6 19:30:53 2024~[info] Starting startupCheck
+Fri Dec  6 19:30:57 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 19:31:00 2024~[success] Backend working properly
+Fri Dec  6 19:31:00 2024~[success] Connection established with the backend server
+Fri Dec  6 19:31:00 2024~[success] Session File Found
+Fri Dec  6 19:31:00 2024~[success] Transaction storage files found
+Fri Dec  6 19:31:00 2024~[info] Session Matched
+Fri Dec  6 19:31:08 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:31:08 2024~[info] Transaction failed to sync. Attempting to save locally
+Fri Dec  6 19:31:08 2024~[success] Transaction created locally as the first transaction
+Fri Dec  6 19:31:08 2024~[success] Transactions saved successfully to transactionStorage.csv
+Fri Dec  6 19:32:08 2024~[info] Starting startupCheck
+Fri Dec  6 19:32:13 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 19:32:19 2024~[info] Starting startupCheck
+Fri Dec  6 19:32:19 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:32:19 2024~[error] Connection failed with the backend server
+Fri Dec  6 19:32:23 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:32:23 2024~[info] Transaction failed to sync. Attempting to save locally
+Fri Dec  6 19:32:23 2024~[success] Transaction created locally as the first transaction
+Fri Dec  6 19:32:23 2024~[success] Transactions saved successfully to transactionStorage.csv
+Fri Dec  6 19:32:50 2024~[info] Starting startupCheck
+Fri Dec  6 19:32:50 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:32:50 2024~[error] Connection failed with the backend server
+Fri Dec  6 19:33:00 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:33:00 2024~[info] Transaction failed to sync. Attempting to save locally
+Fri Dec  6 19:33:00 2024~[success] Transaction created locally as the first transaction
+Fri Dec  6 19:33:00 2024~[success] Transactions saved successfully to transactionStorage.csv
+Fri Dec  6 19:34:47 2024~[info] Starting startupCheck
+Fri Dec  6 19:34:50 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 19:34:50 2024~[success] Backend working properly
+Fri Dec  6 19:34:50 2024~[success] Connection established with the backend server
+Fri Dec  6 19:34:50 2024~[success] Session File Found
+Fri Dec  6 19:34:50 2024~[success] Transaction storage files found
+Fri Dec  6 19:34:51 2024~[info] Session Matched
+Fri Dec  6 19:42:08 2024~[info] Starting startupCheck
+Fri Dec  6 19:42:08 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 19:42:11 2024~[success] Backend working properly
+Fri Dec  6 19:42:11 2024~[success] Connection established with the backend server
+Fri Dec  6 19:42:11 2024~[success] Session File Found
+Fri Dec  6 19:42:11 2024~[success] Transaction storage files found
+Fri Dec  6 19:42:12 2024~[info] Session Matched
+Fri Dec  6 19:42:25 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:42:25 2024~[info] Transaction failed to sync. Attempting to save locally
+Fri Dec  6 19:42:25 2024~[success] Transaction created locally as the first transaction
+Fri Dec  6 19:42:25 2024~[success] Transactions saved successfully to transactionStorage.csv
+Fri Dec  6 19:46:25 2024~[info] Starting startupCheck
+Fri Dec  6 19:46:25 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:46:25 2024~[error] Connection failed with the backend server
+Fri Dec  6 19:46:30 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:46:30 2024~[info] Transaction failed to sync. Attempting to save locally
+Fri Dec  6 19:46:30 2024~[success] Transaction created locally as the first transaction
+Fri Dec  6 19:46:30 2024~[success] Transactions saved successfully to transactionStorage.csv
+Fri Dec  6 19:47:06 2024~[info] Starting startupCheck
+Fri Dec  6 19:47:06 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:47:06 2024~[error] Connection failed with the backend server
+Fri Dec  6 19:47:10 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:47:10 2024~[info] Transaction failed to sync. Attempting to save locally
+Fri Dec  6 19:47:10 2024~[success] Transaction created locally as the first transaction
+Fri Dec  6 19:47:10 2024~[success] Transactions saved successfully to transactionStorage.csv
+Fri Dec  6 19:47:52 2024~[info] Starting startupCheck
+Fri Dec  6 19:47:52 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:47:52 2024~[error] Connection failed with the backend server
+Fri Dec  6 19:49:13 2024~[info] Starting startupCheck
+Fri Dec  6 19:49:13 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:49:13 2024~[error] Connection failed with the backend server
+Fri Dec  6 19:49:18 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:49:18 2024~[info] Transaction failed to sync. Attempting to save locally
+Fri Dec  6 19:49:18 2024~[success] Transaction created locally as the first transaction
+Fri Dec  6 19:49:18 2024~[success] Transactions saved successfully to transactionStorage.csv
+Fri Dec  6 19:51:24 2024~[info] Starting startupCheck
+Fri Dec  6 19:51:24 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:51:24 2024~[error] Connection failed with the backend server
+Fri Dec  6 19:51:30 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:51:30 2024~[info] Transaction failed to sync. Attempting to save locally
+Fri Dec  6 19:51:30 2024~[success] Transaction created locally as the first transaction
+Fri Dec  6 19:51:30 2024~[success] Transactions saved successfully to transactionStorage.csv
+Fri Dec  6 19:51:30 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:52:29 2024~[info] Starting startupCheck
+Fri Dec  6 19:52:29 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:52:29 2024~[error] Connection failed with the backend server
+Fri Dec  6 19:52:32 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:52:32 2024~[info] Transaction failed to sync. Attempting to save locally
+Fri Dec  6 19:52:32 2024~[success] Transaction created locally as the first transaction
+Fri Dec  6 19:52:32 2024~[success] Transactions saved successfully to transactionStorage.csv
+Fri Dec  6 19:52:32 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:53:24 2024~[info] Starting startupCheck
+Fri Dec  6 19:53:24 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:53:24 2024~[error] Connection failed with the backend server
+Fri Dec  6 19:53:27 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:53:27 2024~[info] Transaction failed to sync. Attempting to save locally
+Fri Dec  6 19:53:27 2024~[success] Transaction created locally as the first transaction
+Fri Dec  6 19:53:27 2024~[success] Transactions saved successfully to transactionStorage.csv
+Fri Dec  6 19:53:27 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:53:27 2024~[error] DEBUG - Connection failed again
+Fri Dec  6 19:54:59 2024~[info] Starting startupCheck
+Fri Dec  6 19:54:59 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:54:59 2024~[error] Connection failed with the backend server
+Fri Dec  6 19:55:03 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:55:03 2024~[info] Transaction failed to sync. Attempting to save locally
+Fri Dec  6 19:55:03 2024~[success] Transaction created locally as the first transaction
+Fri Dec  6 19:55:03 2024~[success] Transactions saved successfully to transactionStorage.csv
+Fri Dec  6 19:55:03 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:55:03 2024~[error] DEBUG - Connection failed again
+Fri Dec  6 19:55:12 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:55:12 2024~[info] Transaction failed to sync. Attempting to save locally
+Fri Dec  6 19:55:12 2024~[success] Transaction created locally and appended to the list
+Fri Dec  6 19:55:12 2024~[success] Transactions saved successfully to transactionStorage.csv
+Fri Dec  6 19:55:12 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Fri Dec  6 19:55:12 2024~[error] DEBUG - Connection failed again
+Fri Dec  6 19:55:29 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 19:55:29 2024~[success] Backend working properly
+Fri Dec  6 19:55:29 2024~[info] Attempting to send transaction to the server
+Fri Dec  6 19:55:29 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 19:55:30 2024~[success] Backend working properly
+Fri Dec  6 19:55:30 2024~[info] Trying to push tranasction to the server
+
+Fri Dec  6 19:55:30 2024~[info] {"transactionId": "fcefeg","transactionReason":"connection back transaction","amount":233,"transactionType":1,"apiToken":"723f11f4-4461-44a1-87e9-440e636f8d28"}
+Fri Dec  6 19:55:30 2024~[info] "True"
+Fri Dec  6 19:55:30 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Fri Dec  6 19:55:30 2024~[success] Backend working properly
+Fri Dec  6 19:55:30 2024~[success] DEBUG - Connection came back
+Fri Dec  6 19:55:30 2024~[success] Session File Found
+Fri Dec  6 19:55:30 2024~[success] Transaction storage files found
+Fri Dec  6 19:55:32 2024~[info] Session Matched

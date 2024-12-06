@@ -17,6 +17,7 @@ void sysMessage(char prefix[], char comment[]);
 bool pushTransactionToServer(struct USYNCED_TRANSACTION *newTransactionInfo);
 bool createTransactionView();
 void removeQuotes(char *str);
+bool saveTransactionToCSV(struct USYNCED_TRANSACTION *head);
 bool checkString(char string1[], char string2[]) {
     int checkStrInteger = strcmp(string1, string2);
     return checkStrInteger == 0;
@@ -170,9 +171,20 @@ bool startupCheck(){
     }else{
         conLog("Connection failed with the backend server", "error");
         // programExit(0, "Connection failed with the backend server");
-        sysMessage("INFO", "You are not connected with the internet switching to the offline mode");
-        createTransactionView();
-        return true;    
+        while (true){
+            sysMessage("INFO", "You are not connected with the internet switching to the offline mode");
+            
+            createTransactionView();
+            if (checkConnection(BACKEND_URI)){
+                conLog("DEBUG - Connection came back", "success");
+                break;
+
+            }else{
+                conLog("DEBUG - Connection failed again", "error");
+                continue;;
+            }
+        }
+
     }
     if (checkFileExists(sessionFileName)){
         conLog("Session File Found", "success");
@@ -459,60 +471,65 @@ struct USYNCED_TRANSACTION* createUsyncTransaction(int amount, int transactionTy
 
     newNode->amount = amount;
     newNode->transactionType = transactionType;
+
     char *newTransactionId = generateStrToken(6);
-    newNode -> transactionId = newTransactionId;
+    if (newTransactionId == NULL) {
+        free(newNode);
+        sysMessage("[ERROR]", "Failed to generate transaction ID");
+        programExit(0, "Transaction ID generation failed");
+    }
+    newNode->transactionId = newTransactionId;
+
     newNode->transactionReason = (char *)malloc(strlen(transactionReason) + 1);
     if (newNode->transactionReason == NULL) {
+        free(newNode->transactionId);
         free(newNode);
         sysMessage("[ERROR]", "Failed to allocate memory for transaction reason");
         programExit(0, "Memory allocation failed");
     }
     strcpy(newNode->transactionReason, transactionReason);
+
     newNode->prev = newNode->next = NULL;
+
     int pushAttemptCounter = 0;
-    pushAttempt: 
-    if (checkConnection(BACKEND_URI)){
-        conLog("Transaction will sent to server?","info");
-        
-        if (pushTransactionToServer(newNode)){
-            sysMessage("SUCCESS", "Transaction synced with the sevrer");
-        }else{
-            sysMessage("Failed", "Transaction could not get synced with server");
-            conLog("Trying again to push the transaction to the server", "warning");
-            if (pushAttemptCounter < 3){
-                // printf("[DEBUG] attempt no : %d\n", pushAttemptCounter);
-                pushAttemptCounter++;
-                goto pushAttempt;
-                
 
-            }else{
-                conLog("Transaction failed to push after multiple attempts, Ignoring this transaction.", "error");
-                sysMessage("ERROR", "Transaction could not be saved try again");
+    if (checkConnection(BACKEND_URI)) {
+        conLog("Attempting to send transaction to the server", "info");
 
-            }
-        }
-    }else{
-        conLog("Transaction failed to submit to the server. Attempting to save locally","info");
-        if (uSyncTransactionHead == NULL) {
-            uSyncTransactionHead = newNode;
-            conLog("Transaction Created Locally. It was the first transaction", "success");
-            return uSyncTransactionHead;
+        if (pushTransactionToServer(newNode)) {
+            sysMessage("SUCCESS", "Transaction synced with the server");
+            free(newNode->transactionId);
+            free(newNode->transactionReason);
+            free(newNode);
+            return NULL;
         } else {
-            struct USYNCED_TRANSACTION *temp = uSyncTransactionHead;
-            while (temp->next != NULL) {
-                temp = temp->next;
-            }
-            temp->next = newNode;
-
-            newNode->prev = temp;
-
-            conLog("Transaction Created Locally and appended to the list", "success");
-            return newNode;
+            conLog("Transaction could not sent to the server", "error");
+            programExit(0, "Transaction could not sent to the server also could not saved locally");
         }
     }
 
+    conLog("Transaction failed to sync. Attempting to save locally", "info");
+    if (uSyncTransactionHead == NULL) {
+        uSyncTransactionHead = newNode;
+        conLog("Transaction created locally as the first transaction", "success");
+    } else {
+        struct USYNCED_TRANSACTION *temp = uSyncTransactionHead;
+        while (temp->next != NULL) {
+            temp = temp->next;
+        }
+        temp->next = newNode;
+        newNode->prev = temp;
+        conLog("Transaction created locally and appended to the list", "success");
+    }
 
+    if (!saveTransactionToCSV(uSyncTransactionHead)) {
+        conLog("Failed to save transaction locally to CSV", "error");
+        sysMessage("ERROR", "Failed to save transaction locally");
+    }
+
+    return newNode;
 }
+
 bool logoutOperation(){
     // @assigned to darklight    
     FILE *file;
@@ -557,7 +574,7 @@ bool saveTransactionToCSV(struct USYNCED_TRANSACTION *head) {
     if (!file) {
         perror("Failed to open the transactionStorageFile");
         conLog("Failed to open the transactionStorageFile", "error");
-        programExit(0, "Failed to open the transactionStorageFile");
+        return false;
     }
 
     if (head == NULL) {
@@ -567,21 +584,26 @@ bool saveTransactionToCSV(struct USYNCED_TRANSACTION *head) {
     }
 
     fprintf(file, "TransactionId,Amount,TransactionType,TransactionReason\n");
+
     struct USYNCED_TRANSACTION *current = head;
     while (current != NULL) {
-        fprintf(stderr, "Debug: Processing transactionId=%s\n",
-                current->transactionId ? current->transactionId : "NULL");
+        if (current->transactionId == NULL || current->transactionReason == NULL) {
+            conLog("Null fields found in the transaction node", "error");
+            fclose(file);
+            return false;
+        }
 
         fprintf(file, "%s,%d,%d,%s\n",
-                current->transactionId ? current->transactionId : "NULL",
+                current->transactionId,
                 current->amount,
                 current->transactionType,
-                current->transactionReason ? current->transactionReason : "NULL");
-        
+                current->transactionReason);
+
         current = current->next;
     }
+
     fclose(file);
-    conLog("Transactions saved successfully to transactionStorage.csv\n", "success");
+    conLog("Transactions saved successfully to transactionStorage.csv", "success");
     return true;
 }
 
@@ -608,7 +630,7 @@ char* generateStrToken(int length){
 bool pushTransactionToServer(struct USYNCED_TRANSACTION *newTransactionInfo){
     if (checkConnection(BACKEND_URI)){
         conLog("Trying to push tranasction to the server\n", "info");
-        size_t json_size = 430; 
+        size_t json_size = 2000; 
         char *json_data = malloc(json_size);
         if (json_data == NULL) {
             conLog("Memory allocation failed to send packet to backend server to checkConnect\n", "error");
