@@ -30,7 +30,7 @@ int main()
             struct loginCred* loginInfoVAR;
             loginInfoVAR = loginView();
             if (checklogin(loginInfoVAR)){
-                sleep(2);
+                // sleep(2);
                 goto start;
 
             }else{
@@ -60,11 +60,11 @@ int main()
                 if (x == 1){
                     sysMessage("OUT","You selected to create transaction.\n");
                     createTransactionView();
-                    sleep(2);
+                    // sleep(2);
                 }else if(x == 2){
                     printf("Transaction history");
                     viewTransaction();
-                    sleep(3);
+                    // sleep(3);
                 }else if(x == 3){
                     printf("Stats");
                 }else if (x == 5){
@@ -85,7 +85,8 @@ int main()
                     }else{
                         conLog("Transaction could not saved", "error");
                     }
-                    sleep(2);                }
+                    // sleep(2);       
+                    }
                 else{
                     sysMessage("WARN", "You have selected unknown option\n");
                     sleep(1);
