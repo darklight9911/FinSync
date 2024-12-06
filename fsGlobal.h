@@ -18,6 +18,7 @@ bool pushTransactionToServer(struct USYNCED_TRANSACTION *newTransactionInfo);
 bool createTransactionView();
 void removeQuotes(char *str);
 bool saveTransactionToCSV(struct USYNCED_TRANSACTION *head);
+bool postInternetConnection();
 bool checkString(char string1[], char string2[]) {
     int checkStrInteger = strcmp(string1, string2);
     return checkStrInteger == 0;
@@ -133,7 +134,7 @@ bool checkConnection(char url[]){
         if (getResponse.response_code == 200){
             if (checkString("\"True\"", getResponse.data)){
                 conLog("Backend working properly", "success");
-
+                postInternetConnection();
                 return true;                
             }else{
                 conLog("Backend Server deny to response", "warning");
