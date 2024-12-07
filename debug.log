@@ -1663,3 +1663,255 @@ Sat Dec  7 00:31:36 2024~[success] Connection established with the backend serve
 Sat Dec  7 00:31:36 2024~[success] Session File Found
 Sat Dec  7 00:31:36 2024~[success] Transaction storage files found
 Sat Dec  7 00:31:36 2024~[info] Session Matched
+Sat Dec  7 17:11:46 2024~[info] Starting startupCheck
+Sat Dec  7 17:11:47 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:11:47 2024~[success] Backend working properly
+Sat Dec  7 17:11:47 2024~[success] Connection established with the backend server
+Sat Dec  7 17:11:47 2024~[success] Session File Found
+Sat Dec  7 17:11:47 2024~[success] Transaction storage files found
+Sat Dec  7 17:11:47 2024~[warning] Session not matched
+Sat Dec  7 17:11:59 2024~[error] Curl failed to interact [Couldn't resolve host name] with the endpoint https://zoogle.projectdaffodil.xyz/api/login
+Sat Dec  7 17:12:06 2024~[info] Starting startupCheck
+Sat Dec  7 17:12:06 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Sat Dec  7 17:12:06 2024~[error] Connection failed with the backend server
+Sat Dec  7 17:12:13 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Sat Dec  7 17:12:13 2024~[info] Transaction failed to sync. Attempting to save locally
+Sat Dec  7 17:12:13 2024~[success] Transaction created locally as the first transaction
+Sat Dec  7 17:12:13 2024~[success] Transactions saved successfully to transactionStorage.csv
+Sat Dec  7 17:12:13 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Sat Dec  7 17:12:13 2024~[error] DEBUG - Connection failed again
+Sat Dec  7 17:12:18 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Sat Dec  7 17:12:18 2024~[info] Transaction failed to sync. Attempting to save locally
+Sat Dec  7 17:12:18 2024~[success] Transaction created locally and appended to the list
+Sat Dec  7 17:12:18 2024~[success] Transactions saved successfully to transactionStorage.csv
+Sat Dec  7 17:12:18 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Sat Dec  7 17:12:18 2024~[error] DEBUG - Connection failed again
+Sat Dec  7 17:12:23 2024~[info] Starting startupCheck
+Sat Dec  7 17:12:24 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:12:24 2024~[success] Backend working properly
+Sat Dec  7 17:12:24 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:12:24 2024~[success] Backend working properly
+Sat Dec  7 17:17:04 2024~[info] Starting startupCheck
+Sat Dec  7 17:17:04 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:17:04 2024~[success] Backend working properly
+Sat Dec  7 17:17:04 2024~[success] Connection established with the backend server
+Sat Dec  7 17:17:04 2024~[success] Session File Found
+Sat Dec  7 17:17:04 2024~[success] Transaction storage files found
+Sat Dec  7 17:17:04 2024~[warning] Session not matched
+Sat Dec  7 17:17:16 2024~[info] Starting startupCheck
+Sat Dec  7 17:17:16 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:17:16 2024~[success] Backend working properly
+Sat Dec  7 17:17:16 2024~[success] Connection established with the backend server
+Sat Dec  7 17:17:16 2024~[success] Session File Found
+Sat Dec  7 17:17:16 2024~[success] Transaction storage files found
+Sat Dec  7 17:17:16 2024~[warning] Session not matched
+Sat Dec  7 17:17:21 2024~[info] Response JSON: 200
+
+Sat Dec  7 17:17:21 2024~[success] Authentication token saved to sessionFile.lock
+Sat Dec  7 17:17:21 2024~[info] Starting startupCheck
+Sat Dec  7 17:17:21 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:17:21 2024~[success] Backend working properly
+Sat Dec  7 17:17:21 2024~[success] Connection established with the backend server
+Sat Dec  7 17:17:21 2024~[success] Session File Found
+Sat Dec  7 17:17:21 2024~[success] Transaction storage files found
+Sat Dec  7 17:17:21 2024~[info] Session Matched
+Sat Dec  7 17:17:26 2024~[info] Starting startupCheck
+Sat Dec  7 17:17:26 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Sat Dec  7 17:17:26 2024~[error] Connection failed with the backend server
+Sat Dec  7 17:17:29 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Sat Dec  7 17:17:29 2024~[info] Transaction failed to sync. Attempting to save locally
+Sat Dec  7 17:17:29 2024~[success] Transaction created locally as the first transaction
+Sat Dec  7 17:17:29 2024~[success] Transactions saved successfully to transactionStorage.csv
+Sat Dec  7 17:17:29 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Sat Dec  7 17:17:29 2024~[error] DEBUG - Connection failed again
+Sat Dec  7 17:17:36 2024~[info] Starting startupCheck
+Sat Dec  7 17:17:37 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:17:37 2024~[success] Backend working properly
+Sat Dec  7 17:17:37 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:17:37 2024~[success] Backend working properly
+Sat Dec  7 17:22:56 2024~[info] Starting startupCheck
+Sat Dec  7 17:22:56 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:22:56 2024~[success] Backend working properly
+Sat Dec  7 17:22:56 2024~[info] Queue is empty from StoreQueueToCSV
+
+Sat Dec  7 17:22:56 2024~[success] Connection established with the backend server
+Sat Dec  7 17:22:56 2024~[success] Session File Found
+Sat Dec  7 17:22:56 2024~[success] Transaction storage files found
+Sat Dec  7 17:22:56 2024~[info] Session Matched
+Sat Dec  7 17:23:05 2024~[info] Starting startupCheck
+Sat Dec  7 17:23:05 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:23:05 2024~[success] Backend working properly
+Sat Dec  7 17:23:05 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:23:06 2024~[success] Backend working properly
+Sat Dec  7 17:23:06 2024~[info] Queue is empty from StoreQueueToCSV
+
+Sat Dec  7 17:24:10 2024~[info] Starting startupCheck
+Sat Dec  7 17:24:10 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:24:10 2024~[success] Backend working properly
+Sat Dec  7 17:24:10 2024~[info] Queue is empty from StoreQueueToCSV
+
+Sat Dec  7 17:24:10 2024~[success] Connection established with the backend server
+Sat Dec  7 17:24:10 2024~[success] Session File Found
+Sat Dec  7 17:24:10 2024~[success] Transaction storage files found
+Sat Dec  7 17:24:10 2024~[info] Session Matched
+Sat Dec  7 17:24:19 2024~[info] Starting startupCheck
+Sat Dec  7 17:24:19 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:24:19 2024~[success] Backend working properly
+Sat Dec  7 17:24:19 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:24:19 2024~[success] Backend working properly
+Sat Dec  7 17:24:19 2024~[info] Queue is empty from StoreQueueToCSV
+
+Sat Dec  7 17:24:57 2024~[info] Starting startupCheck
+Sat Dec  7 17:24:57 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:24:57 2024~[success] Backend working properly
+Sat Dec  7 17:25:20 2024~[info] Starting startupCheck
+Sat Dec  7 17:25:20 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:25:20 2024~[success] Backend working properly
+Sat Dec  7 17:25:20 2024~[Info] Queue is empty from displayQueue
+Sat Dec  7 17:27:53 2024~[info] Starting startupCheck
+Sat Dec  7 17:27:53 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:27:54 2024~[success] Backend working properly
+Sat Dec  7 17:27:54 2024~[Info] Queue is empty from displayQueue
+Sat Dec  7 17:27:59 2024~[info] Starting startupCheck
+Sat Dec  7 17:27:59 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:27:59 2024~[success] Backend working properly
+Sat Dec  7 17:27:59 2024~[Info] Queue is empty from displayQueue
+Sat Dec  7 17:28:08 2024~[info] Starting startupCheck
+Sat Dec  7 17:28:08 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:28:08 2024~[success] Backend working properly
+Sat Dec  7 17:28:34 2024~[info] Starting startupCheck
+Sat Dec  7 17:28:34 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:28:34 2024~[success] Backend working properly
+Sat Dec  7 17:31:00 2024~[info] Starting startupCheck
+Sat Dec  7 17:31:00 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:31:00 2024~[success] Backend working properly
+Sat Dec  7 17:31:00 2024~[info] Unsynced transaction loaded into queue
+Sat Dec  7 17:31:00 2024~[info] Unsynced transaction loaded into queue
+Sat Dec  7 17:31:00 2024~[success] Transactions loaded successfully
+Sat Dec  7 17:31:00 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:31:00 2024~[success] Backend working properly
+Sat Dec  7 17:31:00 2024~[success] Transactions loaded successfully
+Sat Dec  7 17:31:00 2024~[Info] Queue is empty from displayQueue
+Sat Dec  7 17:31:00 2024~[info] Queue is empty from StoreQueueToCSV
+
+Sat Dec  7 17:31:11 2024~[info] Starting startupCheck
+Sat Dec  7 17:31:11 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:31:11 2024~[success] Backend working properly
+Sat Dec  7 17:31:11 2024~[info] Unsynced transaction loaded into queue
+Sat Dec  7 17:31:11 2024~[info] Unsynced transaction loaded into queue
+Sat Dec  7 17:31:11 2024~[success] Transactions loaded successfully
+Sat Dec  7 17:31:11 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:31:11 2024~[success] Backend working properly
+Sat Dec  7 17:31:11 2024~[success] Transactions loaded successfully
+Sat Dec  7 17:31:11 2024~[Info] Queue is empty from displayQueue
+Sat Dec  7 17:31:11 2024~[info] Queue is empty from StoreQueueToCSV
+
+Sat Dec  7 17:32:07 2024~[info] Starting startupCheck
+Sat Dec  7 17:32:07 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:32:07 2024~[success] Backend working properly
+Sat Dec  7 17:32:07 2024~[success] Transactions loaded successfully
+Sat Dec  7 17:32:07 2024~[Info] Queue is empty from displayQueue
+Sat Dec  7 17:32:07 2024~[info] Queue is empty from StoreQueueToCSV
+
+Sat Dec  7 17:32:07 2024~[success] Connection established with the backend server
+Sat Dec  7 17:32:07 2024~[success] Session File Found
+Sat Dec  7 17:32:07 2024~[success] Transaction storage files found
+Sat Dec  7 17:32:08 2024~[info] Session Matched
+Sat Dec  7 17:34:21 2024~[info] Starting startupCheck
+Sat Dec  7 17:34:21 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:34:22 2024~[success] Backend working properly
+Sat Dec  7 17:34:22 2024~[info] Unsynced transaction loaded into queue
+Sat Dec  7 17:34:22 2024~[info] Unsynced transaction loaded into queue
+Sat Dec  7 17:34:22 2024~[success] Transactions loaded successfully
+Sat Dec  7 17:34:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:34:22 2024~[success] Backend working properly
+Sat Dec  7 17:34:22 2024~[success] Transactions loaded successfully
+Sat Dec  7 17:34:22 2024~[Info] Queue is empty from displayQueue
+Sat Dec  7 17:34:22 2024~[info] Queue is empty from StoreQueueToCSV
+
+Sat Dec  7 17:39:10 2024~[info] Starting startupCheck
+Sat Dec  7 17:39:10 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Sat Dec  7 17:39:10 2024~[error] Connection failed with the backend server
+Sat Dec  7 17:39:13 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Sat Dec  7 17:39:13 2024~[info] Transaction failed to sync. Attempting to save locally
+Sat Dec  7 17:39:13 2024~[success] Transaction created locally as the first transaction
+Sat Dec  7 17:39:13 2024~[success] Transactions saved successfully to transactionStorage.csv
+Sat Dec  7 17:39:13 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Sat Dec  7 17:39:13 2024~[error] DEBUG - Connection failed again
+Sat Dec  7 17:39:19 2024~[info] Starting startupCheck
+Sat Dec  7 17:39:19 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:39:19 2024~[success] Backend working properly
+Sat Dec  7 17:39:19 2024~[info] Unsynced transaction loaded into queue
+Sat Dec  7 17:39:19 2024~[success] Transactions loaded successfully
+Sat Dec  7 17:39:19 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:39:19 2024~[success] Backend working properly
+Sat Dec  7 17:39:19 2024~[success] Transactions loaded successfully
+Sat Dec  7 17:39:19 2024~[Info] Queue is empty from displayQueue
+Sat Dec  7 17:39:19 2024~[info] Queue is empty from StoreQueueToCSV
+
+Sat Dec  7 17:44:39 2024~[info] Starting startupCheck
+Sat Dec  7 17:44:39 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:44:39 2024~[success] Backend working properly
+Sat Dec  7 17:44:39 2024~[success] Transactions loaded successfully
+Sat Dec  7 17:44:39 2024~[Info] Queue is empty from displayQueue
+Sat Dec  7 17:44:39 2024~[info] Queue is empty from StoreQueueToCSV
+Sat Dec  7 17:44:39 2024~[success] Connection established with the backend server
+Sat Dec  7 17:44:39 2024~[success] Session File Found
+Sat Dec  7 17:44:39 2024~[success] Transaction storage files found
+Sat Dec  7 17:44:39 2024~[info] Session Matched
+Sat Dec  7 17:44:48 2024~[info] Starting startupCheck
+Sat Dec  7 17:44:48 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:44:48 2024~[success] Backend working properly
+Sat Dec  7 17:44:48 2024~[success] Transactions loaded successfully
+Sat Dec  7 17:44:48 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:44:49 2024~[success] Backend working properly
+Sat Dec  7 17:44:49 2024~[success] Transactions loaded successfully
+Sat Dec  7 17:44:49 2024~[Info] Queue is empty from displayQueue
+Sat Dec  7 17:44:49 2024~[info] Queue is empty from StoreQueueToCSV
+Sat Dec  7 17:45:00 2024~[info] Starting startupCheck
+Sat Dec  7 17:45:00 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:45:00 2024~[success] Backend working properly
+Sat Dec  7 17:45:00 2024~[success] Transactions loaded successfully
+Sat Dec  7 17:45:00 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:45:01 2024~[success] Backend working properly
+Sat Dec  7 17:45:01 2024~[success] Transactions loaded successfully
+Sat Dec  7 17:45:01 2024~[Info] Queue is empty from displayQueue
+Sat Dec  7 17:45:01 2024~[info] Queue is empty from StoreQueueToCSV
+Sat Dec  7 17:45:21 2024~[info] Starting startupCheck
+Sat Dec  7 17:45:21 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:45:21 2024~[success] Backend working properly
+Sat Dec  7 17:45:21 2024~[success] Transactions loaded successfully
+Sat Dec  7 17:45:21 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:45:21 2024~[success] Backend working properly
+Sat Dec  7 17:45:21 2024~[success] Transactions loaded successfully
+Sat Dec  7 17:45:21 2024~[Info] Queue is empty from displayQueue
+Sat Dec  7 17:45:21 2024~[info] Queue is empty from StoreQueueToCSV
+Sat Dec  7 17:47:47 2024~[info] Starting startupCheck
+Sat Dec  7 17:47:47 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:47:48 2024~[success] Backend working properly
+Sat Dec  7 17:47:48 2024~[success] Transactions loaded successfully
+Sat Dec  7 17:47:48 2024~[Info] Queue is empty from displayQueue
+Sat Dec  7 17:47:48 2024~[info] Queue is empty from storeQueueToCSV
+Sat Dec  7 17:47:48 2024~[success] Connection established with the backend server
+Sat Dec  7 17:47:48 2024~[success] Session File Found
+Sat Dec  7 17:47:48 2024~[success] Transaction storage files found
+Sat Dec  7 17:47:49 2024~[info] Session Matched
+Sat Dec  7 17:47:56 2024~[info] Starting startupCheck
+Sat Dec  7 17:47:56 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:47:56 2024~[success] Backend working properly
+Sat Dec  7 17:47:56 2024~[success] Transactions loaded successfully
+Sat Dec  7 17:47:56 2024~[debug] Processing transactionId: hfbabb
+Sat Dec  7 17:47:56 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 17:47:56 2024~[success] Backend working properly
+Sat Dec  7 17:47:56 2024~[success] Transactions loaded successfully
+Sat Dec  7 17:47:56 2024~[Info] Queue is empty from displayQueue
+Sat Dec  7 17:47:56 2024~[info] Queue is empty from storeQueueToCSV
+Sat Dec  7 18:42:10 2024~[info] Starting startupCheck
+Sat Dec  7 18:42:10 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 18:42:11 2024~[success] Backend working properly
+Sat Dec  7 18:42:11 2024~[success] Transactions loaded successfully
+Sat Dec  7 18:42:11 2024~[Info] Queue is empty from displayQueue
+Sat Dec  7 18:42:11 2024~[success] Connection established with the backend server
+Sat Dec  7 18:42:11 2024~[success] Session File Found
+Sat Dec  7 18:42:11 2024~[success] Transaction storage files found
+Sat Dec  7 18:42:12 2024~[info] Session Matched
