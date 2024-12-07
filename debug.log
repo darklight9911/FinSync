@@ -1915,3 +1915,386 @@ Sat Dec  7 18:42:11 2024~[success] Connection established with the backend serve
 Sat Dec  7 18:42:11 2024~[success] Session File Found
 Sat Dec  7 18:42:11 2024~[success] Transaction storage files found
 Sat Dec  7 18:42:12 2024~[info] Session Matched
+Sat Dec  7 18:53:40 2024~[info] Starting startupCheck
+Sat Dec  7 18:53:40 2024~[error]  zoogle.projectdaffodil.xyz no connection
+Sat Dec  7 18:53:40 2024~[error] Connection failed with the backend server
+Sat Dec  7 18:53:46 2024~[info] Starting startupCheck
+Sat Dec  7 18:53:46 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 18:53:46 2024~[success] Backend working properly
+Sat Dec  7 18:53:46 2024~[success] Transactions loaded successfully
+Sat Dec  7 18:53:46 2024~[Info] Queue is empty from displayQueue
+Sat Dec  7 18:56:54 2024~[info] Starting startupCheck
+Sat Dec  7 18:56:54 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 18:56:54 2024~[success] Backend working properly
+Sat Dec  7 18:56:54 2024~[success] Transactions loaded successfully
+Sat Dec  7 19:03:58 2024~[info] Starting startupCheck
+Sat Dec  7 19:03:58 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:03:58 2024~[success] Backend working properly
+Sat Dec  7 19:03:58 2024~[success] Transactions loaded successfully
+Sat Dec  7 19:04:09 2024~[info] Starting startupCheck
+Sat Dec  7 19:04:09 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:04:10 2024~[success] Backend working properly
+Sat Dec  7 19:04:10 2024~[success] Transactions loaded successfully
+Sat Dec  7 19:04:42 2024~[info] Starting startupCheck
+Sat Dec  7 19:04:42 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:04:43 2024~[success] Backend working properly
+Sat Dec  7 19:04:43 2024~[success] Transactions loaded successfully
+Sat Dec  7 19:04:49 2024~[info] Starting startupCheck
+Sat Dec  7 19:04:49 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:04:50 2024~[success] Backend working properly
+Sat Dec  7 19:11:02 2024~[info] Starting startupCheck
+Sat Dec  7 19:11:02 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:11:03 2024~[success] Backend working properly
+Sat Dec  7 19:14:37 2024~[info] Starting startupCheck
+Sat Dec  7 19:14:37 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:14:38 2024~[success] Backend working properly
+Sat Dec  7 19:15:43 2024~[info] Starting startupCheck
+Sat Dec  7 19:15:43 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:15:44 2024~[success] Backend working properly
+Sat Dec  7 19:15:55 2024~[info] Starting startupCheck
+Sat Dec  7 19:15:55 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:15:55 2024~[success] Backend working properly
+Sat Dec  7 19:17:20 2024~[info] Starting startupCheck
+Sat Dec  7 19:17:20 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:17:20 2024~[success] Backend working properly
+Sat Dec  7 19:23:14 2024~[info] Starting startupCheck
+Sat Dec  7 19:23:14 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:23:38 2024~[info] Starting startupCheck
+Sat Dec  7 19:23:38 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:23:41 2024~[success] Backend working properly
+Sat Dec  7 19:24:46 2024~[info] Starting startupCheck
+Sat Dec  7 19:24:46 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:24:46 2024~[success] Backend working properly
+Sat Dec  7 19:25:16 2024~[info] Starting startupCheck
+Sat Dec  7 19:25:16 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:25:16 2024~[success] Backend working properly
+Sat Dec  7 19:27:58 2024~[info] Starting startupCheck
+Sat Dec  7 19:27:58 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:06 2024~[success] Backend working properly
+Sat Dec  7 19:28:11 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:13 2024~[info] Starting startupCheck
+Sat Dec  7 19:28:13 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:13 2024~[success] Backend working properly
+Sat Dec  7 19:28:13 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:14 2024~[success] Backend working properly
+Sat Dec  7 19:28:14 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:16 2024~[success] Backend working properly
+Sat Dec  7 19:28:16 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:16 2024~[success] Backend working properly
+Sat Dec  7 19:28:16 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:16 2024~[success] Backend working properly
+Sat Dec  7 19:28:16 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:17 2024~[success] Backend working properly
+Sat Dec  7 19:28:17 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:17 2024~[success] Backend working properly
+Sat Dec  7 19:28:17 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:18 2024~[success] Backend working properly
+Sat Dec  7 19:28:18 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:18 2024~[success] Backend working properly
+Sat Dec  7 19:28:18 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:18 2024~[success] Backend working properly
+Sat Dec  7 19:28:18 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:19 2024~[success] Backend working properly
+Sat Dec  7 19:28:19 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:19 2024~[success] Backend working properly
+Sat Dec  7 19:28:19 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:19 2024~[success] Backend working properly
+Sat Dec  7 19:28:19 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:19 2024~[success] Backend working properly
+Sat Dec  7 19:28:19 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:20 2024~[success] Backend working properly
+Sat Dec  7 19:28:20 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:20 2024~[success] Backend working properly
+Sat Dec  7 19:28:20 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:20 2024~[success] Backend working properly
+Sat Dec  7 19:28:20 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:21 2024~[success] Backend working properly
+Sat Dec  7 19:28:21 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:22 2024~[success] Backend working properly
+Sat Dec  7 19:28:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:22 2024~[success] Backend working properly
+Sat Dec  7 19:28:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:22 2024~[success] Backend working properly
+Sat Dec  7 19:28:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:22 2024~[success] Backend working properly
+Sat Dec  7 19:28:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:23 2024~[success] Backend working properly
+Sat Dec  7 19:28:23 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:23 2024~[success] Backend working properly
+Sat Dec  7 19:28:23 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:23 2024~[success] Backend working properly
+Sat Dec  7 19:28:23 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:23 2024~[success] Backend working properly
+Sat Dec  7 19:28:23 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:24 2024~[success] Backend working properly
+Sat Dec  7 19:28:24 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:24 2024~[success] Backend working properly
+Sat Dec  7 19:28:24 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:24 2024~[success] Backend working properly
+Sat Dec  7 19:28:24 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:24 2024~[success] Backend working properly
+Sat Dec  7 19:28:24 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:25 2024~[success] Backend working properly
+Sat Dec  7 19:28:25 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:25 2024~[success] Backend working properly
+Sat Dec  7 19:28:25 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:25 2024~[success] Backend working properly
+Sat Dec  7 19:28:25 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:26 2024~[success] Backend working properly
+Sat Dec  7 19:28:26 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:26 2024~[success] Backend working properly
+Sat Dec  7 19:28:26 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:26 2024~[success] Backend working properly
+Sat Dec  7 19:28:26 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:26 2024~[success] Backend working properly
+Sat Dec  7 19:28:26 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:28 2024~[success] Backend working properly
+Sat Dec  7 19:28:28 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:28 2024~[success] Backend working properly
+Sat Dec  7 19:28:28 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:28 2024~[success] Backend working properly
+Sat Dec  7 19:28:28 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:28 2024~[success] Backend working properly
+Sat Dec  7 19:28:28 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:29 2024~[success] Backend working properly
+Sat Dec  7 19:28:29 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:29 2024~[success] Backend working properly
+Sat Dec  7 19:28:29 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:29 2024~[success] Backend working properly
+Sat Dec  7 19:28:29 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:29 2024~[success] Backend working properly
+Sat Dec  7 19:28:29 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:30 2024~[success] Backend working properly
+Sat Dec  7 19:28:30 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:30 2024~[success] Backend working properly
+Sat Dec  7 19:28:30 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:31 2024~[success] Backend working properly
+Sat Dec  7 19:28:31 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:31 2024~[success] Backend working properly
+Sat Dec  7 19:28:31 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:31 2024~[success] Backend working properly
+Sat Dec  7 19:28:31 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:31 2024~[success] Backend working properly
+Sat Dec  7 19:28:31 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:32 2024~[success] Backend working properly
+Sat Dec  7 19:28:32 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:32 2024~[success] Backend working properly
+Sat Dec  7 19:28:32 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:33 2024~[success] Backend working properly
+Sat Dec  7 19:28:33 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:33 2024~[success] Backend working properly
+Sat Dec  7 19:28:33 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:33 2024~[success] Backend working properly
+Sat Dec  7 19:28:33 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:33 2024~[success] Backend working properly
+Sat Dec  7 19:28:33 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:34 2024~[success] Backend working properly
+Sat Dec  7 19:28:34 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:34 2024~[success] Backend working properly
+Sat Dec  7 19:28:34 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:34 2024~[success] Backend working properly
+Sat Dec  7 19:28:34 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:34 2024~[success] Backend working properly
+Sat Dec  7 19:28:34 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:35 2024~[success] Backend working properly
+Sat Dec  7 19:28:35 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:35 2024~[success] Backend working properly
+Sat Dec  7 19:28:35 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:35 2024~[success] Backend working properly
+Sat Dec  7 19:28:35 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:35 2024~[success] Backend working properly
+Sat Dec  7 19:28:35 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:36 2024~[success] Backend working properly
+Sat Dec  7 19:28:36 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:36 2024~[success] Backend working properly
+Sat Dec  7 19:28:36 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:36 2024~[success] Backend working properly
+Sat Dec  7 19:28:36 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:37 2024~[success] Backend working properly
+Sat Dec  7 19:28:37 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:37 2024~[success] Backend working properly
+Sat Dec  7 19:28:37 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:38 2024~[success] Backend working properly
+Sat Dec  7 19:28:38 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:38 2024~[success] Backend working properly
+Sat Dec  7 19:28:38 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:39 2024~[success] Backend working properly
+Sat Dec  7 19:28:39 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:39 2024~[success] Backend working properly
+Sat Dec  7 19:28:39 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:39 2024~[success] Backend working properly
+Sat Dec  7 19:28:39 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:39 2024~[success] Backend working properly
+Sat Dec  7 19:28:39 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:40 2024~[success] Backend working properly
+Sat Dec  7 19:28:40 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:40 2024~[success] Backend working properly
+Sat Dec  7 19:28:40 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:40 2024~[success] Backend working properly
+Sat Dec  7 19:28:40 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:41 2024~[success] Backend working properly
+Sat Dec  7 19:28:41 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:28:41 2024~[success] Backend working properly
+Sat Dec  7 19:28:41 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:31:34 2024~[info] Starting startupCheck
+Sat Dec  7 19:31:34 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:31:34 2024~[success] Backend working properly
+Sat Dec  7 19:31:34 2024~[success] Connection established with the backend server
+Sat Dec  7 19:31:34 2024~[success] Session File Found
+Sat Dec  7 19:31:34 2024~[success] Transaction storage files found
+Sat Dec  7 19:31:34 2024~[info] Session Matched
+Sat Dec  7 19:32:38 2024~[info] Starting startupCheck
+Sat Dec  7 19:32:38 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:32:38 2024~[success] Backend working properly
+Sat Dec  7 19:32:38 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:32:38 2024~[success] Backend working properly
+Sat Dec  7 19:32:38 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:32:38 2024~[success] Backend working properly
+Sat Dec  7 19:32:38 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:32:39 2024~[success] Backend working properly
+Sat Dec  7 19:32:39 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:32:39 2024~[success] Backend working properly
+Sat Dec  7 19:32:39 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:32:39 2024~[success] Backend working properly
+Sat Dec  7 19:32:39 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:32:39 2024~[success] Backend working properly
+Sat Dec  7 19:32:39 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:32:39 2024~[success] Backend working properly
+Sat Dec  7 19:32:39 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:32:40 2024~[success] Backend working properly
+Sat Dec  7 19:32:40 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:32:40 2024~[success] Backend working properly
+Sat Dec  7 19:32:40 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:32:40 2024~[success] Backend working properly
+Sat Dec  7 19:32:40 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:32:41 2024~[success] Backend working properly
+Sat Dec  7 19:32:41 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:32:41 2024~[success] Backend working properly
+Sat Dec  7 19:32:41 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:32:41 2024~[success] Backend working properly
+Sat Dec  7 19:32:41 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:33:21 2024~[info] Starting startupCheck
+Sat Dec  7 19:33:21 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:33:22 2024~[success] Backend working properly
+Sat Dec  7 19:33:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:33:22 2024~[success] Backend working properly
+Sat Dec  7 19:33:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:33:22 2024~[success] Backend working properly
+Sat Dec  7 19:33:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:33:22 2024~[success] Backend working properly
+Sat Dec  7 19:33:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:33:23 2024~[success] Backend working properly
+Sat Dec  7 19:33:23 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:33:23 2024~[success] Backend working properly
+Sat Dec  7 19:33:23 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:33:23 2024~[success] Backend working properly
+Sat Dec  7 19:33:23 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:33:23 2024~[success] Backend working properly
+Sat Dec  7 19:33:23 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:33:24 2024~[success] Backend working properly
+Sat Dec  7 19:33:24 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:33:24 2024~[success] Backend working properly
+Sat Dec  7 19:33:24 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:33:24 2024~[success] Backend working properly
+Sat Dec  7 19:33:24 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:33:24 2024~[success] Backend working properly
+Sat Dec  7 19:33:24 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:33:25 2024~[success] Backend working properly
+Sat Dec  7 19:33:25 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:33:25 2024~[success] Backend working properly
+Sat Dec  7 19:33:25 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:33:25 2024~[success] Backend working properly
+Sat Dec  7 19:33:25 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:36:23 2024~[info] Starting startupCheck
+Sat Dec  7 19:37:10 2024~[info] Starting startupCheck
+Sat Dec  7 19:37:10 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:37:14 2024~[success] Backend working properly
+Sat Dec  7 19:37:14 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:37:17 2024~[success] Backend working properly
+Sat Dec  7 19:37:17 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:37:17 2024~[success] Backend working properly
+Sat Dec  7 19:37:17 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:37:18 2024~[success] Backend working properly
+Sat Dec  7 19:37:18 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:37:18 2024~[success] Backend working properly
+Sat Dec  7 19:37:18 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:37:18 2024~[success] Backend working properly
+Sat Dec  7 19:37:18 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:37:18 2024~[success] Backend working properly
+Sat Dec  7 19:37:18 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:37:18 2024~[success] Backend working properly
+Sat Dec  7 19:37:18 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:37:19 2024~[success] Backend working properly
+Sat Dec  7 19:37:19 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:37:19 2024~[success] Backend working properly
+Sat Dec  7 19:37:19 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:37:19 2024~[success] Backend working properly
+Sat Dec  7 19:37:19 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:37:21 2024~[success] Backend working properly
+Sat Dec  7 19:37:21 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:37:22 2024~[success] Backend working properly
+Sat Dec  7 19:37:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:37:22 2024~[success] Backend working properly
+Sat Dec  7 19:37:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:37:22 2024~[success] Backend working properly
+Sat Dec  7 19:37:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:37:22 2024~[success] Backend working properly
+Sat Dec  7 19:37:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:37:22 2024~[success] Backend working properly
+Sat Dec  7 19:37:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:37:23 2024~[success] Backend working properly
+Sat Dec  7 19:37:23 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:38:11 2024~[info] Starting startupCheck
+Sat Dec  7 19:38:11 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:38:11 2024~[success] Backend working properly
+Sat Dec  7 19:38:11 2024~[info] Trying to push tranasction to the server
+
+Sat Dec  7 19:38:11 2024~[info] {"transactionId": "hfbabb","transactionReason":"hello","amount":23,"transactionType":1,"apiToken":"73c533e9-0735-4770-a5f9-9ec7d224574a"}
+Sat Dec  7 19:38:11 2024~[info] "True"
+Sat Dec  7 19:38:11 2024~[info] Trying to push tranasction to the server
+
+Sat Dec  7 19:38:11 2024~[info] {"transactionId": "ggfcfb","transactionReason":"hello","amount":233,"transactionType":1,"apiToken":"73c533e9-0735-4770-a5f9-9ec7d224574a"}
+Sat Dec  7 19:38:12 2024~[info] "True"
+Sat Dec  7 19:45:41 2024~[info] Starting startupCheck
+Sat Dec  7 19:45:41 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:45:41 2024~[success] Backend working properly
+Sat Dec  7 19:45:41 2024~[info] Trying to push tranasction to the server
+
+Sat Dec  7 19:45:41 2024~[info] {"transactionId": "hfbabb","transactionReason":"hello","amount":23,"transactionType":1,"apiToken":"73c533e9-0735-4770-a5f9-9ec7d224574a"}
+Sat Dec  7 19:45:41 2024~[info] "True"
+Sat Dec  7 19:45:41 2024~[info] Trying to push tranasction to the server
+
+Sat Dec  7 19:45:41 2024~[info] {"transactionId": "ggfcfb","transactionReason":"hello","amount":233,"transactionType":1,"apiToken":"73c533e9-0735-4770-a5f9-9ec7d224574a"}
+Sat Dec  7 19:45:41 2024~[info] "True"
+Sat Dec  7 19:46:21 2024~[info] Starting startupCheck
+Sat Dec  7 19:46:21 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:46:21 2024~[success] Backend working properly
+Sat Dec  7 19:46:21 2024~[info] Trying to push tranasction to the server
+
+Sat Dec  7 19:46:21 2024~[info] {"transactionId": "hfbabb","transactionReason":"hello","amount":23,"transactionType":1,"apiToken":"73c533e9-0735-4770-a5f9-9ec7d224574a"}
+Sat Dec  7 19:46:22 2024~[info] "True"
+Sat Dec  7 19:46:22 2024~[info] Trying to push tranasction to the server
+
+Sat Dec  7 19:46:22 2024~[info] {"transactionId": "ggfcfb","transactionReason":"hello","amount":233,"transactionType":1,"apiToken":"73c533e9-0735-4770-a5f9-9ec7d224574a"}
+Sat Dec  7 19:46:22 2024~[info] "True"
+Sat Dec  7 19:53:12 2024~[info] Starting startupCheck
+Sat Dec  7 19:53:12 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:53:12 2024~[success] Backend working properly
+Sat Dec  7 19:53:12 2024~[info] Trying to push tranasction to the server
+
+Sat Dec  7 19:53:12 2024~[info] {"transactionId": "hfbabb","transactionReason":"hello","amount":23,"transactionType":1,"apiToken":"73c533e9-0735-4770-a5f9-9ec7d224574a"}
+Sat Dec  7 19:53:12 2024~[info] "True"
+Sat Dec  7 19:53:12 2024~[info] Trying to push tranasction to the server
+
+Sat Dec  7 19:53:12 2024~[info] {"transactionId": "ggfcfb","transactionReason":"hello","amount":233,"transactionType":1,"apiToken":"73c533e9-0735-4770-a5f9-9ec7d224574a"}
+Sat Dec  7 19:53:14 2024~[info] "True"
+Sat Dec  7 19:53:18 2024~[info] Starting startupCheck
+Sat Dec  7 19:53:18 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:53:19 2024~[success] Backend working properly
+Sat Dec  7 19:53:31 2024~[info] Starting startupCheck
+Sat Dec  7 19:53:31 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Sat Dec  7 19:53:31 2024~[success] Backend working properly
+Sat Dec  7 19:53:31 2024~[success] Connection established with the backend server
+Sat Dec  7 19:53:31 2024~[success] Session File Found
+Sat Dec  7 19:53:31 2024~[success] Transaction storage files found
+Sat Dec  7 19:53:32 2024~[info] Session Matched

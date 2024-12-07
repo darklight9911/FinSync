@@ -21,13 +21,16 @@ struct USYNCED_TRANSACTION{
     
 
 };
-struct USYNCED_NODE {
+
+typedef struct Transaction {
+    char transactionId[50];
     int amount;
     int transactionType;
-    char *transactionReason;
-    char *transactionId;
-    struct USYNCED_NODE *next;
-};
-struct USYNCED_QUEUE {
-    struct USYNCED_NODE *front, *rear;
-};
+    char transactionReason[200];
+    struct Transaction* next; // Pointer to the next node in the queue
+} Transaction;
+
+typedef struct TransactionQueue {
+    Transaction* front;
+    Transaction* rear;
+} TransactionQueue;

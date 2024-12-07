@@ -6,6 +6,7 @@
 #include "constants.h"
 #include <curl/curl.h>
 #include "structures.h"
+#include "offline.h"
 char* getCurrentDateTime();
 char* generateStrToken(int length);
 struct USYNCED_TRANSACTION *uSyncTransactionHead = NULL;
@@ -135,6 +136,7 @@ bool checkConnection(char url[]){
             if (checkString("\"True\"", getResponse.data)){
                 conLog("Backend working properly", "success");
                 postInternetConnection();
+
                 return true;                
             }else{
                 conLog("Backend Server deny to response", "warning");
@@ -667,239 +669,75 @@ bool pushTransactionToServer(struct USYNCED_TRANSACTION *newTransactionInfo){
 }
 
 
+bool pushOfflineTransactionToServer(Transaction *newTransactionInfo){
+        conLog("Trying to push tranasction to the server\n", "info");
+        size_t json_size = 2000; 
+        char *json_data = malloc(json_size);
+        if (json_data == NULL) {
+            conLog("Memory allocation failed to send packet to backend server to checkConnect\n", "error");
+            programExit(0, "Memory allocation failed in checkConnection function");
+        }   
+        sprintf(json_data, "{\"transactionId\": \"%s\",\"transactionReason\":\"%s\",\"amount\":%d,\"transactionType\":%d,\"apiToken\":\"%s\"}", 
+        newTransactionInfo->transactionId, 
+        newTransactionInfo->transactionReason,
+        newTransactionInfo-> amount,
+        newTransactionInfo -> transactionType,
+        readApiToken());
+        // printf("[DEBUG] %s \n", json_data);
+        conLog(json_data, "info");
+        const char* url = "https://zoogle.projectdaffodil.xyz/api/createTransaction";
+        struct Response getResponse = callServer(url, json_data);
+        printf("%ld\n", getResponse.response_code);
+        if (getResponse.response_code == 200){
+            conLog(getResponse.data, "info");
 
+            return true;
 
-struct USYNCED_NODE* LOAD_USYNCED_NODE(int amount, int transactionType, char *transactionReason, char *transactionId) {
-    struct USYNCED_NODE *newNode = (struct USYNCED_NODE*)malloc(sizeof(struct USYNCED_NODE));
-    if (!newNode) {
-        conLog("Memory allocation failed for USYNCED_NODE", "error");
-        programExit(0, "Memory allocation failed");
+        }else{
+            return false;
     }
-
-    newNode->amount = amount;
-    newNode->transactionType = transactionType;
-
-    // Safe allocation
-    if (transactionReason) {
-        newNode->transactionReason = (char*)malloc(strlen(transactionReason) + 1);
-        if (!newNode->transactionReason) {
-            conLog("Memory allocation failed for transactionReason", "error");
-            programExit(0, "Memory allocation failed");
-        }
-        strcpy(newNode->transactionReason, transactionReason);
-    } else {
-        newNode->transactionReason = NULL;
-    }
-
-    if (transactionId) {
-        newNode->transactionId = (char*)malloc(strlen(transactionId) + 1);
-        if (!newNode->transactionId) {
-            conLog("Memory allocation failed for transactionId", "error");
-            programExit(0, "Memory allocation failed");
-        }
-        strcpy(newNode->transactionId, transactionId);
-    } else {
-        newNode->transactionId = NULL;
-    }
-
-    newNode->next = NULL;
-    return newNode;
 }
 
 
 
 
-struct USYNCED_QUEUE* createQueue() {
-    struct USYNCED_QUEUE* q = (struct USYNCED_QUEUE*)malloc(sizeof(struct USYNCED_QUEUE));
-    q->front = q->rear = NULL;
-    return q;
-}
 
-int isEmpty(struct USYNCED_QUEUE *q) {
-    return (q->front == NULL);
-}
 
-void enQueue(struct USYNCED_QUEUE *q, int amount, int transactionType, char *transactionReason, char *transactionId) {
-    struct USYNCED_NODE *newNode = LOAD_USYNCED_NODE(amount, transactionType, transactionReason, transactionId);
-    if (q->rear == NULL) {
-        q->front = q->rear = newNode;
-        return;
-    }
-    q->rear->next = newNode;
-    q->rear = newNode;
-}
+bool postInternetConnection() {
+    TransactionQueue queue; 
+    initializeQueue(&queue); 
 
-void deQueue(struct USYNCED_QUEUE *q) {
-    if (isEmpty(q)) {
-        printf("Queue Underflow\n");
-        return;
-    }
+    loadTransactionsFromCSV(&queue);
 
-    struct USYNCED_NODE* temp = q->front;
-    q->front = q->front->next;
+    printQueue(&queue);
 
-    if (q->front == NULL)
-        q->rear = NULL;
+    Transaction* current = queue.front;
+    while (current != NULL) {
+        printf("Transaction: %s | Amount: %d | Type: %d | Reason: %s\n",
+               current->transactionId, current->amount, current->transactionType, current->transactionReason);
 
-    free(temp->transactionReason);
-    free(temp->transactionId);
-    free(temp);
-}
-
-char* getFront(struct USYNCED_QUEUE* q) {
-    if (isEmpty(q)) {
-        printf("Queue is empty\n");
-        return NULL;
-    }
-    return q->front->transactionId;
-}
-
-char* getRear(struct USYNCED_QUEUE* q) {
-    if (isEmpty(q)) {
-        printf("Queue is empty\n");
-        return NULL;
-    }
-    return q->rear->transactionId;
-}
-void displayQueue(struct USYNCED_QUEUE *head){
-    if (isEmpty(head)) {
-        conLog("Queue is empty from displayQueue", "Info");
-        return;
-    }
-
-    struct USYNCED_NODE* temp = head->front;
-    printf("Queue elements: ");
-    while (temp != NULL) {
-        printf("%s ", temp->transactionId);
-        temp = temp->next;
-    }
-    printf("\n");
-}
-void storeQueueToCSV(struct USYNCED_QUEUE *head) {
-    if (isEmpty(head)) {
-        conLog("Queue is empty from storeQueueToCSV", "info");
-        return;
-    }
-
-    FILE *file = fopen("transactionStorage.csv", "w");
-    if (file == NULL) {
-        conLog("Error opening file for writing", "error");
-        programExit(0, "Error opening transactionStorage.csv");
-    }
-
-    fprintf(file, "TransactionId,Amount,TransactionType,TransactionReason\n");
-
-    struct USYNCED_NODE *temp = head->front;
-
-    while (temp != NULL) {
-        // Log the current transaction being processed
-        if (temp->transactionId) {
-            char logBuffer[256];
-            sprintf(logBuffer, "Processing transactionId: %s", temp->transactionId);
-            conLog(logBuffer, "debug");
-        } else {
-            conLog("transactionId is NULL. Skipping this node.", "error");
-            temp = temp->next;
-            continue;
+        Transaction *offlineTransaction = (Transaction*)malloc(sizeof(Transaction));
+        if (!offlineTransaction) {
+            perror("Memory allocation failed for offlineTransaction");
+            return false; 
         }
 
-        if (checkConnection(BACKEND_URI)) {
-            struct USYNCED_TRANSACTION *pushTransaction = (struct USYNCED_TRANSACTION *)malloc(sizeof(struct USYNCED_TRANSACTION));
-            if (!pushTransaction) {
-                conLog("Memory allocation failed for pushTransaction", "error");
-                programExit(0, "Memory allocation failed for pushTransaction");
-            }
+        strcpy(offlineTransaction->transactionId, current->transactionId);
+        offlineTransaction->amount = current->amount;
+        offlineTransaction->transactionType = current->transactionType;
+        strcpy(offlineTransaction->transactionReason, current->transactionReason);
 
-            // Safely copy transaction details
-            pushTransaction->amount = temp->amount;
-            pushTransaction->transactionType = temp->transactionType;
+        printf("Processing offline transaction: %s\n", offlineTransaction->transactionId);
 
-            if (temp->transactionId) {
-                strcpy(pushTransaction->transactionId, temp->transactionId);
-            } else {
-                conLog("Invalid transactionId while pushing to server", "error");
-                free(pushTransaction);
-                temp = temp->next;
-                continue;
-            }
-
-            if (temp->transactionReason) {
-                strcpy(pushTransaction->transactionReason, temp->transactionReason);
-            } else {
-                strcpy(pushTransaction->transactionReason, ""); // Use an empty string if no reason provided
-            }
-
-            // Push transaction to the server
-            if (pushTransactionToServer(pushTransaction)) {
-                conLog("Unsynced transaction pushed successfully", "success");
-                free(pushTransaction);
-                deQueue(head); // Remove the node if successfully pushed
-            } else {
-                conLog("Failed to push transaction to server. Writing to file.", "error");
-                fprintf(file, "%s,%d,%d,%s\n", 
-                        temp->transactionId, 
-                        temp->amount, 
-                        temp->transactionType, 
-                        temp->transactionReason ? temp->transactionReason : ""); // Handle NULL gracefully
-                free(pushTransaction);
-            }
-        } else {
-            // If no connection, write to file
-            conLog("No connection to backend. Writing transaction to file.", "info");
-            fprintf(file, "%s,%d,%d,%s\n", 
-                    temp->transactionId, 
-                    temp->amount, 
-                    temp->transactionType, 
-                    temp->transactionReason ? temp->transactionReason : ""); // Handle NULL gracefully
+        if (pushOfflineTransactionToServer(offlineTransaction)){
+            dequeue(&queue);
         }
+        free(offlineTransaction);
 
-        // Move to the next node
-        temp = temp->next;
+        current = current->next;
     }
-
-    // Close the file and log completion
-    fclose(file);
-    conLog("Queue data has been written to transactionStorage.csv", "success");
-}
-void loadTransactionsFromCSV() {
-    char *filename = "transactionStorage.csv";
-    FILE *file = fopen(filename, "r");
-    struct USYNCED_QUEUE *notSyncedTransactions = createQueue();
-    if (!file) {
-        perror("Failed to open CSV file");
-        return;
-    }
-
-    char line[256];
-    int lineNum = 0;
-
-    while (fgets(line, sizeof(line), file)) {
-        if (lineNum == 0) {  // Skip header
-            lineNum++;
-            continue;
-        }
-
-        char *transactionId = strtok(line, ",");
-        char *amountStr = strtok(NULL, ",");
-        char *transactionTypeStr = strtok(NULL, ",");
-        char *transactionReason = strtok(NULL, "\n");
-
-        if (!transactionId || !amountStr || !transactionTypeStr || !transactionReason) {
-            fprintf(stderr, "Invalid CSV format on line %d\n", lineNum + 1);
-            continue;
-        }
-
-        int amount = atoi(amountStr);
-        int transactionType = atoi(transactionTypeStr);
-        printf("Old Transaction Loaded %s | %d | %d | %s\n", transactionId,amount, transactionType, transactionReason);
-    }
-
-    fclose(file);
-    conLog("Transactions loaded successfully", "success");
-    displayQueue(notSyncedTransactions);
-
-}
-
-bool postInternetConnection(){
-    loadTransactionsFromCSV();
+    printf("[+] DEBUG STARTED\n");
+    // printQueue(&queue);
+    saveQueueToCSV(&queue, "transactionStorage.csv");
+    return true;
 }
