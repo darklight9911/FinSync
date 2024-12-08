@@ -142,13 +142,12 @@ int fetchCurrentBalance(){
     struct Response getResponse;
     getResponse = callServer(url, json_data);
     if (getResponse.response_code == 200){
-        // printf("[DEBUG] Current balance is %s\n", getResponse.data);
         removeQuotes(getResponse.data);
         balance = atoi(getResponse.data);
-        // printf("%d", balance);
+        CURRENT_BALANCE = balance;
     }else{
-        // printf("[DEBUG] Balance fetching failed\n");
         balance = atoi(getResponse.data);
+        balance = CURRENT_BALANCE;
     }
 
     

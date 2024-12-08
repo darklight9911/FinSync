@@ -7,6 +7,7 @@
 #include <curl/curl.h>
 #include "structures.h"
 #include "offline.h"
+
 char* getCurrentDateTime();
 char* generateStrToken(int length);
 struct USYNCED_TRANSACTION *uSyncTransactionHead = NULL;
@@ -20,6 +21,8 @@ bool createTransactionView();
 void removeQuotes(char *str);
 bool saveTransactionToCSV(struct USYNCED_TRANSACTION *head);
 bool postInternetConnection();
+int CURRENT_BALANCE = 0;
+
 bool checkString(char string1[], char string2[]) {
     int checkStrInteger = strcmp(string1, string2);
     return checkStrInteger == 0;
@@ -27,23 +30,7 @@ bool checkString(char string1[], char string2[]) {
 
 
 
-bool conLog(char string[], char level[]) {
-    FILE *logs = fopen("debug.log", "a+");
-    if (logs == NULL) {
-        printf("ERROR: Log write unsuccessful.\n");
-        return false;
-    }
 
-    char *currentTime = getCurrentDateTime();
-    currentTime[strcspn(currentTime, "\n")] = '\0';
-
-    fprintf(logs, "%s~[%s] %s\n", currentTime, level, string);
-    if (CONLOG_OUTPUT_ENABLED){
-        printf("%s~[%s] %s\n", currentTime, level, string);
-    }
-    fclose(logs);
-    return true;
-}
 char* readApiToken(){
     FILE *sessionFile = fopen("sessionFile.lock", "r");
     char *apiToken;
@@ -100,13 +87,7 @@ void conOut(char string[], char level[]){
 
 }
 
-char* getCurrentDateTime() {
-    time_t rawtime;
-    struct tm *timeinfo;
-    time(&rawtime);
-    timeinfo = localtime(&rawtime);
-    return asctime(timeinfo);
-}
+
 
 bool checkConnection(char url[]){
     char *hostname;   
@@ -484,9 +465,10 @@ struct USYNCED_TRANSACTION* createUsyncTransaction(int amount, int transactionTy
         sysMessage("[ERROR]", "Failed to generate transaction ID");
         programExit(0, "Transaction ID generation failed");
     }
+    
     newNode->transactionId = newTransactionId;
-
     newNode->transactionReason = (char *)malloc(strlen(transactionReason) + 1);
+
     if (newNode->transactionReason == NULL) {
         free(newNode->transactionId);
         free(newNode);
@@ -652,19 +634,15 @@ bool pushTransactionToServer(struct USYNCED_TRANSACTION *newTransactionInfo){
         conLog(json_data, "info");
         const char* url = "https://zoogle.projectdaffodil.xyz/api/createTransaction";
         struct Response getResponse = callServer(url, json_data);
-        printf("%ld\n", getResponse.response_code);
+        // printf("%ld\n", getResponse.response_code);
         conLog(getResponse.data, "info");
         
         return true;
     }else{
         conLog("Failed to push created transaction to the server", "warning");
         sysMessage("MANAGER", "Trying to save the transaction in offline\n");
-
-
         return false;
     }
-
-
 
 }
 
@@ -683,7 +661,6 @@ bool pushOfflineTransactionToServer(Transaction *newTransactionInfo){
         newTransactionInfo-> amount,
         newTransactionInfo -> transactionType,
         readApiToken());
-        // printf("[DEBUG] %s \n", json_data);
         conLog(json_data, "info");
         const char* url = "https://zoogle.projectdaffodil.xyz/api/createTransaction";
         struct Response getResponse = callServer(url, json_data);
@@ -699,36 +676,26 @@ bool pushOfflineTransactionToServer(Transaction *newTransactionInfo){
 }
 
 
-
-
-
-
 bool postInternetConnection() {
     TransactionQueue queue; 
     initializeQueue(&queue); 
 
     loadTransactionsFromCSV(&queue);
 
-    printQueue(&queue);
 
     Transaction* current = queue.front;
     while (current != NULL) {
-        printf("Transaction: %s | Amount: %d | Type: %d | Reason: %s\n",
-               current->transactionId, current->amount, current->transactionType, current->transactionReason);
+
 
         Transaction *offlineTransaction = (Transaction*)malloc(sizeof(Transaction));
         if (!offlineTransaction) {
             perror("Memory allocation failed for offlineTransaction");
             return false; 
         }
-
         strcpy(offlineTransaction->transactionId, current->transactionId);
         offlineTransaction->amount = current->amount;
         offlineTransaction->transactionType = current->transactionType;
         strcpy(offlineTransaction->transactionReason, current->transactionReason);
-
-        printf("Processing offline transaction: %s\n", offlineTransaction->transactionId);
-
         if (pushOfflineTransactionToServer(offlineTransaction)){
             dequeue(&queue);
         }
@@ -736,8 +703,6 @@ bool postInternetConnection() {
 
         current = current->next;
     }
-    printf("[+] DEBUG STARTED\n");
-    // printQueue(&queue);
     saveQueueToCSV(&queue, "transactionStorage.csv");
     return true;
 }

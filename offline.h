@@ -1,4 +1,28 @@
 
+char* getCurrentDateTime() {
+    time_t rawtime;
+    struct tm *timeinfo;
+    time(&rawtime);
+    timeinfo = localtime(&rawtime);
+    return asctime(timeinfo);
+}
+bool conLog(char string[], char level[]) {
+    FILE *logs = fopen("debug.log", "a+");
+    if (logs == NULL) {
+        printf("ERROR: Log write unsuccessful.\n");
+        return false;
+    }
+
+    char *currentTime = getCurrentDateTime();
+    currentTime[strcspn(currentTime, "\n")] = '\0';
+
+    fprintf(logs, "%s~[%s] %s\n", currentTime, level, string);
+    if (CONLOG_OUTPUT_ENABLED){
+        printf("%s~[%s] %s\n", currentTime, level, string);
+    }
+    fclose(logs);
+    return true;
+}
 void initializeQueue(TransactionQueue* queue) {
     queue->front = NULL;
     queue->rear = NULL;
@@ -70,13 +94,11 @@ void loadTransactionsFromCSV(TransactionQueue* queue) {
         int amount = atoi(amountStr);
         int transactionType = atoi(transactionTypeStr);
         enqueue(queue, transactionId, amount, transactionType, transactionReason);
-
-        printf("Enqueued Transaction: %s | %d | %d | %s\n", transactionId, amount, transactionType, transactionReason);
         lineNum++;
     }
 
     fclose(file);
-    printf("Transactions loaded and enqueued successfully\n");
+    conLog("Transactions loaded and enqueued successfully","success");
 }
 
 void printQueue(TransactionQueue* queue) {
@@ -107,25 +129,7 @@ void saveQueueToCSV(TransactionQueue* queue, const char* filename) {
     }
 
     fclose(file);
-    printf("Transactions have been saved to %s\n", filename);
+    conLog("Transaction have been saved to transactionStorage.csv", "success");
 }
 
 
-// int main() {
-//     TransactionQueue queue;
-//     initializeQueue(&queue);
-
-//     loadTransactionsFromCSV(&queue);
-//     printf("Printing all transactions in the queue:\n");
-//     printQueue(&queue);
-
-//     printf("Dequeuing transactions:\n");
-//     Transaction* transaction;
-//     while ((transaction = dequeue(&queue)) != NULL) {
-//         printf("Processed Transaction: %s | %d | %d | %s\n",
-//                transaction->transactionId, transaction->amount, transaction->transactionType, transaction->transactionReason);
-//         free(transaction);
-//     }
-
-//     return 0;
-// }
