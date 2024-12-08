@@ -134,21 +134,27 @@ void viewTransaction(){
 
 int fetchCurrentBalance(){
     int balance;
-    size_t json_size = 500;
-    char *json_data = malloc(json_size);
-    char *url = "https://zoogle.projectdaffodil.xyz/api/getCurrentBalance";
 
-    sprintf(json_data, "{\"apiToken\":\"%s\"}", readApiToken());
-    struct Response getResponse;
-    getResponse = callServer(url, json_data);
-    if (getResponse.response_code == 200){
-        removeQuotes(getResponse.data);
-        balance = atoi(getResponse.data);
-        CURRENT_BALANCE = balance;
+    if (checkConnection(BACKEND_URI)){
+        size_t json_size = 500;
+        char *json_data = malloc(json_size);
+        char *url = "https://zoogle.projectdaffodil.xyz/api/getCurrentBalance";
+
+        sprintf(json_data, "{\"apiToken\":\"%s\"}", readApiToken());
+        struct Response getResponse;
+        getResponse = callServer(url, json_data);
+        if (getResponse.response_code == 200){
+            removeQuotes(getResponse.data);
+            balance = atoi(getResponse.data);
+            CURRENT_BALANCE = balance;
+        }else{
+            balance = atoi(getResponse.data);
+            balance = CURRENT_BALANCE;
+        }
     }else{
-        balance = atoi(getResponse.data);
         balance = CURRENT_BALANCE;
     }
+
 
     
 
