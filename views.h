@@ -119,17 +119,46 @@ bool createTransactionView(){
     createUsyncTransaction(amount, transactionType, transactonReason);
     return true;
 }
-void viewTransaction(){
-    // Complete this function add all the details of transaction
-    struct USYNCED_TRANSACTION *temp;
-    temp = uSyncTransactionHead;
-    int counter = 1;
-    while(temp != NULL){
-        printf("%d. Amount : %d; Reason : %s; Transaction Type : %d; TransactionId : %s\n", counter, temp->amount, temp->transactionReason, temp -> transactionType, temp->transactionId);
-        counter++;
-        temp = temp -> next;
+void viewTransaction() {
+    if (checkConnection(BACKEND_URI)) {
+        size_t json_size = 500;
+        char *json_data = malloc(json_size);
+        char *url = "https://zoogle.projectdaffodil.xyz/api/getTransactions";
+
+        sprintf(json_data, "{\"apiToken\":\"%s\"}", readApiToken());
+        struct Response getResponse;
+        getResponse = callServer(url, json_data);
+        free(json_data);
+        FILE *file;
+        file = fopen("transactionHistory.csv", "w");
+
+        if (getResponse.response_code == 200) {
+            char *formattedData = strdup(getResponse.data);
+            if (formattedData) {
+                for (char *p = formattedData; *p; ++p) {
+                    if (*p == '\\' && *(p + 1) == 'r') {
+                        *p = ' ';
+                        *(p + 1) = ' ';
+                    } else if (*p == '\\' && *(p + 1) == 'n') {
+                        *p = '\n';
+                        *(p + 1) = ' ';
+                    }
+                }
+                // printf("%s", formattedData);
+                removeQuotes(formattedData);
+                fprintf(file, "%s", formattedData);
+                
+                fclose(file);                
+                free(formattedData);
+            } else {
+                printf("Error: Unable to format data.\n");
+            }
+        } else {
+            conLog("Failed to fetch the transactions!", "error");
+        }
     }
 }
+
 
 
 int fetchCurrentBalance(){

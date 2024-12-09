@@ -706,3 +706,4 @@ bool postInternetConnection() {
     saveQueueToCSV(&queue, "transactionStorage.csv");
     return true;
 }
+

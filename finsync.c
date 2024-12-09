@@ -57,7 +57,7 @@ int main()
             
 
             while(true){
-                x = userDashboard();
+                x = userDashboard();//option
                 // conLog("You are logged in", "info");
                 if (x == 1){
                     sysMessage("OUT","You selected to create transaction.\n");
@@ -71,7 +71,7 @@ int main()
                     printf("Stats");
                 }else if (x == 4){
 
-                    sysMessage("PROC", "Trying to logout");
+                    sysMessage("PROCESS", "Trying to logout");
                     if (logoutOperation()){
                         clearScr();
                         sysMessage("SUCCESS", "Logout successful");

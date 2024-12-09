@@ -6,11 +6,11 @@ char* getCurrentDateTime() {
     timeinfo = localtime(&rawtime);
     return asctime(timeinfo);
 }
-bool conLog(char string[], char level[]) {
+void conLog(char string[], char level[]) {
     FILE *logs = fopen("debug.log", "a+");
     if (logs == NULL) {
         printf("ERROR: Log write unsuccessful.\n");
-        return false;
+        
     }
 
     char *currentTime = getCurrentDateTime();
@@ -21,7 +21,7 @@ bool conLog(char string[], char level[]) {
         printf("%s~[%s] %s\n", currentTime, level, string);
     }
     fclose(logs);
-    return true;
+    
 }
 void initializeQueue(TransactionQueue* queue) {
     queue->front = NULL;
