@@ -2993,3 +2993,916 @@ Mon Dec  9 20:58:22 2024~[info]  zoogle.projectdaffodil.xyz connection establish
 Mon Dec  9 20:58:22 2024~[success] Backend working properly
 Mon Dec  9 20:58:22 2024~[success] Transactions loaded and enqueued successfully
 Mon Dec  9 20:58:22 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:29:36 2024~[info] Starting startupCheck
+Tue Dec 10 08:29:36 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:29:37 2024~[success] Backend working properly
+Tue Dec 10 08:29:37 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:29:37 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:29:37 2024~[success] Connection established with the backend server
+Tue Dec 10 08:29:37 2024~[success] Session File Found
+Tue Dec 10 08:29:37 2024~[success] Transaction storage files found
+Tue Dec 10 08:29:37 2024~[info] Session Matched
+Tue Dec 10 08:29:37 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:29:37 2024~[success] Backend working properly
+Tue Dec 10 08:29:37 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:29:37 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:29:42 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:29:42 2024~[success] Backend working properly
+Tue Dec 10 08:29:42 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:29:42 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:29:42 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:29:42 2024~[success] Backend working properly
+Tue Dec 10 08:29:42 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:29:42 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:29:42 2024~[info] Loaded latest transactions
+Tue Dec 10 08:30:02 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:30:03 2024~[success] Backend working properly
+Tue Dec 10 08:30:03 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:30:03 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:31:55 2024~[info] Starting startupCheck
+Tue Dec 10 08:31:55 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:31:56 2024~[success] Backend working properly
+Tue Dec 10 08:31:56 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:31:56 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:31:56 2024~[success] Connection established with the backend server
+Tue Dec 10 08:31:56 2024~[success] Session File Found
+Tue Dec 10 08:31:56 2024~[success] Transaction storage files found
+Tue Dec 10 08:31:57 2024~[info] Session Matched
+Tue Dec 10 08:31:57 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:31:58 2024~[success] Backend working properly
+Tue Dec 10 08:31:58 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:31:58 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:31:59 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:31:59 2024~[success] Backend working properly
+Tue Dec 10 08:31:59 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:31:59 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:31:59 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:32:00 2024~[success] Backend working properly
+Tue Dec 10 08:32:00 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:32:00 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:32:00 2024~[info] Loaded latest transactions
+Tue Dec 10 08:32:14 2024~[info] Starting startupCheck
+Tue Dec 10 08:32:14 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:32:14 2024~[success] Backend working properly
+Tue Dec 10 08:32:14 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:32:14 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:32:14 2024~[success] Connection established with the backend server
+Tue Dec 10 08:32:14 2024~[success] Session File Found
+Tue Dec 10 08:32:14 2024~[success] Transaction storage files found
+Tue Dec 10 08:32:14 2024~[info] Session Matched
+Tue Dec 10 08:32:14 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:32:14 2024~[success] Backend working properly
+Tue Dec 10 08:32:14 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:32:14 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:32:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:32:23 2024~[success] Backend working properly
+Tue Dec 10 08:32:23 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:32:23 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:32:23 2024~[info] Attempting to send transaction to the server
+Tue Dec 10 08:32:23 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:32:24 2024~[success] Backend working properly
+Tue Dec 10 08:32:24 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:32:24 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:32:24 2024~[info] Trying to push tranasction to the server
+
+Tue Dec 10 08:32:24 2024~[info] {"transactionId": "dhecgc","transactionReason":"hello","amount":230,"transactionType":1,"apiToken":"2a3f9309-eeb2-4761-ab9a-3cf3f896d57c"}
+Tue Dec 10 08:32:24 2024~[info] "True"
+Tue Dec 10 08:32:24 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:32:24 2024~[success] Backend working properly
+Tue Dec 10 08:32:24 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:32:24 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:32:25 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:32:25 2024~[success] Backend working properly
+Tue Dec 10 08:32:25 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:32:25 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:32:25 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:32:26 2024~[success] Backend working properly
+Tue Dec 10 08:32:26 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:32:26 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:32:26 2024~[info] Loaded latest transactions
+Tue Dec 10 08:32:46 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:32:46 2024~[success] Backend working properly
+Tue Dec 10 08:32:46 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:32:46 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:33:12 2024~[info] Starting startupCheck
+Tue Dec 10 08:33:12 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:33:12 2024~[success] Backend working properly
+Tue Dec 10 08:33:12 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:33:12 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:33:12 2024~[success] Connection established with the backend server
+Tue Dec 10 08:33:12 2024~[success] Session File Found
+Tue Dec 10 08:33:12 2024~[success] Transaction storage files found
+Tue Dec 10 08:33:12 2024~[info] Session Matched
+Tue Dec 10 08:33:12 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:33:12 2024~[success] Backend working properly
+Tue Dec 10 08:33:12 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:33:12 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:33:13 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:33:14 2024~[success] Backend working properly
+Tue Dec 10 08:33:14 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:33:14 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:33:14 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:33:14 2024~[success] Backend working properly
+Tue Dec 10 08:33:14 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:33:14 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:33:14 2024~[info] Loaded latest transactions
+Tue Dec 10 08:33:27 2024~[info] Starting startupCheck
+Tue Dec 10 08:33:27 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:33:27 2024~[success] Backend working properly
+Tue Dec 10 08:33:27 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:33:27 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:33:27 2024~[success] Connection established with the backend server
+Tue Dec 10 08:33:27 2024~[success] Session File Found
+Tue Dec 10 08:33:27 2024~[success] Transaction storage files found
+Tue Dec 10 08:33:28 2024~[info] Session Matched
+Tue Dec 10 08:33:28 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:33:28 2024~[success] Backend working properly
+Tue Dec 10 08:33:28 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:33:28 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:33:28 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:33:28 2024~[success] Backend working properly
+Tue Dec 10 08:33:28 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:33:28 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:33:28 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:33:29 2024~[success] Backend working properly
+Tue Dec 10 08:33:29 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:33:29 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:33:29 2024~[info] Loaded latest transactions
+Tue Dec 10 08:33:46 2024~[info] Starting startupCheck
+Tue Dec 10 08:33:46 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:33:46 2024~[success] Backend working properly
+Tue Dec 10 08:33:46 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:33:46 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:33:46 2024~[success] Connection established with the backend server
+Tue Dec 10 08:33:46 2024~[success] Session File Found
+Tue Dec 10 08:33:46 2024~[success] Transaction storage files found
+Tue Dec 10 08:33:46 2024~[info] Session Matched
+Tue Dec 10 08:33:46 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:33:47 2024~[success] Backend working properly
+Tue Dec 10 08:33:47 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:33:47 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:33:47 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:33:48 2024~[success] Backend working properly
+Tue Dec 10 08:33:48 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:33:48 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:33:48 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:33:48 2024~[success] Backend working properly
+Tue Dec 10 08:33:48 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:33:48 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:33:48 2024~[info] Loaded latest transactions
+Tue Dec 10 08:34:08 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:34:08 2024~[success] Backend working properly
+Tue Dec 10 08:34:08 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:34:08 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:34:14 2024~[info] Starting startupCheck
+Tue Dec 10 08:34:14 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:34:14 2024~[success] Backend working properly
+Tue Dec 10 08:34:14 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:34:14 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:34:14 2024~[success] Connection established with the backend server
+Tue Dec 10 08:34:14 2024~[success] Session File Found
+Tue Dec 10 08:34:14 2024~[success] Transaction storage files found
+Tue Dec 10 08:34:14 2024~[info] Session Matched
+Tue Dec 10 08:34:14 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:34:14 2024~[success] Backend working properly
+Tue Dec 10 08:34:14 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:34:14 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:34:28 2024~[info] Starting startupCheck
+Tue Dec 10 08:34:28 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:34:28 2024~[success] Backend working properly
+Tue Dec 10 08:34:28 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:34:28 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:34:28 2024~[success] Connection established with the backend server
+Tue Dec 10 08:34:28 2024~[success] Session File Found
+Tue Dec 10 08:34:28 2024~[success] Transaction storage files found
+Tue Dec 10 08:34:28 2024~[info] Session Matched
+Tue Dec 10 08:34:28 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:34:28 2024~[success] Backend working properly
+Tue Dec 10 08:34:28 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:34:28 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:34:29 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:34:29 2024~[success] Backend working properly
+Tue Dec 10 08:34:29 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:34:29 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:34:29 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:34:29 2024~[success] Backend working properly
+Tue Dec 10 08:34:29 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:34:29 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:34:30 2024~[info] Loaded latest transactions
+Tue Dec 10 08:34:50 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:34:50 2024~[success] Backend working properly
+Tue Dec 10 08:34:50 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:34:50 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:35:21 2024~[info] Starting startupCheck
+Tue Dec 10 08:35:21 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:35:22 2024~[success] Backend working properly
+Tue Dec 10 08:35:22 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:35:22 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:35:22 2024~[success] Connection established with the backend server
+Tue Dec 10 08:35:22 2024~[success] Session File Found
+Tue Dec 10 08:35:22 2024~[success] Transaction storage files found
+Tue Dec 10 08:35:23 2024~[info] Session Matched
+Tue Dec 10 08:35:23 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:35:23 2024~[success] Backend working properly
+Tue Dec 10 08:35:23 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:35:23 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:35:24 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:35:24 2024~[success] Backend working properly
+Tue Dec 10 08:35:24 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:35:24 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:35:24 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:35:24 2024~[success] Backend working properly
+Tue Dec 10 08:35:24 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:35:24 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:35:24 2024~[info] Loaded latest transactions
+Tue Dec 10 08:35:32 2024~[info] Starting startupCheck
+Tue Dec 10 08:35:32 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:35:32 2024~[success] Backend working properly
+Tue Dec 10 08:35:32 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:35:32 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:35:32 2024~[success] Connection established with the backend server
+Tue Dec 10 08:35:32 2024~[success] Session File Found
+Tue Dec 10 08:35:32 2024~[success] Transaction storage files found
+Tue Dec 10 08:35:32 2024~[info] Session Matched
+Tue Dec 10 08:35:32 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:35:33 2024~[success] Backend working properly
+Tue Dec 10 08:35:33 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:35:33 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:35:43 2024~[info] Starting startupCheck
+Tue Dec 10 08:35:43 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:35:43 2024~[success] Backend working properly
+Tue Dec 10 08:35:43 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:35:43 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:35:43 2024~[success] Connection established with the backend server
+Tue Dec 10 08:35:43 2024~[success] Session File Found
+Tue Dec 10 08:35:43 2024~[success] Transaction storage files found
+Tue Dec 10 08:35:43 2024~[info] Session Matched
+Tue Dec 10 08:35:43 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:35:44 2024~[success] Backend working properly
+Tue Dec 10 08:35:44 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:35:44 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:35:44 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:35:45 2024~[success] Backend working properly
+Tue Dec 10 08:35:45 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:35:45 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:35:45 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:35:45 2024~[success] Backend working properly
+Tue Dec 10 08:35:45 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:35:45 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:35:45 2024~[info] Loaded latest transactions
+Tue Dec 10 08:35:53 2024~[info] Starting startupCheck
+Tue Dec 10 08:35:53 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:35:54 2024~[success] Backend working properly
+Tue Dec 10 08:35:54 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:35:54 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:35:54 2024~[success] Connection established with the backend server
+Tue Dec 10 08:35:54 2024~[success] Session File Found
+Tue Dec 10 08:35:54 2024~[success] Transaction storage files found
+Tue Dec 10 08:35:54 2024~[info] Session Matched
+Tue Dec 10 08:35:54 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:35:54 2024~[success] Backend working properly
+Tue Dec 10 08:35:54 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:35:54 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:35:55 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:35:55 2024~[success] Backend working properly
+Tue Dec 10 08:35:55 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:35:55 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:35:55 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:35:56 2024~[success] Backend working properly
+Tue Dec 10 08:35:56 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:35:56 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:35:56 2024~[info] Loaded latest transactions
+Tue Dec 10 08:36:16 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:36:16 2024~[success] Backend working properly
+Tue Dec 10 08:36:16 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:36:16 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:50:34 2024~[info] Starting startupCheck
+Tue Dec 10 08:50:35 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:50:35 2024~[success] Backend working properly
+Tue Dec 10 08:50:35 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:50:35 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:50:35 2024~[success] Connection established with the backend server
+Tue Dec 10 08:50:35 2024~[success] Session File Found
+Tue Dec 10 08:50:35 2024~[success] Transaction storage files found
+Tue Dec 10 08:50:36 2024~[info] Session Matched
+Tue Dec 10 08:50:36 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:50:36 2024~[success] Backend working properly
+Tue Dec 10 08:50:36 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:50:36 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:50:52 2024~[info] Starting startupCheck
+Tue Dec 10 08:50:52 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:50:53 2024~[success] Backend working properly
+Tue Dec 10 08:50:53 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:50:53 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:50:53 2024~[success] Connection established with the backend server
+Tue Dec 10 08:50:53 2024~[success] Session File Found
+Tue Dec 10 08:50:53 2024~[success] Transaction storage files found
+Tue Dec 10 08:50:53 2024~[info] Session Matched
+Tue Dec 10 08:50:53 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:50:53 2024~[success] Backend working properly
+Tue Dec 10 08:50:53 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:50:53 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:51:47 2024~[info] Starting startupCheck
+Tue Dec 10 08:51:47 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:51:47 2024~[success] Backend working properly
+Tue Dec 10 08:51:47 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:51:47 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:51:47 2024~[success] Connection established with the backend server
+Tue Dec 10 08:51:47 2024~[success] Session File Found
+Tue Dec 10 08:51:47 2024~[success] Transaction storage files found
+Tue Dec 10 08:51:47 2024~[info] Session Matched
+Tue Dec 10 08:51:47 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:51:47 2024~[success] Backend working properly
+Tue Dec 10 08:51:47 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:51:47 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:54:02 2024~[info] Starting startupCheck
+Tue Dec 10 08:54:02 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:54:02 2024~[success] Backend working properly
+Tue Dec 10 08:54:02 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:54:02 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:54:02 2024~[success] Connection established with the backend server
+Tue Dec 10 08:54:02 2024~[success] Session File Found
+Tue Dec 10 08:54:02 2024~[success] Transaction storage files found
+Tue Dec 10 08:54:03 2024~[info] Session Matched
+Tue Dec 10 08:54:03 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:54:03 2024~[success] Backend working properly
+Tue Dec 10 08:54:03 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:54:03 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:54:26 2024~[info] Starting startupCheck
+Tue Dec 10 08:54:26 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:54:27 2024~[success] Backend working properly
+Tue Dec 10 08:54:27 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:54:27 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:54:27 2024~[success] Connection established with the backend server
+Tue Dec 10 08:54:27 2024~[success] Session File Found
+Tue Dec 10 08:54:27 2024~[success] Transaction storage files found
+Tue Dec 10 08:54:27 2024~[info] Session Matched
+Tue Dec 10 08:54:27 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:54:27 2024~[success] Backend working properly
+Tue Dec 10 08:54:27 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:54:27 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:54:28 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:54:28 2024~[success] Backend working properly
+Tue Dec 10 08:54:28 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:54:28 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:54:28 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:54:28 2024~[success] Backend working properly
+Tue Dec 10 08:54:28 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:54:28 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:54:28 2024~[info] Loaded latest transactions
+Tue Dec 10 08:54:48 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:54:49 2024~[success] Backend working properly
+Tue Dec 10 08:54:49 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:54:49 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:54:52 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:54:52 2024~[success] Backend working properly
+Tue Dec 10 08:54:52 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:54:52 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:54:52 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:54:53 2024~[success] Backend working properly
+Tue Dec 10 08:54:53 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:54:53 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:54:54 2024~[info] Loaded latest transactions
+Tue Dec 10 08:55:12 2024~[info] Starting startupCheck
+Tue Dec 10 08:55:12 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:55:12 2024~[success] Backend working properly
+Tue Dec 10 08:55:12 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:55:12 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:55:12 2024~[success] Connection established with the backend server
+Tue Dec 10 08:55:12 2024~[success] Session File Found
+Tue Dec 10 08:55:12 2024~[success] Transaction storage files found
+Tue Dec 10 08:55:13 2024~[info] Session Matched
+Tue Dec 10 08:55:13 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:55:13 2024~[success] Backend working properly
+Tue Dec 10 08:55:13 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:55:13 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:56:32 2024~[info] Starting startupCheck
+Tue Dec 10 08:56:32 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:56:32 2024~[success] Backend working properly
+Tue Dec 10 08:56:32 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:56:32 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:56:32 2024~[success] Connection established with the backend server
+Tue Dec 10 08:56:32 2024~[success] Session File Found
+Tue Dec 10 08:56:32 2024~[success] Transaction storage files found
+Tue Dec 10 08:56:32 2024~[info] Session Matched
+Tue Dec 10 08:56:32 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:56:32 2024~[success] Backend working properly
+Tue Dec 10 08:56:32 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:56:32 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:57:38 2024~[info] Starting startupCheck
+Tue Dec 10 08:57:38 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:57:38 2024~[success] Backend working properly
+Tue Dec 10 08:57:38 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:57:38 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:57:38 2024~[success] Connection established with the backend server
+Tue Dec 10 08:57:38 2024~[success] Session File Found
+Tue Dec 10 08:57:38 2024~[success] Transaction storage files found
+Tue Dec 10 08:57:39 2024~[info] Session Matched
+Tue Dec 10 08:57:39 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:57:39 2024~[success] Backend working properly
+Tue Dec 10 08:57:39 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:57:39 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:57:40 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:57:40 2024~[success] Backend working properly
+Tue Dec 10 08:57:40 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:57:40 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:57:40 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:57:41 2024~[success] Backend working properly
+Tue Dec 10 08:57:41 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:57:41 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:57:41 2024~[info] Loaded latest transactions
+Tue Dec 10 08:57:43 2024~[info] Starting startupCheck
+Tue Dec 10 08:57:43 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:57:43 2024~[success] Backend working properly
+Tue Dec 10 08:57:43 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:57:43 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:57:43 2024~[success] Connection established with the backend server
+Tue Dec 10 08:57:43 2024~[success] Session File Found
+Tue Dec 10 08:57:43 2024~[success] Transaction storage files found
+Tue Dec 10 08:57:43 2024~[info] Session Matched
+Tue Dec 10 08:57:43 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:57:44 2024~[success] Backend working properly
+Tue Dec 10 08:57:44 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:57:44 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:57:51 2024~[info] Starting startupCheck
+Tue Dec 10 08:57:51 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:57:51 2024~[success] Backend working properly
+Tue Dec 10 08:57:51 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:57:51 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:57:51 2024~[success] Connection established with the backend server
+Tue Dec 10 08:57:51 2024~[success] Session File Found
+Tue Dec 10 08:57:51 2024~[success] Transaction storage files found
+Tue Dec 10 08:57:51 2024~[info] Session Matched
+Tue Dec 10 08:57:51 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:57:51 2024~[success] Backend working properly
+Tue Dec 10 08:57:51 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:57:51 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:59:33 2024~[info] Starting startupCheck
+Tue Dec 10 08:59:33 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:59:34 2024~[success] Backend working properly
+Tue Dec 10 08:59:34 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:59:34 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 08:59:34 2024~[success] Connection established with the backend server
+Tue Dec 10 08:59:34 2024~[success] Session File Found
+Tue Dec 10 08:59:34 2024~[success] Transaction storage files found
+Tue Dec 10 08:59:35 2024~[info] Session Matched
+Tue Dec 10 08:59:35 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 08:59:35 2024~[success] Backend working properly
+Tue Dec 10 08:59:35 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 08:59:35 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:00:30 2024~[info] Starting startupCheck
+Tue Dec 10 09:00:30 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:00:30 2024~[success] Backend working properly
+Tue Dec 10 09:00:30 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:00:30 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:00:30 2024~[success] Connection established with the backend server
+Tue Dec 10 09:00:30 2024~[success] Session File Found
+Tue Dec 10 09:00:30 2024~[success] Transaction storage files found
+Tue Dec 10 09:00:31 2024~[info] Session Matched
+Tue Dec 10 09:00:31 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:00:31 2024~[success] Backend working properly
+Tue Dec 10 09:00:31 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:00:31 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:00:56 2024~[info] Starting startupCheck
+Tue Dec 10 09:00:56 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:00:56 2024~[success] Backend working properly
+Tue Dec 10 09:00:56 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:00:56 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:00:56 2024~[success] Connection established with the backend server
+Tue Dec 10 09:00:56 2024~[success] Session File Found
+Tue Dec 10 09:00:56 2024~[success] Transaction storage files found
+Tue Dec 10 09:00:56 2024~[info] Session Matched
+Tue Dec 10 09:00:56 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:00:57 2024~[success] Backend working properly
+Tue Dec 10 09:00:57 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:00:57 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:02:20 2024~[info] Starting startupCheck
+Tue Dec 10 09:02:20 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:02:20 2024~[success] Backend working properly
+Tue Dec 10 09:02:20 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:02:20 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:02:20 2024~[success] Connection established with the backend server
+Tue Dec 10 09:02:20 2024~[success] Session File Found
+Tue Dec 10 09:02:20 2024~[success] Transaction storage files found
+Tue Dec 10 09:02:20 2024~[info] Session Matched
+Tue Dec 10 09:02:20 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:02:20 2024~[success] Backend working properly
+Tue Dec 10 09:02:20 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:02:20 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:02:51 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:02:51 2024~[success] Backend working properly
+Tue Dec 10 09:02:51 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:02:51 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:04:30 2024~[info] Starting startupCheck
+Tue Dec 10 09:04:30 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:04:31 2024~[success] Backend working properly
+Tue Dec 10 09:04:31 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:04:31 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:04:31 2024~[success] Connection established with the backend server
+Tue Dec 10 09:04:31 2024~[success] Session File Found
+Tue Dec 10 09:04:31 2024~[success] Transaction storage files found
+Tue Dec 10 09:04:31 2024~[info] Session Matched
+Tue Dec 10 09:04:31 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:04:31 2024~[success] Backend working properly
+Tue Dec 10 09:04:31 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:04:31 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:04:57 2024~[info] Starting startupCheck
+Tue Dec 10 09:04:57 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:04:57 2024~[success] Backend working properly
+Tue Dec 10 09:04:57 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:04:57 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:04:57 2024~[success] Connection established with the backend server
+Tue Dec 10 09:04:57 2024~[success] Session File Found
+Tue Dec 10 09:04:57 2024~[success] Transaction storage files found
+Tue Dec 10 09:04:57 2024~[info] Session Matched
+Tue Dec 10 09:04:57 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:04:57 2024~[success] Backend working properly
+Tue Dec 10 09:04:57 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:04:57 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:05:42 2024~[info] Starting startupCheck
+Tue Dec 10 09:05:42 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:05:45 2024~[success] Backend working properly
+Tue Dec 10 09:05:45 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:05:45 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:05:45 2024~[success] Connection established with the backend server
+Tue Dec 10 09:05:45 2024~[success] Session File Found
+Tue Dec 10 09:05:45 2024~[success] Transaction storage files found
+Tue Dec 10 09:05:45 2024~[info] Session Matched
+Tue Dec 10 09:05:45 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:05:46 2024~[success] Backend working properly
+Tue Dec 10 09:05:46 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:05:46 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:05:47 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:05:47 2024~[success] Backend working properly
+Tue Dec 10 09:05:47 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:05:47 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:05:49 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:05:50 2024~[success] Backend working properly
+Tue Dec 10 09:05:50 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:05:50 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:05:58 2024~[info] Starting startupCheck
+Tue Dec 10 09:05:58 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:05:59 2024~[success] Backend working properly
+Tue Dec 10 09:05:59 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:05:59 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:05:59 2024~[success] Connection established with the backend server
+Tue Dec 10 09:05:59 2024~[success] Session File Found
+Tue Dec 10 09:05:59 2024~[success] Transaction storage files found
+Tue Dec 10 09:05:59 2024~[info] Session Matched
+Tue Dec 10 09:05:59 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:05:59 2024~[success] Backend working properly
+Tue Dec 10 09:05:59 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:05:59 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:06:31 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:06:31 2024~[success] Backend working properly
+Tue Dec 10 09:06:31 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:06:31 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:07:57 2024~[info] Starting startupCheck
+Tue Dec 10 09:07:57 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:07:58 2024~[success] Backend working properly
+Tue Dec 10 09:07:58 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:07:58 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:07:58 2024~[success] Connection established with the backend server
+Tue Dec 10 09:07:58 2024~[success] Session File Found
+Tue Dec 10 09:07:58 2024~[success] Transaction storage files found
+Tue Dec 10 09:07:58 2024~[info] Session Matched
+Tue Dec 10 09:07:58 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:07:58 2024~[success] Backend working properly
+Tue Dec 10 09:07:58 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:07:58 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:08:08 2024~[info] Starting startupCheck
+Tue Dec 10 09:08:08 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:08:08 2024~[success] Backend working properly
+Tue Dec 10 09:08:08 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:08:08 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:08:08 2024~[success] Connection established with the backend server
+Tue Dec 10 09:08:08 2024~[success] Session File Found
+Tue Dec 10 09:08:08 2024~[success] Transaction storage files found
+Tue Dec 10 09:08:08 2024~[info] Session Matched
+Tue Dec 10 09:08:08 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:08:08 2024~[success] Backend working properly
+Tue Dec 10 09:08:08 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:08:08 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:08:19 2024~[info] Starting startupCheck
+Tue Dec 10 09:08:19 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:08:19 2024~[success] Backend working properly
+Tue Dec 10 09:08:19 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:08:19 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:08:19 2024~[success] Connection established with the backend server
+Tue Dec 10 09:08:19 2024~[success] Session File Found
+Tue Dec 10 09:08:19 2024~[success] Transaction storage files found
+Tue Dec 10 09:08:21 2024~[info] Session Matched
+Tue Dec 10 09:08:21 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:08:21 2024~[success] Backend working properly
+Tue Dec 10 09:08:21 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:08:21 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:08:29 2024~[info] Starting startupCheck
+Tue Dec 10 09:08:29 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:08:30 2024~[success] Backend working properly
+Tue Dec 10 09:08:30 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:08:30 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:08:30 2024~[success] Connection established with the backend server
+Tue Dec 10 09:08:30 2024~[success] Session File Found
+Tue Dec 10 09:08:30 2024~[success] Transaction storage files found
+Tue Dec 10 09:08:30 2024~[info] Session Matched
+Tue Dec 10 09:08:30 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:08:30 2024~[success] Backend working properly
+Tue Dec 10 09:08:30 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:08:30 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:08:38 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:08:38 2024~[success] Backend working properly
+Tue Dec 10 09:08:38 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:08:38 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:08:38 2024~[info] Attempting to send transaction to the server
+Tue Dec 10 09:08:38 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:08:38 2024~[success] Backend working properly
+Tue Dec 10 09:08:38 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:08:38 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:08:38 2024~[info] Trying to push tranasction to the server
+
+Tue Dec 10 09:08:38 2024~[info] {"transactionId": "cbagch","transactionReason":"testing given","amount":10,"transactionType":3,"apiToken":"2a3f9309-eeb2-4761-ab9a-3cf3f896d57c"}
+Tue Dec 10 09:08:39 2024~[info] "True"
+Tue Dec 10 09:08:39 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:08:39 2024~[success] Backend working properly
+Tue Dec 10 09:08:39 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:08:39 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:08:44 2024~[info] Starting startupCheck
+Tue Dec 10 09:08:44 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:08:44 2024~[success] Backend working properly
+Tue Dec 10 09:08:44 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:08:44 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:08:44 2024~[success] Connection established with the backend server
+Tue Dec 10 09:08:44 2024~[success] Session File Found
+Tue Dec 10 09:08:44 2024~[success] Transaction storage files found
+Tue Dec 10 09:08:44 2024~[info] Session Matched
+Tue Dec 10 09:08:44 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:08:44 2024~[success] Backend working properly
+Tue Dec 10 09:08:44 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:08:44 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:08:46 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:08:46 2024~[success] Backend working properly
+Tue Dec 10 09:08:46 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:08:46 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:08:46 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:08:46 2024~[success] Backend working properly
+Tue Dec 10 09:08:46 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:08:46 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:08:46 2024~[info] Loaded latest transactions
+Tue Dec 10 09:08:50 2024~[info] Starting startupCheck
+Tue Dec 10 09:08:50 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:08:50 2024~[success] Backend working properly
+Tue Dec 10 09:08:50 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:08:50 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:08:50 2024~[success] Connection established with the backend server
+Tue Dec 10 09:08:50 2024~[success] Session File Found
+Tue Dec 10 09:08:50 2024~[success] Transaction storage files found
+Tue Dec 10 09:08:50 2024~[info] Session Matched
+Tue Dec 10 09:08:50 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:08:51 2024~[success] Backend working properly
+Tue Dec 10 09:08:51 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:08:51 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:08:56 2024~[info] Starting startupCheck
+Tue Dec 10 09:08:56 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:08:57 2024~[success] Backend working properly
+Tue Dec 10 09:08:57 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:08:57 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:08:57 2024~[success] Connection established with the backend server
+Tue Dec 10 09:08:57 2024~[success] Session File Found
+Tue Dec 10 09:08:57 2024~[success] Transaction storage files found
+Tue Dec 10 09:08:57 2024~[info] Session Matched
+Tue Dec 10 09:08:57 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:08:57 2024~[success] Backend working properly
+Tue Dec 10 09:08:57 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:08:57 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:10:12 2024~[info] Starting startupCheck
+Tue Dec 10 09:10:12 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:10:12 2024~[success] Backend working properly
+Tue Dec 10 09:10:12 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:10:12 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:10:12 2024~[success] Connection established with the backend server
+Tue Dec 10 09:10:12 2024~[success] Session File Found
+Tue Dec 10 09:10:12 2024~[success] Transaction storage files found
+Tue Dec 10 09:10:13 2024~[info] Session Matched
+Tue Dec 10 09:10:13 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:10:13 2024~[success] Backend working properly
+Tue Dec 10 09:10:13 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:10:13 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:10:21 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:10:21 2024~[success] Backend working properly
+Tue Dec 10 09:10:21 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:10:21 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:10:21 2024~[info] Attempting to send transaction to the server
+Tue Dec 10 09:10:21 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:10:21 2024~[success] Backend working properly
+Tue Dec 10 09:10:21 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:10:21 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:10:21 2024~[info] Trying to push tranasction to the server
+
+Tue Dec 10 09:10:21 2024~[info] {"transactionId": "dcecdf","transactionReason":"testing taken","amount":23,"transactionType":4,"apiToken":"2a3f9309-eeb2-4761-ab9a-3cf3f896d57c"}
+Tue Dec 10 09:10:22 2024~[info] "True"
+Tue Dec 10 09:10:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:10:22 2024~[success] Backend working properly
+Tue Dec 10 09:10:22 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:10:22 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:10:26 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:10:26 2024~[success] Backend working properly
+Tue Dec 10 09:10:26 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:10:26 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:10:26 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:10:26 2024~[success] Backend working properly
+Tue Dec 10 09:10:26 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:10:26 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:10:56 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:10:57 2024~[success] Backend working properly
+Tue Dec 10 09:10:57 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:10:57 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:13:05 2024~[info] Starting startupCheck
+Tue Dec 10 09:13:05 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:13:05 2024~[success] Backend working properly
+Tue Dec 10 09:13:05 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:13:05 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:13:05 2024~[success] Connection established with the backend server
+Tue Dec 10 09:13:05 2024~[success] Session File Found
+Tue Dec 10 09:13:05 2024~[success] Transaction storage files found
+Tue Dec 10 09:13:05 2024~[info] Session Matched
+Tue Dec 10 09:13:05 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:13:06 2024~[success] Backend working properly
+Tue Dec 10 09:13:06 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:13:06 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:13:07 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:13:07 2024~[success] Backend working properly
+Tue Dec 10 09:13:07 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:13:07 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:13:07 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:13:10 2024~[success] Backend working properly
+Tue Dec 10 09:13:10 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:13:10 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:13:10 2024~[info] Loaded latest transactions
+Tue Dec 10 09:13:11 2024~[info] Starting startupCheck
+Tue Dec 10 09:13:11 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:13:11 2024~[success] Backend working properly
+Tue Dec 10 09:13:11 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:13:11 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:13:11 2024~[success] Connection established with the backend server
+Tue Dec 10 09:13:11 2024~[success] Session File Found
+Tue Dec 10 09:13:11 2024~[success] Transaction storage files found
+Tue Dec 10 09:13:11 2024~[info] Session Matched
+Tue Dec 10 09:13:11 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:13:12 2024~[success] Backend working properly
+Tue Dec 10 09:13:12 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:13:12 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:13:13 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:13:13 2024~[success] Backend working properly
+Tue Dec 10 09:13:13 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:13:13 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:13:13 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:13:13 2024~[success] Backend working properly
+Tue Dec 10 09:13:13 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:13:13 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:13:15 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:13:16 2024~[success] Backend working properly
+Tue Dec 10 09:13:16 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:13:16 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:13:21 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:13:21 2024~[success] Backend working properly
+Tue Dec 10 09:13:21 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:13:21 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:13:21 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:13:21 2024~[success] Backend working properly
+Tue Dec 10 09:13:21 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:13:21 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:13:22 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:13:22 2024~[success] Backend working properly
+Tue Dec 10 09:13:22 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:13:22 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:13:23 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:13:23 2024~[success] Backend working properly
+Tue Dec 10 09:13:23 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:13:23 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:13:37 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:13:38 2024~[success] Backend working properly
+Tue Dec 10 09:13:38 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:13:38 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:13:38 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:13:38 2024~[success] Backend working properly
+Tue Dec 10 09:13:38 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:13:38 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:13:38 2024~[info] Loaded latest transactions
+Tue Dec 10 09:13:58 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:13:58 2024~[success] Backend working properly
+Tue Dec 10 09:13:58 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:13:58 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:15:40 2024~[info] Starting startupCheck
+Tue Dec 10 09:15:40 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:15:40 2024~[success] Backend working properly
+Tue Dec 10 09:15:40 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:15:40 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:15:40 2024~[success] Connection established with the backend server
+Tue Dec 10 09:15:40 2024~[success] Session File Found
+Tue Dec 10 09:15:40 2024~[success] Transaction storage files found
+Tue Dec 10 09:15:40 2024~[info] Session Matched
+Tue Dec 10 09:15:40 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:15:40 2024~[success] Backend working properly
+Tue Dec 10 09:15:40 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:15:40 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:15:43 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:15:43 2024~[success] Backend working properly
+Tue Dec 10 09:15:43 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:15:43 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:15:43 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:15:43 2024~[success] Backend working properly
+Tue Dec 10 09:15:43 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:15:43 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:15:43 2024~[info] Loaded latest transactions
+Tue Dec 10 09:15:59 2024~[info] Starting startupCheck
+Tue Dec 10 09:15:59 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:15:59 2024~[success] Backend working properly
+Tue Dec 10 09:15:59 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:15:59 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:15:59 2024~[success] Connection established with the backend server
+Tue Dec 10 09:15:59 2024~[success] Session File Found
+Tue Dec 10 09:15:59 2024~[success] Transaction storage files found
+Tue Dec 10 09:15:59 2024~[info] Session Matched
+Tue Dec 10 09:15:59 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:16:00 2024~[success] Backend working properly
+Tue Dec 10 09:16:00 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:16:00 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:16:02 2024~[info] Starting startupCheck
+Tue Dec 10 09:16:02 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:16:02 2024~[success] Backend working properly
+Tue Dec 10 09:16:02 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:16:02 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:16:02 2024~[success] Connection established with the backend server
+Tue Dec 10 09:16:02 2024~[success] Session File Found
+Tue Dec 10 09:16:02 2024~[success] Transaction storage files found
+Tue Dec 10 09:16:02 2024~[info] Session Matched
+Tue Dec 10 09:16:02 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:16:03 2024~[success] Backend working properly
+Tue Dec 10 09:16:03 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:16:03 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:16:04 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:16:05 2024~[success] Backend working properly
+Tue Dec 10 09:16:05 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:16:05 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:16:05 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:16:05 2024~[success] Backend working properly
+Tue Dec 10 09:16:05 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:16:05 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:16:05 2024~[info] Loaded latest transactions
+Tue Dec 10 09:16:07 2024~[info] Starting startupCheck
+Tue Dec 10 09:16:07 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:16:07 2024~[success] Backend working properly
+Tue Dec 10 09:16:07 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:16:07 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:16:07 2024~[success] Connection established with the backend server
+Tue Dec 10 09:16:07 2024~[success] Session File Found
+Tue Dec 10 09:16:07 2024~[success] Transaction storage files found
+Tue Dec 10 09:16:07 2024~[info] Session Matched
+Tue Dec 10 09:16:07 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:16:08 2024~[success] Backend working properly
+Tue Dec 10 09:16:08 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:16:08 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:16:08 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:16:08 2024~[success] Backend working properly
+Tue Dec 10 09:16:08 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:16:08 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:16:08 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:16:09 2024~[success] Backend working properly
+Tue Dec 10 09:16:09 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:16:09 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:16:09 2024~[info] Loaded latest transactions
+Tue Dec 10 09:16:52 2024~[info] Starting startupCheck
+Tue Dec 10 09:16:52 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:16:53 2024~[success] Backend working properly
+Tue Dec 10 09:16:53 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:16:53 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:16:53 2024~[success] Connection established with the backend server
+Tue Dec 10 09:16:53 2024~[success] Session File Found
+Tue Dec 10 09:16:53 2024~[success] Transaction storage files found
+Tue Dec 10 09:16:53 2024~[info] Session Matched
+Tue Dec 10 09:16:53 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:16:53 2024~[success] Backend working properly
+Tue Dec 10 09:16:53 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:16:53 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:16:55 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:16:55 2024~[success] Backend working properly
+Tue Dec 10 09:16:55 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:16:55 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:16:55 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:16:55 2024~[success] Backend working properly
+Tue Dec 10 09:16:55 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:16:55 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:16:56 2024~[info] Loaded latest transactions
+Tue Dec 10 09:16:58 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:16:58 2024~[success] Backend working properly
+Tue Dec 10 09:16:58 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:16:58 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:17:05 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:17:05 2024~[success] Backend working properly
+Tue Dec 10 09:17:05 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:17:05 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:17:05 2024~[info]  zoogle.projectdaffodil.xyz connection established
+Tue Dec 10 09:17:05 2024~[success] Backend working properly
+Tue Dec 10 09:17:05 2024~[success] Transactions loaded and enqueued successfully
+Tue Dec 10 09:17:05 2024~[success] Transaction have been saved to transactionStorage.csv
+Tue Dec 10 09:17:05 2024~[info] Loaded latest transactions

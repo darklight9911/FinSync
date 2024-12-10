@@ -66,6 +66,9 @@
     "array": "c",
     "deque": "c",
     "vector": "c",
-    "string_view": "c"
+    "string_view": "c",
+    "offline.h": "c",
+    "any": "c",
+    "complex": "c"
   }
 }

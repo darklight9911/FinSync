@@ -119,7 +119,7 @@ bool createTransactionView(){
     createUsyncTransaction(amount, transactionType, transactonReason);
     return true;
 }
-void viewTransaction() {
+int viewTransaction() {
     if(checkConnection(BACKEND_URI)){
         downloadTransactionHistory();
         conLog("Loaded latest transactions","info");
@@ -133,7 +133,6 @@ void viewTransaction() {
             free(transaction);
         }
    
-        sleep(20);
 
     }
     else{
@@ -147,6 +146,12 @@ void viewTransaction() {
         while ((transaction = pop(&stack)) != NULL) {
             free(transaction);
         }
+    }
+    int option;
+    sysMessage("IN","Enter anything to go back");
+    scanf("%d", &option);
+    if (option){
+        return 0;
     }
 }
 
@@ -181,8 +186,56 @@ int fetchCurrentBalance(){
     return balance;
 }
 
-bool syncWithServer(){
-    
-    return true;
-}
+int statsPage(Stack *stack) {
+    if (!stack || !stack->top) {
+        printf("Stack is empty!\n");
+        return;
+    }
 
+
+    TransactionHistory *current = stack->top;
+    clearScr();
+    printf("\t\t Statistics \t\t\n");
+
+    int totalSpent = 0;
+    int totalIncome = 0;
+    int totalGiven = 0;
+    int totalTaken = 0;
+    int counter = 0;
+
+    while (current) {
+
+        if (strcmp(current->type, "Outgoing") == 0) {
+            totalSpent += current->amount;
+        } else if (strcmp(current->type, "Incoming") == 0) {
+            totalIncome += current->amount;
+        } else if (strcmp(current->type, "Taken") == 0) {
+            totalTaken += current->amount;
+        } else if (strcmp(current->type, "Given") == 0) {
+            totalGiven += current->amount;
+        }
+
+        current = current->next;
+        counter++;
+    }
+
+    char spentInfo[200], incomeInfo[200], givenInfo[200], takenInfo[200];
+    sprintf(spentInfo, "Total Spent : %d Taka\n", totalSpent);
+    sprintf(incomeInfo, "Total Income : %d Taka\n", totalIncome);
+    sprintf(givenInfo, "Total Given : %d Taka\n", totalGiven);
+    sprintf(takenInfo, "Total Taken : %d Taka\n", totalTaken);
+
+    sysMessage("STATS", spentInfo);
+    sysMessage("STATS", incomeInfo);
+    sysMessage("STATS", givenInfo);
+    sysMessage("STATS", takenInfo);
+
+    sysMessage("IN","Enter anything to go back:");
+    int goBack;
+    scanf("%d", &goBack);
+    if (goBack){
+        return 0;
+    }
+
+    
+}

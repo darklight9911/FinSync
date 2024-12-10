@@ -7,7 +7,8 @@ projectfiles = [
     "fsGlobal.h",
     "structures.h",
     "constants.h",
-    "views.h"
+    "views.h",
+    "offline.h"
 ]
 
 availableProjectFiles = os.listdir()
@@ -30,4 +31,4 @@ if len(sys.argv) == 1:
 if sys.argv[1] == "info":
     totalLinesCount = checkFiles()
     print(f"Total Lines of Project: {totalLinesCount}")
-    print(f"Additional Library: {open("linkers", "r").read().splitlines()}")
+    # print(f"Additional Library: {open("linkers", "r").read().splitlines()}")

@@ -65,10 +65,29 @@ int main()
                     // sleep(2);
                 }else if(x == 2){
                     printf("Transaction history");
-                    viewTransaction();
+                    int tom;
+                    tom = viewTransaction();
+                    if (tom == 0){
+                        continue;
+                    }
                     // sleep(3);
                 }else if(x == 3){
-                    printf("Stats");
+                        Stack stack;
+                        initStack(&stack);
+                        if (checkConnection(BACKEND_URI)){
+                            downloadTransactionHistory();
+                            loadTransactions(&stack, "transactionHistory.csv");
+                            
+                        }else{
+                            loadTransactions(&stack, "transactionHistory.csv");
+                        
+                        }
+
+                        int y = statsPage(&stack);
+                        if (y == 0){
+                            continue;
+
+                        }
                 }else if (x == 4){
 
                     sysMessage("PROCESS", "Trying to logout");

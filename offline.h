@@ -197,11 +197,20 @@ void loadTransactions(Stack *stack, const char *filename) {
 
 void displayTransactions(Stack *stack) {
     TransactionHistory *current = stack->top;
+    clearScr();
+    int counter = 0;
+    printf("\t\t Transaction History \t\t\n");
     while (current) {
-        printf("ID: %s, Time: %s, Amount: %d, Type: %s, Reason: %s\n",
-               current->id, current->time, current->amount,
-               current->type, current->reason);
+        if (counter >=1 && counter <= 10){
+            printf("[%d] Time: %s, Amount: %d, Type: %s, Reason: %s\n",
+                counter, current->time, current->amount,
+                current->type, current->reason);
+        }
+
+
         current = current->next;
+
+        counter++;
     }
 }
 TransactionHistory *pop(Stack *stack) {
