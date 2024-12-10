@@ -294,7 +294,7 @@ static size_t WriteCallback(void *contents, size_t size, size_t nmemb, void *use
         return 0; 
     }
 
-        mem->memory = ptr;
+    mem->memory = ptr;
     memcpy(&(mem->memory[mem->size]), contents, total_size);
     mem->size += total_size;
     mem->memory[mem->size] = 0;
@@ -707,3 +707,42 @@ bool postInternetConnection() {
     return true;
 }
 
+void downloadTransactionHistory(){
+       if (checkConnection(BACKEND_URI)) {
+        size_t json_size = 500;
+        char *json_data = malloc(json_size);
+        char *url = "https://zoogle.projectdaffodil.xyz/api/getTransactions";
+
+        sprintf(json_data, "{\"apiToken\":\"%s\"}", readApiToken());
+        struct Response getResponse;
+        getResponse = callServer(url, json_data);
+        free(json_data);
+        FILE *file;
+        file = fopen("transactionHistory.csv", "w");
+
+        if (getResponse.response_code == 200) {
+            char *formattedData = strdup(getResponse.data);
+            if (formattedData) {
+                for (char *p = formattedData; *p; ++p) {
+                    if (*p == '\\' && *(p + 1) == 'r') {
+                        *p = ' ';
+                        *(p + 1) = ' ';
+                    } else if (*p == '\\' && *(p + 1) == 'n') {
+                        *p = '\n';
+                        *(p + 1) = ' ';
+                    }
+                }
+                // printf("%s", formattedData);
+                removeQuotes(formattedData);
+                fprintf(file, "%s", formattedData);
+                
+                fclose(file);                
+                free(formattedData);
+            } else {
+                printf("Error: Unable to format data.\n");
+            }
+        } else {
+            conLog("Failed to fetch the transactions!", "error");
+        }
+    }
+}

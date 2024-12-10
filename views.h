@@ -120,41 +120,32 @@ bool createTransactionView(){
     return true;
 }
 void viewTransaction() {
-    if (checkConnection(BACKEND_URI)) {
-        size_t json_size = 500;
-        char *json_data = malloc(json_size);
-        char *url = "https://zoogle.projectdaffodil.xyz/api/getTransactions";
+    if(checkConnection(BACKEND_URI)){
+        downloadTransactionHistory();
+        conLog("Loaded latest transactions","info");
+        Stack stack;
+        initStack(&stack);
+        loadTransactions(&stack, "transactionHistory.csv");
+        printf("Loaded Transactions:\n");
+        displayTransactions(&stack);
+        TransactionHistory *transaction;
+        while ((transaction = pop(&stack)) != NULL) {
+            free(transaction);
+        }
+   
+        sleep(20);
 
-        sprintf(json_data, "{\"apiToken\":\"%s\"}", readApiToken());
-        struct Response getResponse;
-        getResponse = callServer(url, json_data);
-        free(json_data);
-        FILE *file;
-        file = fopen("transactionHistory.csv", "w");
-
-        if (getResponse.response_code == 200) {
-            char *formattedData = strdup(getResponse.data);
-            if (formattedData) {
-                for (char *p = formattedData; *p; ++p) {
-                    if (*p == '\\' && *(p + 1) == 'r') {
-                        *p = ' ';
-                        *(p + 1) = ' ';
-                    } else if (*p == '\\' && *(p + 1) == 'n') {
-                        *p = '\n';
-                        *(p + 1) = ' ';
-                    }
-                }
-                // printf("%s", formattedData);
-                removeQuotes(formattedData);
-                fprintf(file, "%s", formattedData);
-                
-                fclose(file);                
-                free(formattedData);
-            } else {
-                printf("Error: Unable to format data.\n");
-            }
-        } else {
-            conLog("Failed to fetch the transactions!", "error");
+    }
+    else{
+        conLog("Loaded previously downloaded transactions","info");
+        Stack stack;
+        initStack(&stack);
+        loadTransactions(&stack, "transactionHistory.csv");
+        printf("Loaded Transactions:\n");
+        displayTransactions(&stack);
+        TransactionHistory *transaction;
+        while ((transaction = pop(&stack)) != NULL) {
+            free(transaction);
         }
     }
 }

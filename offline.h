@@ -133,3 +133,82 @@ void saveQueueToCSV(TransactionQueue* queue, const char* filename) {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void initStack(Stack *stack) {
+    stack->top = NULL;
+}
+
+
+void push(Stack *stack, TransactionHistory *transaction) {
+    transaction->next = stack->top;
+    stack->top = transaction;
+}
+
+
+
+// Function to load transactions from a file into a stack
+void loadTransactions(Stack *stack, const char *filename) {
+    FILE *file = fopen(filename, "r");
+    if (file == NULL) {
+        perror("Failed to open file");
+        return;
+    }
+
+    char line[MAX_LINE_LENGTH];
+    fgets(line, sizeof(line), file);
+
+    while (fgets(line, sizeof(line), file)) {
+        TransactionHistory *transaction = (TransactionHistory *)malloc(sizeof(TransactionHistory));
+        if (transaction == NULL) {
+            perror("Memory allocation failed");
+            fclose(file);
+            return;
+        }
+        sscanf(line, "%49[^,],%49[^,],%d,%9[^,],%199[^\n]",
+               transaction->id, transaction->time, &transaction->amount,
+               transaction->type, transaction->reason);
+
+        transaction->next = NULL; 
+        push(stack, transaction);
+    }
+
+    fclose(file);
+}
+
+void displayTransactions(Stack *stack) {
+    TransactionHistory *current = stack->top;
+    while (current) {
+        printf("ID: %s, Time: %s, Amount: %d, Type: %s, Reason: %s\n",
+               current->id, current->time, current->amount,
+               current->type, current->reason);
+        current = current->next;
+    }
+}
+TransactionHistory *pop(Stack *stack) {
+    if (stack->top == NULL) {
+        return NULL;
+    }
+    TransactionHistory *topTransaction = stack->top;
+    stack->top = stack->top->next;
+    return topTransaction;
+}

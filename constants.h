@@ -7,4 +7,4 @@
     #define CONLOG_OUTPUT_ENABLED false
 #endif
 #define MAX_SIZE 1000
-
+#define MAX_LINE_LENGTH 256
